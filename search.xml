@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>最简单的爬虫项目之爬取豆瓣电影TOP250</title>
+    <url>/blog/2019/11/13/191113pbh01/</url>
+    <content><![CDATA[<center>作者：18级 潘愽浩</center><p>Hello，大家好，相信很多人都对爬虫有着浓厚的兴趣，今天我来为大家简单的讲一下什么是爬虫，并通过爬取豆瓣电影TOP250来让大家更清楚的明白爬虫的工作原理。</p><p>网络爬虫（又称为网页蜘蛛，网络机器人），是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。</p><p>由于python语法简单简洁，第三方模块比较丰富，关于爬虫的网络请求模块和网络解析模块（Lxml,BeautifulSoup,pyQuery）也比较多,并且有高效稳定的scrapy网络爬虫框架，以及爬scrapy，redis分布式爬虫框架，Python也是一门胶水语言，对于其他语言的调用比较方便，所以我们在爬虫时一般使用python语言。</p><a id="more"></a>
+
+
+
+
+<p>首先，我们要明白一个网页所具备的三大特征：<br>•    每一个网页都有一个唯一的url（统一资源定位符）来进行定位<br>•    网页都是通过HTML&lt;超文本&gt;文本展示的<br>•    所有的网页都是通过HTTP&lt;超文本传输协议&gt;（HTTPS）协议来传输的</p>
+<p>然后，我们需要安装requests和BeautifulSoup4这两个库，requests是python实现的简单易用的HTTP库 ，bs4可以通过解析requests获取的网页信息为用户提供需要抓取的数据。</p>
+<p>安装方法如下：</p>
+<ol>
+<li>运行cmd命令提示符</li>
+</ol>
+<ol start="2">
+<li>输入<code>pip install requests</code>，等待安装完成</li>
+</ol>
+<ol start="3">
+<li>输入<code>pip install bs4</code>，等待安装完成</li>
+</ol>
+<p>（若在cmd中显示不是外部或内部命令，也不是可运行的程序或批处理文件，则说明未把python设为环境变量，设置方法请点击<br><a href="https://jingyan.baidu.com/article/48206aeafdcf2a216ad6b316.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/48206aeafdcf2a216ad6b316.html</a><br>查看）</p>
+<p>明白了这些，我们应该就有了爬取豆瓣电影TOP250的大致思路：</p>
+<ol>
+<li>找到记载有豆瓣电影TOP250的网站</li>
+<li>获取该网站的HTML信息</li>
+<li>整理数据，将所需要的信息输出</li>
+</ol>
+<p>好了，废话不多说，让我们进入我们的第一个爬虫项目的实战中吧！</p>
+<p>使用谷歌打开含有我们需要的信息的网站“<a href="https://movie.douban.com/top250" target="_blank" rel="noopener">https://movie.douban.com/top250</a>”</p>
+<p>///图1</p>
+<p>我们先把这个网站的信息使用requests库中的get函数获取出来并保存到req变量中：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">req = requests.get(‘https://movie.douban.com/top250’)</span><br></pre></td></tr></table></figure>
+
+<p>然后，我们按F12打开审查元素</p>
+<p>///tu2</p>
+<p>点击箭头所指的键，然后点击网页中我们所需要获取的信息（即肖申克的救赎）</p>
+<p>//tu3</p>
+<p>上图中肖申克的救赎所存放的位置已经显示出来了</p>
+<p>///tu4</p>
+<p>我们可以看到《肖申克的救赎》存放在id为hd的div标签中的a，span标签中，然后我们再通过看《霸王别姬》《阿甘正传》等发现它们的标签存放地是一样的！</p>
+<p>这样，我们就可以把req变量中的内容使用BeautifulSoup4库解析出来存放到soup变量中：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">soup = bs4.BeautifulSoup(req.text,’ html.parse’)</span><br><span class="line">txt = soup.find_all(‘div’,class_ = ‘hd’)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> txt:</span><br><span class="line">	print(i.a.span.text)</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
     <title>你知道吗？这里是电脑120</title>
     <url>/blog/2019/11/13/history/</url>
     <content><![CDATA[<center>作者：18级 李嘉琦</center><p>在百度百科中电脑120：<br><a href="https://baike.baidu.com/item/电脑120/198143?fr=aladdin" target="_blank" rel="noopener">https://baike.baidu.com/item/电脑120/198143?fr=aladdin</a></p><p>在这一届组员中的电脑120：</p><p>2006年成立的学生公益组织，在过去的那么多年中，一代又一代的电脑120成员做出了不可忽视的成绩，农创空间保留的项目是因为曾经有一群人在那里战斗过，取得的是优异的成绩，现在即使是有些冷落，但也应该记住我们最开始的志向是面向全校，一群人有共同的目标做一个相同的事，可知是青春奋斗的模样。</p><a id="more"></a>
