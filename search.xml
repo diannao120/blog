@@ -29,19 +29,31 @@
 </ol>
 <p>好了，废话不多说，让我们进入我们的第一个爬虫项目的实战中吧！</p>
 <p>使用谷歌打开含有我们需要的信息的网站“<a href="https://movie.douban.com/top250" target="_blank" rel="noopener">https://movie.douban.com/top250</a>”</p>
-<p>///图1</p>
+<p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/13/pbh01/01.jpg?raw=true" alt></p>
 <p>我们先把这个网站的信息使用requests库中的get函数获取出来并保存到req变量中：</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">req = requests.get(‘https://movie.douban.com/top250’)</span><br></pre></td></tr></table></figure>
 
 <p>然后，我们按F12打开审查元素</p>
-<p>///tu2</p>
+<p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/13/pbh01/02.jpg?raw=true" alt></p>
 <p>点击箭头所指的键，然后点击网页中我们所需要获取的信息（即肖申克的救赎）</p>
-<p>//tu3</p>
+<p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/13/pbh01/03.png?raw=true" alt></p>
 <p>上图中肖申克的救赎所存放的位置已经显示出来了</p>
-<p>///tu4</p>
+<p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/13/pbh01/04.png?raw=true" alt></p>
 <p>我们可以看到《肖申克的救赎》存放在id为hd的div标签中的a，span标签中，然后我们再通过看《霸王别姬》《阿甘正传》等发现它们的标签存放地是一样的！</p>
 <p>这样，我们就可以把req变量中的内容使用BeautifulSoup4库解析出来存放到soup变量中：</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">soup = bs4.BeautifulSoup(req.text,’ html.parse’)</span><br><span class="line">txt = soup.find_all(‘div’,class_ = ‘hd’)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> txt:</span><br><span class="line">	print(i.a.span.text)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/13/pbh01/05.png?raw=true" alt></p>
+<p>运行出来的结果为：</p>
+<p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/13/pbh01/06.png?raw=true" alt></p>
+<p>这样，第一页中所包含的前25名的电影名称就获取完成了！</p>
+<p>当我们来到第二页时，会发现该网页的url变成了‘<code>https://movie.douban.com/top250?start=25&amp;filter=</code>’，第三页则是‘<code>https://movie.douban.com/top250?start=50&amp;filter=</code>’，再拐到第一页时，url变成了‘<code>https://movie.douban.com/top250?start=0&amp;filter=</code>’，怎么样，发现规律了吗？url有一个成25的倍数变化的数，若为75则是第四页，225则为第十页！</p>
+<p>因此，我们可以做一个循环结构，将十页的内容全部获取出来并依次输出：<br>for i in range(0,250,25):</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,<span class="number">250</span>,<span class="number">25</span>):</span><br><span class="line">	url = ‘https://movie.douban.com/top250?start=&#123;&#125;&amp;filter=’.format(i)</span><br><span class="line">	soup = bs4.BeautifulSoup(req.text,’ html.parse’)</span><br><span class="line">	txt = soup.find_all(‘div’,class_ = ‘hd’)</span><br><span class="line">	<span class="keyword">for</span> j <span class="keyword">in</span> txt:</span><br><span class="line">		print(j.a.span.text)</span><br></pre></td></tr></table></figure>
+
+<p>最终我们的代码如下：</p>
+<p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/13/pbh01/07.png?raw=true" alt></p>
+<p>好了，一个最基本的爬虫程序就这样写好啦，是不是很简单呢。当然，爬虫远不止于此，在后面我们还要讲到各种各样的反爬虫机制和不同的请求（get,post）,让我们敬请期待！</p>
 ]]></content>
   </entry>
   <entry>
