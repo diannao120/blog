@@ -2,6 +2,22 @@
 <search>
   <entry>
     <title>常见电脑问题（2019.11月之前）</title>
+    <url>/blog/2019/11/13/191113zyz01/</url>
+    <content><![CDATA[<center>作者：18级 张怡哲</center><h1 id="总结1-系统激活问题"><a href="#总结1-系统激活问题" class="headerlink" title="总结1.系统激活问题"></a>总结1.系统激活问题</h1><p>win10提示“转到设置以激活windows”但激活工具被电脑拦截<br>神龙官网上有一键关闭windows defender工具（我们软件安装栏目也有）,激活后可以再用神龙一键开启</p><h1 id="总结2-Windows-系统重置"><a href="#总结2-Windows-系统重置" class="headerlink" title="总结2.Windows 系统重置"></a>总结2.Windows 系统重置</h1><p>适用于电脑无法进入BIOS，系统卡顿需要还原（能够进入系统）等情况。<br>打开 C://windows/System32/sysprep/sysprep.exe</p><a id="more"></a>
+
+
+
+<h1 id="总结3-连不上校园网"><a href="#总结3-连不上校园网" class="headerlink" title="总结3.连不上校园网"></a>总结3.连不上校园网</h1><p>①win+r,输入cmd。在cmd中输入ipconfig /release,回车，再输入ipconfig /renew</p>
+<p>②网络重置<br>【网络和Internet设置】，右侧的【状态】栏下拉找到【网络重置】并点击。或者右键开始菜单，选择打开“Windows PowerShell（管理员），在弹出cmd的命令运行界面中输入netsh winsock reset，然后回车运行，重启电脑。</p>
+<h1 id="总结4-“某些设置已隐藏或由你的组织管理”"><a href="#总结4-“某些设置已隐藏或由你的组织管理”" class="headerlink" title="总结4.“某些设置已隐藏或由你的组织管理”"></a>总结4.“某些设置已隐藏或由你的组织管理”</h1><p>在控制面板里卸载品牌应用程序</p>
+<h1 id="总结5-打不开网页"><a href="#总结5-打不开网页" class="headerlink" title="总结5.打不开网页"></a>总结5.打不开网页</h1><p>①360修复</p>
+<p>②浏览器设置 选项Internet选项 连接 局域网 代理服务器关了</p>
+<p>③命令提示符直接输入：ipconfig /flushdns然后按Enter确认键。</p>
+<p>④网络重置</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>常见电脑问题（2019.11月之前）</title>
     <url>/blog/2019/11/11/191111wsl01/</url>
     <content><![CDATA[<center>作者：18级 王少磊</center><h1 id="问题1："><a href="#问题1：" class="headerlink" title="问题1："></a>问题1：</h1><p>win10系统开机不是进入系统而是出现蓝屏界面，并提示错误代码0xc0000428。</p><h2 id="解答1："><a href="#解答1：" class="headerlink" title="解答1："></a>解答1：</h2><p>开机按shift+重启键进入高级启动界面，点击“疑难解答”，点击打开“高级选项”，在“高级选项”界面，点击“启动设置”，在“启动设置”界面里，找到并点击“重启”，然后点击“禁用驱动程序强制签名”即可。</p><a id="more"></a>
 
@@ -14,7 +30,7 @@
 <h1 id="问题4："><a href="#问题4：" class="headerlink" title="问题4："></a>问题4：</h1><p>win10系统重启死循环（可能是系统显卡出现问题）</p>
 <h2 id="解答4："><a href="#解答4：" class="headerlink" title="解答4："></a>解答4：</h2><p>1、将电脑开机，在开机界面出现时按住F8，进入系统的设置        界面<br>2、找到“更新和安全选项卡”，点击进入后，打开“恢复选项卡”<br>3、然后点击“高级启动”中的“立即重启”按钮，进入修复界面<br>4、进入修复界面后，点击“高级选项”，点击“疑难解答”<br>5、点击“高级选项”<br>6、点击“启动选项设置卡”，进入后打开启动设置<br>7、在此页面中点击下方的重启按钮，把电脑进行重启操作<br>8、这时电脑会弹出“启动安全模式选项卡”，在此页面直接按F4（可能每台电脑进入的按键不同）进入电脑的安全模式<br>9、电脑重启完毕后会自动进入安全模式，然后点击开始菜单，使用鼠标右键点击菜单中的设备管理选项卡<br>10、在设备管理窗口中找到显卡驱动程序，然后鼠标右键点击，将显卡驱动程序禁用<br>11、禁用完成后重启电脑，这时电脑会正常开机进入主界面，然后重新下载安全显卡驱动程序即可</p>
 <h1 id="问题5："><a href="#问题5：" class="headerlink" title="问题5："></a>问题5：</h1><p>win10系统开机输入密码后黑屏</p>
-<h2 id="解答5："><a href="#解答5：" class="headerlink" title="解答5："></a>解答5：</h2><p>1、打开电脑，输入开机密码进入<br>2、显示黑屏后，按住“Ctrl+Alt+Del”打开任务管理器<br>3、在打开的任务管理器中，点击“文件”，“运行新任务”<br>4、再弹出的“新建任务”窗口中输入“explorder”命令，点击确定<br>5、这时候成功进入桌面，但为了彻底解决黑屏故障继续以下操作；按住“Win+R”，在打开的输入框中输入“regedit”，按回车<br>6、在弹出的注册表编辑器中依次打开：<br>HKEY_Local_Machine —- Software —- Microsoft —- Windows NT —- CurrentVersion —- Winlogon选项<br>7、在右侧列表中双击“shell”项，在打开的编辑字符串窗口中修改数据数值为“explorer.exe”点击确定，保存后推出注册表即可</p>
+<h2 id="解答5："><a href="#解答5：" class="headerlink" title="解答5："></a>解答5：</h2><p>1、打开电脑，输入开机密码进入<br>2、显示黑屏后，按住“Ctrl+Alt+Del”打开任务管理器<br>3、在打开的任务管理器中，点击“文件”，“运行新任务”<br>4、再弹出的“新建任务”窗口中输入“explorer”命令，点击确定<br>5、这时候成功进入桌面，但为了彻底解决黑屏故障继续以下操作；按住“Win+R”，在打开的输入框中输入“regedit”，按回车<br>6、在弹出的注册表编辑器中依次打开：<br>HKEY_Local_Machine —- Software —- Microsoft —- Windows NT —- CurrentVersion —- Winlogon选项<br>7、在右侧列表中双击“shell”项，在打开的编辑字符串窗口中修改数据数值为“explorer.exe”点击确定，保存后推出注册表即可</p>
 <h1 id="问题6："><a href="#问题6：" class="headerlink" title="问题6："></a>问题6：</h1><p>电脑连接打印机后无法找到</p>
 <h2 id="解答6："><a href="#解答6：" class="headerlink" title="解答6："></a>解答6：</h2><p>1、按住“Win+R”，在打开的对话框中输入“compmgmt.msc”，点击确定<br>2、在打开的新窗口左侧列表中展开“设备管理器”，在右侧的“串行总线控制器”中找到相应的打印机设备，确保此设备没有被禁用<br>3、展开左侧的“服务”界面，在右侧找到“Print Spooler”服务项，确保此服务处于正常开启状态<br>4、更多情况下造成打印机无法识别或打印的原因是相关的打印驱动未正常安装，对此，我们可以通过相关驱动管理器工具（例如驱动精灵、驱动人生等）进行检测及安装驱动</p>
 ]]></content>
