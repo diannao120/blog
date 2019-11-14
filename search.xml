@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>电脑120荣获河南农业大学首届“最美大学生”荣誉</title>
+    <url>/blog/2019/11/14/191114ctt01/</url>
+    <content><![CDATA[<center>作者：18级 蔡婷婷</center><p>服务全校师生，提高实践技能，知识回报社会，奉献成就价值，上万次服务见证他们无私的价值，近万台电脑留下他们工作的痕迹，电脑120历经十三载，延续着不变的爱心接力，河南农业大学首届最美大学生-电脑120集体。<br>2019年五月份，电脑120荣获河南农业大学首届“最美大学生”，这一荣誉的获得是对电脑120的肯定，也是集体成员共同努力奋斗的见证。</p><a id="more"></a>
+
+
+<iframe src="//player.bilibili.com/player.html?aid=75636447&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<p>兢兢业业，无私奉献，电脑120全体成员会再接再厉，为共同目标而奋斗！</p>
+]]></content>
+  </entry>
+  <entry>
     <title>最简单的爬虫项目之爬取豆瓣电影TOP250</title>
     <url>/blog/2019/11/13/191113pbh01/</url>
     <content><![CDATA[<center>作者：18级 潘愽浩</center><p>Hello，大家好，相信很多人都对爬虫有着浓厚的兴趣，今天我来为大家简单的讲一下什么是爬虫，并通过爬取豆瓣电影TOP250来让大家更清楚的明白爬虫的工作原理。</p><p>网络爬虫（又称为网页蜘蛛，网络机器人），是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。</p><p>由于python语法简单简洁，第三方模块比较丰富，关于爬虫的网络请求模块和网络解析模块（Lxml,BeautifulSoup,pyQuery）也比较多,并且有高效稳定的scrapy网络爬虫框架，以及爬scrapy，redis分布式爬虫框架，Python也是一门胶水语言，对于其他语言的调用比较方便，所以我们在爬虫时一般使用python语言。</p><a id="more"></a>
