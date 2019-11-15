@@ -3,11 +3,11 @@
   <entry>
     <title>重装系统进不了安装界面的解决方案</title>
     <url>/blog/2019/11/15/191115djt01/</url>
-    <content><![CDATA[<center>作者：19级 董敬涛</center><center>审核：18级 李翱</center><p>采用重装系统的方法进行解决，本台电脑安装win7系统。<br>正常情况下做出以下操作：</p><ol>
+    <content><![CDATA[<center>作者：19级 董敬涛</center><center>审核：18级 李翱</center><p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/15/djt01/image001.jpg?raw=true" alt></p><p>采用重装系统的方法进行解决，本台电脑安装win7系统。<br>正常情况下做出以下操作：</p><ol>
 <li>改BIOS设置；</li>
 </ol><ol start="2">
 <li>进入PE重新分区并做系统；</li>
-</ol><p>即可解决。但是本台电脑快速分区后并未出现两个小的引导分区，如下图所示：（重复多次没有出现标注的两个小引导分区）</p><p>将MBR格式改为GUID格式，可以生成ESP和MSR引导分区，如下图：</p><a id="more"></a>
+</ol><p>即可解决。但是本台电脑快速分区后并未出现两个小的引导分区，如下图所示：（重复多次没有出现标注的两个小引导分区）</p><p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/15/djt01/image003.gif?raw=true" alt></p><p>将MBR格式改为GUID格式，可以生成ESP和MSR引导分区，如下图：</p><a id="more"></a>
 
 Thinkpad笔记本电脑开机显示启动菜单界面，并且无法跳出，无法关闭，如下图所示：
 
@@ -16,11 +16,18 @@ Thinkpad笔记本电脑开机显示启动菜单界面，并且无法跳出，无
 
 
 
+
+
+<p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/15/djt01/image005.jpg?raw=true" alt></p>
 <p>解决了无法出现两个小的引导分区的问题，改装win10系统。但是继续安装系统时仍然跳出如下图所示界面。重新安装win10系统多次，仍弹出以下界面，无法跳出。</p>
+<p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/15/djt01/image007.jpg?raw=true" alt></p>
 <p>猜想是BIOS设置问题。接着应对BIOS做出以下处理：</p>
+<p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/15/djt01/image009.jpg?raw=true" alt></p>
 <p>UEFI是新式的引导方式，Legacy是传统引导方式。而GPT分区表下的Win 10 x64系统，需要优先使用UEFI模式引导；MBR分区表下的系统，只能在Legacy模式下进系统。UEFI只支持64位系统。一般的win10用UEFI引导，只需选择UEFI only就行了。但本机比较特殊，所以在此处选择both，并且将UEFI作为优先使用对象。CSM Support （有的BIOS叫Launch CSM）是兼容性支持模块（要使得电脑能启动不完全支持UEFI的设备，就必须关闭Secure Boot，然后打开CSM。），在此处选择YES。</p>
 <p>Boot Mode 选择快速启动。secure rollback prevention安全回滚预防关掉，如下图所示：</p>
+<p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/15/djt01/image011.jpg?raw=true" alt></p>
 <p>至于开机优先顺序，Windows boot manager 和固态硬盘启动两个择一放到第一位就ok，如下图所示：</p>
+<p><img src="https://github.com/diannao120/blog/blob/master/image/2019/11/15/djt01/image013.jpg?raw=true" alt></p>
 <p>然后就是保存并退出，此时不用再进入PE重新进行装机而是直接进入安装系统的步骤，因为已经对电脑进行了装机但是装系统时被拦下，修改以后解除了阻拦，开始装系统。以上便是解决此问题的方法。</p>
 ]]></content>
   </entry>
