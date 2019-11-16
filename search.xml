@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>U盘问题处理合集</title>
+    <url>/blog/2019/11/16/191116xxl01/</url>
+    <content><![CDATA[<center>作者：17级 薛西龙</center><h1 id="问题1-插上U盘后电脑无法正常读取"><a href="#问题1-插上U盘后电脑无法正常读取" class="headerlink" title="问题1:插上U盘后电脑无法正常读取."></a>问题1:插上U盘后电脑无法正常读取.</h1><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案:"></a>解决方案:</h2><p>⑴    先尝试将U盘插入其他电脑检查是否能正常读取;</p><p>⑵    若能,则检查自己电脑相应驱动。此电脑右键管理→找到设备管理器一栏→<br>右键卸载U盘对应的驱动→在设备管理器根目录右键扫描检测硬件改动即可。</p><h1 id="问题2：插入U盘后打开文件提示格式异常等状况"><a href="#问题2：插入U盘后打开文件提示格式异常等状况" class="headerlink" title="问题2：插入U盘后打开文件提示格式异常等状况"></a>问题2：插入U盘后打开文件提示格式异常等状况</h1><a id="more"></a>
+
+
+
+<h2 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h2><p>此类问题多为U盘中病毒所导致的文件被恶意篡改。遇到此类问题第一时间用杀毒软件对U盘全盘扫描杀毒，并且在没有找到之前，你不要随便插入别人的电脑考东西，以免感染给其他电脑。USBkiller是一款不错的U盘杀毒软件，可以修复U盘.exe病毒，被病毒隐藏的文件等。</p>
+<h1 id="问题3：U盘插入提示格式化。"><a href="#问题3：U盘插入提示格式化。" class="headerlink" title="问题3：U盘插入提示格式化。"></a>问题3：U盘插入提示格式化。</h1><h2 id="解决方案：-1"><a href="#解决方案：-1" class="headerlink" title="解决方案："></a>解决方案：</h2><p>此类问题我遇到过好几次，建议先对U盘进行数据恢复，之后再尝试修复U盘。可以下载“芯片精灵”检测U盘的主控芯片，若检测不到表示U盘已经坏了，只能重新买一个使用。如果不是U盘的物理损坏，一般磁盘管理格式化后可以正常使用。</p>
+<h1 id="问题4：插入U盘提示请将磁盘插入驱动器"><a href="#问题4：插入U盘提示请将磁盘插入驱动器" class="headerlink" title="问题4：插入U盘提示请将磁盘插入驱动器"></a>问题4：插入U盘提示请将磁盘插入驱动器</h1><h2 id="解决方案：-2"><a href="#解决方案：-2" class="headerlink" title="解决方案："></a>解决方案：</h2><p>一般是接触不良导致的，先试试其他电脑能否正常显示。打开运行，输入services.msc，检查PlugAndPlay服务是否开启。如若已经开启，建议打开cmd，输入chkdsk d:/d。注：d:/d为问题磁盘。若插入U盘盘符为e，则改为e:/e。</p>
+<blockquote>
+<p>温馨提示：提醒大家规范使用U盘，尽管U盘支持热插拔，但是如果U盘在工作时将其拔出，容易造成数据丢失，更容易对U盘造成不可逆的损害。也不要长时间将U盘插入电脑,在不使用时将U盘正常弹出拔下。</p>
+</blockquote>
+<h1 id="章末小福利："><a href="#章末小福利：" class="headerlink" title="章末小福利："></a>章末小福利：</h1><blockquote>
+<p>数据恢复软件：R-studio<br>链接: <a href="https://pan.baidu.com/s/19J_7zLvsWvJQwGnorLu-Ng" target="_blank" rel="noopener">https://pan.baidu.com/s/19J_7zLvsWvJQwGnorLu-Ng</a><br>提取码: ee3m<br>注册码:<br>Do1z6USGB+sPvR7JD+zAKwU9hlBQE/8MTYGbKXdFvuou+7k8egArDY+EsRigGExVhdx/pRoAgwrumwtOLEu7Gg5+AG4adwdwJ3Pnhg5qOXJlZ6HbHv8Eka3iAOn4<br>(注：转自微信公众号电脑学习)</p>
+</blockquote>
+]]></content>
+  </entry>
+  <entry>
     <title>哈萨克斯坦的小姐姐</title>
     <url>/blog/2019/11/16/191116ljq01/</url>
     <content><![CDATA[<center>作者：18级 李嘉琦</center><h1 id="导言："><a href="#导言：" class="headerlink" title="导言："></a>导言：</h1><p> 在电脑120：你总会遇见一些意想不到的人，见识到不一样的事</p><h1 id="共享温暖："><a href="#共享温暖：" class="headerlink" title="共享温暖："></a>共享温暖：</h1><p>2019年11月15日周五，在电脑120值班时间一位哈萨克斯坦的小姐姐来电脑120装spss，组长们就马上去找这个软件的资源，帮助小姐姐安装她们需要使用的英文版的软件了。</p><p>组员们都很热情的和小姐姐聊天，用着我们努力拼凑出来的英语，笑声是不断的，小姐姐人很好学着我们一起用very thank you 这个表达感谢又自创的句子。</p><a id="more"></a>
