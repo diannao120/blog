@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Windows重装系统的方法</title>
+    <url>/blog/2019/11/17/191117zyz01/</url>
+    <content><![CDATA[<center>作者：18级 张怡哲</center><h1 id="准备阶段"><a href="#准备阶段" class="headerlink" title="准备阶段"></a>准备阶段</h1><blockquote>
+<p>一、启动U盘一个（建议4G以上），准备一个系统</p>
+</blockquote><p>二、电脑重装前最好做好备份，系统重装可以只动C盘里的东西，所以桌面上的东西最好做好备份</p><h1 id="一、启动盘的制作"><a href="#一、启动盘的制作" class="headerlink" title="一、启动盘的制作"></a>一、启动盘的制作</h1><p><strong>此操作会清空U盘数据，请提前做好备份</strong></p><p>1、    在电脑上下载一个启动盘制作工具（以大白菜为例）</p><p>2、    将u盘插入电脑</p><p>3、运行大白菜，选择自己的U盘，其他选项按照默认设置即可，点击开始制作</p><a id="more"></a>
+
+
+
+
+
+
+
+<p><img src="http://www.diannao120.top/blog/image/2019/11/17/zyz01/01.png" alt></p>
+<p>4、当出现如下提示时，表示启动盘制作成功</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/17/zyz01/02.png" alt></p>
+<h1 id="二、下载镜像文件"><a href="#二、下载镜像文件" class="headerlink" title="二、下载镜像文件"></a>二、下载镜像文件</h1><p>推荐网站：</p>
+<ul>
+<li>亦是美：<a href="http://www.yishimei.cn/" target="_blank" rel="noopener">http://www.yishimei.cn/</a></li>
+<li>MSDN：<a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">https://msdn.itellyou.cn/</a></li>
+<li>爱纯净：<a href="http://www.aichunjing.com/win10/" target="_blank" rel="noopener">http://www.aichunjing.com/win10/</a></li>
+<li>公众号：<a href="http://www.diannao120.top/normal/install/sys/" target="_blank" rel="noopener">http://www.diannao120.top/normal/install/sys/</a></li>
+</ul>
+<h1 id="三、安装"><a href="#三、安装" class="headerlink" title="三、安装"></a>三、安装</h1><p>1、将U盘插入电脑USB接口，开机，显示屏亮后按快捷键进入启动选项。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/17/zyz01/03.png" alt></p>
+<p>上图仅供参考。</p>
+<p>2、选择插入的U盘。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/17/zyz01/04.jpg" alt></p>
+<p>若尝试几次还未成功，请设置BIOS。一般的电脑进BIOS的按键是（（Fn+）F2）和ESC，还有的是按Enter键，或者是delete键。电脑在开机的时候会有一个短暂的时间在屏幕下方显示一个信息，那个就是进BIOS设置的按键。<br>联想电脑在侧方有个小按钮，在开机                                                   关机后点击一下会进入这个界面。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/17/zyz01/05.jpg" alt></p>
+<p> 这是进BIOS的原始界面，点击Enter Setup，进入BIOS界面。把BIOS里的security下的secure boot 改为Disabled </p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/17/zyz01/06.jpg" alt></p>
+<p>找到setup下的boot选项，把U盘设置为第一启动项，再重复步骤1。</p>
+<p> <a href="http://www.diannao120.top/blog/image/2019/11/17/zyz01/07.jpg" target="_blank" rel="noopener">http://www.diannao120.top/blog/image/2019/11/17/zyz01/07.jpg</a></p>
+<p>3、进入U盘安装启动页面</p>
+<p><a href="http://www.diannao120.top/blog/image/2019/11/17/zyz01/08.jpg" target="_blank" rel="noopener">http://www.diannao120.top/blog/image/2019/11/17/zyz01/08.jpg</a></p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/17/zyz01/09.jpg" alt></p>
+<p>4、进入装机版pe系统桌面后，打开大白菜PE一键装机工具，选择准备好的镜像文件和要安装的盘符，点击确定，等待安装完成后重启（重启时拔掉U盘）</p>
+<p><a href="http://www.diannao120.top/blog/image/2019/11/17/zyz01/10.png" target="_blank" rel="noopener">http://www.diannao120.top/blog/image/2019/11/17/zyz01/10.png</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>河南农业大学属于信管的荣誉</title>
     <url>/blog/2019/11/17/191117ljq01/</url>
     <content><![CDATA[<center>作者：18级 李嘉琦</center>
