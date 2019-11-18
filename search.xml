@@ -3,33 +3,35 @@
   <entry>
     <title>关于电脑开机磁盘检查问题的解决方案</title>
     <url>/blog/2019/11/18/191118djt01/</url>
-    <content><![CDATA[<center>作者：19级 董敬涛</center><h1 id="Win10出现该情况的界面如下图所示："><a href="#Win10出现该情况的界面如下图所示：" class="headerlink" title="Win10出现该情况的界面如下图所示："></a>Win10出现该情况的界面如下图所示：</h1><p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/01.jpg" alt></p><p>解决方案一般有两种：</p><h2 id="第一种："><a href="#第一种：" class="headerlink" title="第一种："></a>第一种：</h2><p>检查磁盘驱动器是否出现问题：<br>首先打开我的电脑，在这里点击鼠标右键：</p><p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/02.png" alt></p><p>点击属性；</p><p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/03.jpg" alt></p><p>点击工具；</p><p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/04.png" alt></p><p>点击检查；</p><p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/05.png" alt></p><p>若出现该界面则证明电脑没问题；</p><p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/06.png" alt></p><p>若出现错误则进行以下操作：<br>在控制面板中查看“驱动器状态”依次进入“控制面板\系统和安全\安全和维护”，展开“维护”选项，即可看到“驱动器状态”。<br>如果某个驱动器存在错误，那么这里会有提示，并给出运行扫描修复工具的链接。</p><a id="more"></a>
+    <content><![CDATA[<center>作者：19级 董敬涛</center>
 
+<h1 id="Win10出现该情况的界面如下图所示："><a href="#Win10出现该情况的界面如下图所示：" class="headerlink" title="Win10出现该情况的界面如下图所示："></a>Win10出现该情况的界面如下图所示：</h1><p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/01.jpg" alt=""></p>
+<a id="more"></a>
 
-
-
-
-
-
-
-
-
-
-
-
-
+<p>解决方案一般有两种：</p>
+<h2 id="第一种："><a href="#第一种：" class="headerlink" title="第一种："></a>第一种：</h2><p>检查磁盘驱动器是否出现问题：<br>首先打开我的电脑，在这里点击鼠标右键：</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/02.png" alt=""></p>
+<p>点击属性；</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/03.jpg" alt=""></p>
+<p>点击工具；</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/04.png" alt=""></p>
+<p>点击检查；</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/05.png" alt=""></p>
+<p>若出现该界面则证明电脑没问题；</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/06.png" alt=""></p>
+<p>若出现错误则进行以下操作：<br>在控制面板中查看“驱动器状态”依次进入“控制面板\系统和安全\安全和维护”，展开“维护”选项，即可看到“驱动器状态”。<br>如果某个驱动器存在错误，那么这里会有提示，并给出运行扫描修复工具的链接。</p>
 <h2 id="第二种："><a href="#第二种：" class="headerlink" title="第二种："></a>第二种：</h2><p>对于一些硬盘有坏道或少量其他问题在不影响电脑正常工作的情况下可以进行以下操作关闭电脑开机自动检查，具体步骤如下：<br>首先鼠标移到开始菜单并点击右键，然后点击运行：</p>
-<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/07.jpg" alt></p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/07.jpg" alt=""></p>
 <p>输入regedit，并确定，如下图所示：</p>
-<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/08.png" alt></p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/08.png" alt=""></p>
 <p>然后进行以下操作；</p>
-<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/09.png" alt></p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/09.png" alt=""></p>
 <p>并在Control界面内找到Session Manager，并点击，如下图所示；</p>
-<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/10.png" alt></p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/10.png" alt=""></p>
 <p>然后点击BootExecute，如下图所示；</p>
-<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/11.png" alt></p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/11.png" alt=""></p>
 <p>然后将下列的autocheck autockh*删去并确定即可；</p>
-<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/12.png" alt></p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/12.png" alt=""></p>
 <p><strong>若以上方法均不能解决问题则可以联系售后进行处理。</strong></p>
 ]]></content>
   </entry>
