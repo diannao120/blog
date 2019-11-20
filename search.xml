@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>最近所学（11.19之前）</title>
+    <url>/blog/2019/11/21/191121wjx01/</url>
+    <content><![CDATA[<center>作者：19级 王镓璇</center><center>审核：18级 吉时德</center><h1 id="总结1："><a href="#总结1：" class="headerlink" title="总结1："></a>总结1：</h1><p>正常重装系统后，需用激活程序激活系统和office办公软件。查看系统激活状态：此电脑-右键-属性；查看office激活状态：新建word或是其他办公文档，在账户中查看激活状态。</p><h1 id="总结2："><a href="#总结2：" class="headerlink" title="总结2："></a>总结2：</h1><p>据目前的了解，2019年最新的Macpro（MB985CH/A）不支持安装windows系统。 </p><a id="more"></a>
+
+
+
+
+<h1 id="总结3："><a href="#总结3：" class="headerlink" title="总结3："></a>总结3：</h1><p>最近碰到一些同学的U盘做成启动盘后内存容量变小的问题，并且在如下界面上格式化不能解决的</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/21/wjx01/01.jpg" alt></p>
+<p>可以用如下方法解决：win+r打开运行窗口，输入diskpart回车，输入list disk回车，出现自己U盘序列号后（比如说为1），输入select1回车，输入clean格式化U盘，退出运行窗口，在我的电脑中找到管理-磁盘管理-新建压缩卷然后根据默认设置操作即可。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>电脑120义务清灰活动</title>
     <url>/blog/2019/11/18/191118ljq01/</url>
     <content><![CDATA[<center>作者：18级 李嘉琦</center><h1 id="文字描述："><a href="#文字描述：" class="headerlink" title="文字描述："></a>文字描述：</h1><p>2019年11月17日周日，电脑120在河南农业大学家属院举行义务清灰活动，见识到在寒风中依然会坚守的是我们对电脑120的责任。</p><p>出发时：天气没有了前几日的阳光灿烂，但依然热情的是电脑120这一群小伙伴们。兰亭集合后，一起向家属院出发。</p><p>寒风依然在，热情仍不减。组员们一到指定地点就开始布置，搬来桌椅搭起帐篷，摆放好维修工具，搭起横幅，对活动进行介绍。</p><a id="more"></a>
