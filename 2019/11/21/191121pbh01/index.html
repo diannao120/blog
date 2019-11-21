@@ -64,7 +64,7 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;11&#x2F;21&#x2F;pbh01&#x2F;04.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;11&#x2F;21&#x2F;pbh01&#x2F;05.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;11&#x2F;21&#x2F;pbh01&#x2F;06.png">
-<meta property="og:updated_time" content="2019-11-21T14:11:52.961Z">
+<meta property="og:updated_time" content="2019-11-21T14:14:59.927Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;11&#x2F;21&#x2F;pbh01&#x2F;01.png">
 
@@ -244,7 +244,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-11-21 19:16:33 / 修改时间：22:11:52" itemprop="dateCreated datePublished" datetime="2019-11-21T19:16:33+08:00">2019-11-21</time>
+              <time title="创建时间：2019-11-21 19:16:33 / 修改时间：22:14:59" itemprop="dateCreated datePublished" datetime="2019-11-21T19:16:33+08:00">2019-11-21</time>
             </span>
 
           
@@ -291,7 +291,8 @@
 <h2 id="2-Numpy直接创造array："><a href="#2-Numpy直接创造array：" class="headerlink" title="2.    Numpy直接创造array："></a>2.    Numpy直接创造array：</h2><p>可以用<code>numpy.arange(0,10,0.01)</code>，也可以用<code>numpy.linspace(0,10,100)</code>（意思是在0到10范围内等距离取100个值并存放到1行n阶矩阵里）</p>
 <p>这样，我们就完成了自变量X的赋值工作。</p>
 <h1 id="三．-利用x的值根据函数关系求y的值："><a href="#三．-利用x的值根据函数关系求y的值：" class="headerlink" title="三．    利用x的值根据函数关系求y的值："></a>三．    利用x的值根据函数关系求y的值：</h1><p>这一步比较简单，我们只需要使用我们的主角odeint函数。一行代码即可搞定：</p>
-<pre><code>`y = odeint(fun,0,x)`</code></pre><p>在这个函数中，第一个参数fun是我们之前定义好的微分方程表达式的右边f(x,y)的表达式。</p>
+<p>   <code>y = odeint(fun,0,x)</code></p>
+<p>在这个函数中，第一个参数fun是我们之前定义好的微分方程表达式的右边f(x,y)的表达式。</p>
 <p>至于第二个参数，我们以<code>dy/dx = x（0&lt;=x&lt;=10）</code>（以下简称fun1）和<code>dy/dx = x（5&lt;=x&lt;=10）</code>（以下简称fun2）为例子作讲解：</p>
 <p>对于<code>dy/dx = x</code>，我们可求得最终表达式为<code>y = (x^2)/2 + c</code>.</p>
 <p>而第二个参数0就是解的初值.比如对于fun1，自变量最小为0，令<code>y(x0) = 0,x0 = 0</code>,所以c的值就是0。对于fun2，自变量最小为5，令<code>y(x0) = 0</code>,<code>x0 = 5</code>,所以c的值为-25/2.也就是说，我们所作出的坐标图永远是从y = 0开始的。</p>
