@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>关于网线制作的细则</title>
+    <url>/blog/2019/11/23/191123lh01/</url>
+    <content><![CDATA[<center>作者：19级 李昊</center>
+<center>审核：18级 张贺林</center>
+
+<h2 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h2><p>对于网线的制作，对于大多数人来说，是特别基础的东西，主要看耐心程度。</p>
+<h2 id="准备工具："><a href="#准备工具：" class="headerlink" title="准备工具："></a>准备工具：</h2><p>压线钳，双绞线，水晶头。</p>
+<a id="more"></a>
+
+<h2 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h2><h1 id="一、"><a href="#一、" class="headerlink" title="一、"></a>一、</h1><p>用压线钳将双绞线的外皮去掉约3厘米。然后按照线序将线有序排列，有两种排列线序。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/23/lh01/01.gif" alt=""></p>
+<p>1、568B线序：白橙，橙，白绿，蓝，白蓝，绿，白棕，棕。(常用)<br>2、568A线序：白绿，绿，白橙，蓝，白蓝，橙，白棕，棕。(不常用)</p>
+<h1 id="二、"><a href="#二、" class="headerlink" title="二、"></a>二、</h1><p>将八根线有序排列后，伸直对齐，然后用压线钳把线头剪平。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/23/lh01/02.gif" alt=""></p>
+<h1 id="三、"><a href="#三、" class="headerlink" title="三、"></a>三、</h1><p>拿出水晶头，插进水晶头内，并用压线钳夹一下即可，以听到清脆响声为夹成功的标志。一定注意要插到底，否则可能制作不成功！</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/23/lh01/03.gif" alt=""></p>
+<h1 id="四、"><a href="#四、" class="headerlink" title="四、"></a>四、</h1><p>最后注意：用压线钳夹过的水晶头就不能用了，所以注意细心，以免徒劳。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>关于Mac OS系统装Win系统</title>
     <url>/blog/2019/11/22/191122wyl01/</url>
     <content><![CDATA[<center>作者：19级 王云龙</center><center>审核：18级 蔡婷婷</center><h2 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h2><p>首先保证Mac OS是最新版的（Catalina版本的现在还不能装Win系统）。</p><h1 id="第一步："><a href="#第一步：" class="headerlink" title="第一步："></a>第一步：</h1><p>在桌面前往-点击实用工具-选择Boot点击启动转换助理，点开它然后会出现下图的窗口。</p><p><img src="http://www.diannao120.top/blog/image/2019/11/22/wyl01/01.jpg" alt></p><h1 id="第二步："><a href="#第二步：" class="headerlink" title="第二步："></a>第二步：</h1><p>根据自己的需要选择分区的大小，但也不能太小，建议80G以上，不然有可能会安装失败。然后要下载微软官方正版的win系统的镜像，直接在苹果电脑上下载速度会特别慢，建议在别的电脑上下载到u盘然后直接用，省着到时候着急等着它下载。</p><a id="more"></a>
