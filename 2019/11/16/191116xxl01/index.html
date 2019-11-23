@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+  <link rel="alternate" href="/blog/atom.xml" title="电脑120" type="application/atom+xml">
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+
+<link rel="stylesheet" href="/blog/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/blog/',
+    scheme: 'Gemini',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":"default","style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":5},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="作者：17级 薛西龙问题1:插上U盘后电脑无法正常读取.解决方案:⑴    先尝试将U盘插入其他电脑检查是否能正常读取;⑵    若能,则检查自己电脑相应驱动。此电脑右键管理→找到设备管理器一栏→右键卸载U盘对应的驱动→在设备管理器根目录右键扫描检测硬件改动即可。问题2：插入U盘后打开文件提示格式异常等状况">
+<meta property="og:type" content="article">
+<meta property="og:title" content="U盘问题处理合集">
+<meta property="og:url" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;2019&#x2F;11&#x2F;16&#x2F;191116xxl01&#x2F;index.html">
+<meta property="og:site_name" content="电脑120">
+<meta property="og:description" content="作者：17级 薛西龙问题1:插上U盘后电脑无法正常读取.解决方案:⑴    先尝试将U盘插入其他电脑检查是否能正常读取;⑵    若能,则检查自己电脑相应驱动。此电脑右键管理→找到设备管理器一栏→右键卸载U盘对应的驱动→在设备管理器根目录右键扫描检测硬件改动即可。问题2：插入U盘后打开文件提示格式异常等状况">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;11&#x2F;16&#x2F;xxl01&#x2F;01.png">
+<meta property="og:updated_time" content="2019-11-16T05:22:37.101Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;11&#x2F;16&#x2F;xxl01&#x2F;01.png">
+
+<link rel="canonical" href="https://diannao120.github.io/blog/2019/11/16/191116xxl01/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>U盘问题处理合集 | 电脑120</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?9d665843674b57854ba63a6609a4f43d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/blog/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">电脑120</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/blog/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/blog/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/blog/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://diannao120.github.io/blog/blog/2019/11/16/191116xxl01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="电脑120">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="电脑120">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          U盘问题处理合集
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-16 12:32:39 / 修改时间：13:22:37" itemprop="dateCreated datePublished" datetime="2019-11-16T12:32:39+08:00">2019-11-16</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <center>作者：17级 薛西龙</center><h1 id="问题1-插上U盘后电脑无法正常读取"><a href="#问题1-插上U盘后电脑无法正常读取" class="headerlink" title="问题1:插上U盘后电脑无法正常读取."></a>问题1:插上U盘后电脑无法正常读取.</h1><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案:"></a>解决方案:</h2><p>⑴    先尝试将U盘插入其他电脑检查是否能正常读取;</p><p>⑵    若能,则检查自己电脑相应驱动。此电脑右键管理→找到设备管理器一栏→<br>右键卸载U盘对应的驱动→在设备管理器根目录右键扫描检测硬件改动即可。</p><p><img src="http://www.diannao120.top/blog/image/2019/11/16/xxl01/01.png" alt></p><h1 id="问题2：插入U盘后打开文件提示格式异常等状况"><a href="#问题2：插入U盘后打开文件提示格式异常等状况" class="headerlink" title="问题2：插入U盘后打开文件提示格式异常等状况"></a>问题2：插入U盘后打开文件提示格式异常等状况</h1><a id="more"></a>
+
+
+
+
+<h2 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h2><p>此类问题多为U盘中病毒所导致的文件被恶意篡改。遇到此类问题第一时间用杀毒软件对U盘全盘扫描杀毒，并且在没有找到之前，你不要随便插入别人的电脑考东西，以免感染给其他电脑。USBkiller是一款不错的U盘杀毒软件，可以修复U盘.exe病毒，被病毒隐藏的文件等。</p>
+<h1 id="问题3：U盘插入提示格式化。"><a href="#问题3：U盘插入提示格式化。" class="headerlink" title="问题3：U盘插入提示格式化。"></a>问题3：U盘插入提示格式化。</h1><h2 id="解决方案：-1"><a href="#解决方案：-1" class="headerlink" title="解决方案："></a>解决方案：</h2><p>此类问题我遇到过好几次，建议先对U盘进行数据恢复，之后再尝试修复U盘。可以下载“芯片精灵”检测U盘的主控芯片，若检测不到表示U盘已经坏了，只能重新买一个使用。如果不是U盘的物理损坏，一般磁盘管理格式化后可以正常使用。</p>
+<h1 id="问题4：插入U盘提示请将磁盘插入驱动器"><a href="#问题4：插入U盘提示请将磁盘插入驱动器" class="headerlink" title="问题4：插入U盘提示请将磁盘插入驱动器"></a>问题4：插入U盘提示请将磁盘插入驱动器</h1><h2 id="解决方案：-2"><a href="#解决方案：-2" class="headerlink" title="解决方案："></a>解决方案：</h2><p>一般是接触不良导致的，先试试其他电脑能否正常显示。打开运行，输入services.msc，检查PlugAndPlay服务是否开启。如若已经开启，建议打开cmd，输入chkdsk d:/d。注：d:/d为问题磁盘。若插入U盘盘符为e，则改为e:/e。</p>
+<blockquote>
+<p>温馨提示：提醒大家规范使用U盘，尽管U盘支持热插拔，但是如果U盘在工作时将其拔出，容易造成数据丢失，更容易对U盘造成不可逆的损害。也不要长时间将U盘插入电脑,在不使用时将U盘正常弹出拔下。</p>
+</blockquote>
+<h1 id="章末小福利："><a href="#章末小福利：" class="headerlink" title="章末小福利："></a>章末小福利：</h1><blockquote>
+<p>数据恢复软件：R-studio<br>链接: <a href="https://pan.baidu.com/s/19J_7zLvsWvJQwGnorLu-Ng" target="_blank" rel="noopener">https://pan.baidu.com/s/19J_7zLvsWvJQwGnorLu-Ng</a><br>提取码: ee3m<br>注册码:<br>Do1z6USGB+sPvR7JD+zAKwU9hlBQE/8MTYGbKXdFvuou+7k8egArDY+EsRigGExVhdx/pRoAgwrumwtOLEu7Gg5+AG4adwdwJ3Pnhg5qOXJlZ6HbHv8Eka3iAOn4<br>(注：转自微信公众号电脑学习)</p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/blog/2019/11/16/191116ljq01/" rel="next" title="哈萨克斯坦的小姐姐">
+                  <i class="fa fa-chevron-left"></i> 哈萨克斯坦的小姐姐
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/blog/2019/11/17/191117ljq01/" rel="prev" title="河南农业大学属于信管的荣誉">
+                  河南农业大学属于信管的荣誉 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#问题1-插上U盘后电脑无法正常读取"><span class="nav-number">1.</span> <span class="nav-text">问题1:插上U盘后电脑无法正常读取.</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">1.1.</span> <span class="nav-text">解决方案:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题2：插入U盘后打开文件提示格式异常等状况"><span class="nav-number">2.</span> <span class="nav-text">问题2：插入U盘后打开文件提示格式异常等状况</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案："><span class="nav-number">2.1.</span> <span class="nav-text">解决方案：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题3：U盘插入提示格式化。"><span class="nav-number">3.</span> <span class="nav-text">问题3：U盘插入提示格式化。</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案：-1"><span class="nav-number">3.1.</span> <span class="nav-text">解决方案：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题4：插入U盘提示请将磁盘插入驱动器"><span class="nav-number">4.</span> <span class="nav-text">问题4：插入U盘提示请将磁盘插入驱动器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案：-2"><span class="nav-number">4.1.</span> <span class="nav-text">解决方案：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#章末小福利："><span class="nav-number">5.</span> <span class="nav-text">章末小福利：</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="电脑120"
+    src="/blog/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">电脑120</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/blog/archives/">
+        
+          <span class="site-state-item-count">30</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+电脑120成立于2006年3月，作为河南农业大学特色学生公益组织，为校内外广大师生免费解决电脑问题，力求创新。值班时间是每天晚上7~9点（除节假日等特殊情况），值班地点是兰亭116。在首届“河南农业大学最美大学生”评选活动中作为唯一入选的学生组织荣获“最美大学生”称号。
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+
+
+<div class="visit">
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                <span id="busuanzi_container_site_pv">本站到访数：<span id="busuanzi_value_site_uv"></span></span>
+                <span class="post-meta-divider">|</span>
+    			<span id="busuanzi_container_page_pv">本页阅读量：<span id="busuanzi_value_page_pv"></span></span>
+                
+            </div>
+
+<div class="qqqun">
+				<span>电脑120服务群：</span>
+				<a href="http://shang.qq.com/wpa/qunwpa?idkey=6ba6d55616eaad2ba859efff4d9ffa2c7a73afe936f790a24b7a9bc9ccb74960" target="_blank" rel="noopener noreferrer">①群</a>
+				<span>  |  </span>
+				<a href="http://shang.qq.com/wpa/qunwpa?idkey=e42f5389280d1b46ff70e7e75058e0c202922891e7ecaafc30a4110a9869055f" target="_blank" rel="noopener noreferrer">②群</a>
+
+            </div>
+
+<span id="sitetime"></span>
+<script language=javascript>
+    function siteTime(){
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth()+1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2019,11,09,01,30,00); //北京时间2019-11-09 01:30:00
+        var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+        var diff = t2-t1;
+        var diffYears = Math.floor(diff/years);
+        var diffDays = Math.floor((diff/days)-diffYears*365);
+        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+        document.getElementById("sitetime").innerHTML=" 本站已稳定运行："+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>    
+<br>
+
+
+
+<div class="copyright">
+  Copyright
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">电脑120</span>
+ 版权所有
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/blog/lib/anime.min.js"></script>
+  <script src="/blog/lib/velocity/velocity.min.js"></script>
+  <script src="/blog/lib/velocity/velocity.ui.min.js"></script>
+<script src="/blog/js/utils.js"></script><script src="/blog/js/motion.js"></script>
+<script src="/blog/js/schemes/pisces.js"></script>
+<script src="/blog/js/next-boot.js"></script>
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  <script src="/blog/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
