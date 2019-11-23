@@ -51,6 +51,20 @@
   };
 </script>
 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
   <meta name="description" content="作者：18级 王少磊问题1：win10系统开机不是进入系统而是出现蓝屏界面，并提示错误代码0xc0000428。解答1：开机按shift+重启键进入高级启动界面，点击“疑难解答”，点击打开“高级选项”，在“高级选项”界面，点击“启动设置”，在“启动设置”界面里，找到并点击“重启”，然后点击“禁用驱动程序强制签名”即可。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常见电脑问题（2019.11月之前）">

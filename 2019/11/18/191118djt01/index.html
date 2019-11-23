@@ -51,6 +51,20 @@
   };
 </script>
 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
   <meta name="description" content="作者：19级 董敬涛  Win10出现该情况的界面如下图所示：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于电脑开机磁盘检查问题的解决方案">

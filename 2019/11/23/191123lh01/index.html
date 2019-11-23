@@ -51,6 +51,20 @@
   };
 </script>
 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
   <meta name="description" content="作者：19级 李昊 审核：18级 张贺林  引言：对于网线的制作，对于大多数人来说，是特别基础的东西，主要看耐心程度。 准备工具：压线钳，双绞线，水晶头。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于网线制作的细则">

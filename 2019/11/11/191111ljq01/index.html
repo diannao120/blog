@@ -51,6 +51,20 @@
   };
 </script>
 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
   <meta name="description" content="作者：18级 李嘉琦 （转）摘要近日谷歌在其最近发布的论文中提出了新一代的NLP预训练模型T5，其整个模型的参数数量达到了惊人的 110 亿，再次刷新 Glue 榜单。从目前的情况来看，从OPEN AI的GPT-2到谷歌的XLNET、ALBERT以及百度的ERNIE，人工智能的模型迭代速度越来越快，但是模型的参数规模与训练成本也随之水涨船高，平均刷榜模型的训练成本都高达数十万人民币之巨。甚至谷歌的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="全栈人工智能-AI发展新趋势">

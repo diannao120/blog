@@ -51,6 +51,20 @@
   };
 </script>
 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
   <meta name="description" content="作者：17级 薛西龙问题1:插上U盘后电脑无法正常读取.解决方案:⑴    先尝试将U盘插入其他电脑检查是否能正常读取;⑵    若能,则检查自己电脑相应驱动。此电脑右键管理→找到设备管理器一栏→右键卸载U盘对应的驱动→在设备管理器根目录右键扫描检测硬件改动即可。问题2：插入U盘后打开文件提示格式异常等状况">
 <meta property="og:type" content="article">
 <meta property="og:title" content="U盘问题处理合集">

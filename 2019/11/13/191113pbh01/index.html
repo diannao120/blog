@@ -51,6 +51,20 @@
   };
 </script>
 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
   <meta name="description" content="作者：18级 潘愽浩Hello，大家好，相信很多人都对爬虫有着浓厚的兴趣，今天我来为大家简单的讲一下什么是爬虫，并通过爬取豆瓣电影TOP250来让大家更清楚的明白爬虫的工作原理。网络爬虫（又称为网页蜘蛛，网络机器人），是一种按照一定的规则，自动地抓取万维网信息的程序或者脚本。由于python语法简单简洁，第三方模块比较丰富，关于爬虫的网络请求模块和网络解析模块（Lxml,BeautifulSoup">
 <meta property="og:type" content="article">
 <meta property="og:title" content="最简单的爬虫项目之爬取豆瓣电影TOP250">

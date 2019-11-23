@@ -51,6 +51,20 @@
   };
 </script>
 
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
   <meta name="description" content="作者：18级 潘愽浩导言：今天让我们来了解一下如何用scipy中的odeint函数解一阶常微分方程，不过由于scipy的功能实现是在numpy库的基础之上，我还会简单的为大家介绍numpy库。话不多说，让我们进入正题！我们先了解一下python在科学计算领域中四个非常受欢迎的库，numpy、scipy、matplotlib，pandas。numpy是一个高性能的多维数组（矩阵）的计算库，SciPy">
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用python基于scipy库解一阶常微分方程">
