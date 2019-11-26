@@ -21,6 +21,9 @@
 <p>音乐建议选择一些带有节奏的纯音乐，也可以对音乐进行剪裁，选择自己想要的片段；</p>
 <p>利用PPT做快闪，这个过程需要你充分发挥想象力，只要你敢想，敢做，你的作品就注定不平凡。</p>
 ]]></content>
+      <categories>
+        <category>艺术宣传</category>
+      </categories>
   </entry>
   <entry>
     <title>Office 2010安装方法</title>
@@ -44,6 +47,9 @@
 <p><img src="http://www.diannao120.top/blog/image/2019/11/25/zyz01/07.png" alt=""></p>
 <p>7．激活。可在百度或者本站“软件安装”—“激活工具”目录下下载激活软件。</p>
 ]]></content>
+      <categories>
+        <category>软件安装</category>
+      </categories>
   </entry>
   <entry>
     <title>关于网线制作的细则</title>
@@ -64,6 +70,13 @@
 <p><img src="http://www.diannao120.top/blog/image/2019/11/23/lh01/03.gif" alt=""></p>
 <h1 id="四、"><a href="#四、" class="headerlink" title="四、"></a>四、</h1><p>最后注意：用压线钳夹过的水晶头就不能用了，所以注意细心，以免徒劳。</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>上不了网</tag>
+      </tags>
   </entry>
   <entry>
     <title>关于Mac OS系统装Win系统</title>
@@ -93,6 +106,12 @@
 <p><img src="http://www.diannao120.top/blog/image/2019/11/22/wyl01/10.jpg" alt></p>
 <p>以为这样就大功告成了吗？不，红军两万里长征只走完了一半。点击此电脑，选择D盘并打开，然后点开BootCamp，点击Set up，然后按照逻辑思维的顺序一步一步的走，这个安装完成之后红军就到延安了，哈哈哈，好了，不开玩笑。<br>Last，congratulations！你拥有了一台双系统的Mac。</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>开不了机</tag>
+      </tags>
   </entry>
   <entry>
     <title>利用python基于scipy库解一阶常微分方程</title>
@@ -155,6 +174,12 @@ matplotlib.pyplot.show()</code></p>
 <p>当然，专业解微分方程还是要用maple，不过多了解一些其他的也肯定有其好处。</p>
 <p>好了，关于一阶常微分方程的数值求解就到这里啦，因为我也是刚开始看，肯定会有写的不对的地方，欢迎各位大佬帮忙更正。下一次我们学习二阶或者更高阶的求解问题（默默给自己挖个坑，填不填看情况吧/笑哭）。</p>
 ]]></content>
+      <categories>
+        <category>学习考试</category>
+      </categories>
+      <tags>
+        <tag>网络爬虫</tag>
+      </tags>
   </entry>
   <entry>
     <title>近期学习总结（11.19之前）</title>
@@ -168,6 +193,9 @@ matplotlib.pyplot.show()</code></p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/21/wjx01/01.jpg" alt></p>
 <p>可以用如下方法解决：win+r打开运行窗口，输入diskpart回车，输入list disk回车，出现自己U盘序列号后（比如说为1），输入select1回车，输入clean格式化U盘，退出运行窗口，在我的电脑中找到管理-磁盘管理-新建压缩卷然后根据默认设置操作即可。</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
   </entry>
   <entry>
     <title>电脑120义务清灰活动</title>
@@ -190,6 +218,9 @@ matplotlib.pyplot.show()</code></p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/18/ljq01/04.jpg" alt></p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/18/ljq01/05.jpg" alt></p>
 ]]></content>
+      <categories>
+        <category>艺术宣传</category>
+      </categories>
   </entry>
   <entry>
     <title>关于电脑开机磁盘检查问题的解决方案</title>
@@ -225,6 +256,15 @@ matplotlib.pyplot.show()</code></p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/18/djt01/12.png" alt=""></p>
 <p><strong>若以上方法均不能解决问题则可以联系售后进行处理。</strong></p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>开不了机</tag>
+        <tag>显示异常</tag>
+        <tag>U盘问题</tag>
+      </tags>
   </entry>
   <entry>
     <title>Windows重装系统的方法</title>
@@ -265,6 +305,16 @@ matplotlib.pyplot.show()</code></p>
 <p>4、进入装机版pe系统桌面后，打开大白菜PE一键装机工具，选择准备好的镜像文件和要安装的盘符，点击确定，等待安装完成后重启（重启时拔掉U盘）</p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/17/zyz01/10.png" alt></p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>开不了机</tag>
+        <tag>上不了网</tag>
+        <tag>显示异常</tag>
+        <tag>没有声音</tag>
+      </tags>
   </entry>
   <entry>
     <title>河南农业大学属于信管的荣誉</title>
@@ -277,6 +327,9 @@ matplotlib.pyplot.show()</code></p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/17/ljq01/01.jpg" alt=""></p>
 <p>2019年5月7号，河南省第十二届大学生程序设计竞赛在黄淮学院举行，来自省内55所高校的232支队伍共计696名学生同场竞技。我院4支队伍12名同学参加比赛。经过激烈角逐，温春阳、金志礼、徐本奇3名同学获得全场总冠军，夺得冠军奖杯，4支队伍共获3块金牌，1块银牌，1块铜牌。同时，为我校争得了承办河南省第十三届大学生程序设计竞赛的资格。</p>
 ]]></content>
+      <categories>
+        <category>艺术宣传</category>
+      </categories>
   </entry>
   <entry>
     <title>U盘问题处理合集</title>
@@ -296,6 +349,13 @@ matplotlib.pyplot.show()</code></p>
 <p>数据恢复软件：R-studio<br>链接: <a href="https://pan.baidu.com/s/19J_7zLvsWvJQwGnorLu-Ng" target="_blank" rel="noopener">https://pan.baidu.com/s/19J_7zLvsWvJQwGnorLu-Ng</a><br>提取码: ee3m<br>注册码:<br>Do1z6USGB+sPvR7JD+zAKwU9hlBQE/8MTYGbKXdFvuou+7k8egArDY+EsRigGExVhdx/pRoAgwrumwtOLEu7Gg5+AG4adwdwJ3Pnhg5qOXJlZ6HbHv8Eka3iAOn4<br>(注：转自微信公众号电脑学习)</p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>U盘问题</tag>
+      </tags>
   </entry>
   <entry>
     <title>哈萨克斯坦的小姐姐</title>
@@ -307,9 +367,12 @@ matplotlib.pyplot.show()</code></p>
 
 <p>照片是忘记拍了，小姐姐是一个很好看的女孩子了。</p>
 ]]></content>
+      <categories>
+        <category>艺术宣传</category>
+      </categories>
   </entry>
   <entry>
-    <title>重装系统进不了安装界面的解决方案</title>
+    <title>重装系统进不了安装界面(无法正常开机)的解决方案</title>
     <url>/blog/2019/11/15/191115djt01/</url>
     <content><![CDATA[<center>作者：19级 董敬涛</center>
 <center>审核：18级 李翱</center>
@@ -339,6 +402,14 @@ matplotlib.pyplot.show()</code></p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/15/djt01/image013.jpg?raw=true" alt=""></p>
 <p>然后就是保存并退出，此时不用再进入PE重新进行装机而是直接进入安装系统的步骤，因为已经对电脑进行了装机但是装系统时被拦下，修改以后解除了阻拦，开始装系统。以上便是解决此问题的方法。</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>开不了机</tag>
+        <tag>显示异常</tag>
+      </tags>
   </entry>
   <entry>
     <title>电脑120网站信息检索的两种方法</title>
@@ -371,6 +442,9 @@ matplotlib.pyplot.show()</code></p>
 <p><strong>搜索功能实现原理：按照字符串的子串全局检索，标题权重大于正文权重的排序原则</strong></p>
 <h1 id="文末彩蛋："><a href="#文末彩蛋：" class="headerlink" title="文末彩蛋："></a>文末彩蛋：</h1><p>进入diannao120.top站点的404页面，有<strong>在线小游戏</strong>等着我们呦！至于404页面是啥，怎么进入404页面就需要自己百度了。</p>
 <center>网站里还有更多玩法和彩蛋等你探索(๑ゝω╹๑)！</center>]]></content>
+      <categories>
+        <category>艺术宣传</category>
+      </categories>
   </entry>
   <entry>
     <title>120值班以来遇到的问题以及解决方案</title>
@@ -412,6 +486,9 @@ matplotlib.pyplot.show()</code></p>
 </li>
 </ol>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
   </entry>
   <entry>
     <title>电脑USB、U盘接口不能用原因</title>
@@ -469,6 +546,13 @@ matplotlib.pyplot.show()</code></p>
 <p>　　2.就是你的机器的接口有问题,解决的办法就是换个接口。</p>
 <p>　　3.可能是你的电脑系统与你的机器不兼容,导致电脑无法识别!有的电脑的前面是供电不足造成的,插后面就可以了。</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>U盘问题</tag>
+      </tags>
   </entry>
   <entry>
     <title>电脑维修常见问题（2019.11月之前）</title>
@@ -485,6 +569,14 @@ matplotlib.pyplot.show()</code></p>
 <p>4、有时候连不上学校的网络，需要重置网络，要通过cmd指令，以管理员身份打开运行，然后输入cmd指令，在命令提示符窗口之后，输入命令netsh winsock reset，然后回车，就可以重置网络。</p>
 <p>5、在一修理电脑时，重装完系统后，发现电脑的触摸板不可以使用，并不是电脑硬件问题，因为电脑主人拿过来时还可以用，后来发现装的系统中缺少驱动，一般电脑的驱动就直接可以在该品牌的官网中找到，下载并安装即可。</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>开不了机</tag>
+        <tag>上不了网</tag>
+      </tags>
   </entry>
   <entry>
     <title>电脑故障及解决办法</title>
@@ -501,6 +593,15 @@ matplotlib.pyplot.show()</code></p>
 <h1 id="8-win10网络重置"><a href="#8-win10网络重置" class="headerlink" title="8 win10网络重置"></a>8 win10网络重置</h1><p>右键点击开始——选择“命令提示符（管理员）”——再输入 netsh winsock reset 回车。</p>
 <h1 id="9-磁盘坏道"><a href="#9-磁盘坏道" class="headerlink" title="9 磁盘坏道"></a>9 磁盘坏道</h1><p>磁盘扫描程序发现错误甚至坏道。硬盘坏道分为逻辑坏道和物理坏道两种：前者为逻辑性故障，通常为软件操作不当或使用不当造成的，可利用软件修复；后者为物理性故障，表明硬盘磁道产生了物理损伤，只能通过更换硬盘或隐藏硬盘扇区来解决。<br>对于逻辑坏道，Windows自带的“磁盘扫描程序”就是最简便常用的解决手段。对于物理坏道，可利用～些磁盘软件将其单独分为一个区并隐藏起来，让磁头不再去读它，这样可以在一定程度上延长硬盘的使用寿命。除此之外，还有很多优秀的第三方修复工具，如Partition Magic等。<br>零磁道损坏。零磁道损坏的表现是开机自检时，屏幕显示“HDD Controller Error”，而后死机。零磁道损坏时，一般情况下很难修复，只能更换硬盘。</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>路由器问题</tag>
+        <tag>上不了网</tag>
+        <tag>U盘问题</tag>
+      </tags>
   </entry>
   <entry>
     <title>电脑120值班报告</title>
@@ -512,6 +613,9 @@ matplotlib.pyplot.show()</code></p>
 <h1 id="3、-电脑黑屏"><a href="#3、-电脑黑屏" class="headerlink" title="3、    电脑黑屏"></a>3、    电脑黑屏</h1><p>重装系统</p>
 <h1 id="4、-代码问题"><a href="#4、-代码问题" class="headerlink" title="4、    代码问题"></a>4、    代码问题</h1><p>告诉他们哪里错了，改完后再告诉他们怎么写更好</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
   </entry>
   <entry>
     <title>台式电脑拆机教程</title>
@@ -553,6 +657,13 @@ matplotlib.pyplot.show()</code></p>
 <p>最后，我们参照上面的方法把电脑组装起来，盖上机箱盖，将所有的线头<br>插好就OK了，详细的机箱线路如图所示：</p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/14/chr01/15.jpg" alt=""></p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>开不了机</tag>
+      </tags>
   </entry>
   <entry>
     <title>电脑120荣获河南农业大学首届“最美大学生”荣誉</title>
@@ -564,6 +675,9 @@ matplotlib.pyplot.show()</code></p>
 
 <p>兢兢业业，无私奉献，电脑120全体成员会再接再厉，为共同目标而奋斗！</p>
 ]]></content>
+      <categories>
+        <category>艺术宣传</category>
+      </categories>
   </entry>
   <entry>
     <title>最简单的爬虫项目之爬取豆瓣电影TOP250</title>
@@ -620,6 +734,12 @@ matplotlib.pyplot.show()</code></p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/13/pbh01/07.png" alt></p>
 <p>好了，一个最基本的爬虫程序就这样写好啦，是不是很简单呢。当然，爬虫远不止于此，在后面我们还要讲到各种各样的反爬虫机制和不同的请求（get,post）,让我们敬请期待！</p>
 ]]></content>
+      <categories>
+        <category>学习考试</category>
+      </categories>
+      <tags>
+        <tag>网络爬虫</tag>
+      </tags>
   </entry>
   <entry>
     <title>你知道吗？这里是电脑120</title>
@@ -632,6 +752,9 @@ matplotlib.pyplot.show()</code></p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/13/ljqhistory/01.jpg" alt></p>
 <p>—–正式加入的我们都认为这是一个了不起的地方，我们在做一些了不起的事</p>
 ]]></content>
+      <categories>
+        <category>艺术宣传</category>
+      </categories>
   </entry>
   <entry>
     <title>电脑维修常见问题（2019.11月之前）</title>
@@ -670,6 +793,15 @@ matplotlib.pyplot.show()</code></p>
 <li>如果电脑有一个内存条，则要找一根好的内存条替换掉原来的那个，然后电脑重新启动试试，如果不行再换两个试试。</li>
 </ol>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>开不了机</tag>
+        <tag>上不了网</tag>
+        <tag>需要激活</tag>
+        <tag>显示异常</tag>
+      </tags>
   </entry>
   <entry>
     <title>常见电脑问题（2019.11月之前）</title>
@@ -686,6 +818,14 @@ matplotlib.pyplot.show()</code></p>
 <p>③命令提示符直接输入：ipconfig /flushdns然后按Enter确认键。</p>
 <p>④网络重置</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>开不了机</tag>
+        <tag>上不了网</tag>
+        <tag>需要激活</tag>
+      </tags>
   </entry>
   <entry>
     <title>常见电脑问题（2019.11月之前）</title>
@@ -705,6 +845,13 @@ matplotlib.pyplot.show()</code></p>
 <h1 id="问题6："><a href="#问题6：" class="headerlink" title="问题6："></a>问题6：</h1><p>电脑连接打印机后无法找到</p>
 <h2 id="解答6："><a href="#解答6：" class="headerlink" title="解答6："></a>解答6：</h2><p>1、按住“Win+R”，在打开的对话框中输入“compmgmt.msc”，点击确定<br>2、在打开的新窗口左侧列表中展开“设备管理器”，在右侧的“串行总线控制器”中找到相应的打印机设备，确保此设备没有被禁用<br>3、展开左侧的“服务”界面，在右侧找到“Print Spooler”服务项，确保此服务处于正常开启状态<br>4、更多情况下造成打印机无法识别或打印的原因是相关的打印驱动未正常安装，对此，我们可以通过相关驱动管理器工具（例如驱动精灵、驱动人生等）进行检测及安装驱动</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>开不了机</tag>
+      </tags>
   </entry>
   <entry>
     <title>宿舍路由器设置方法</title>
@@ -746,6 +893,13 @@ matplotlib.pyplot.show()</code></p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/11/zhl01/016.jpg" alt></p>
 <p>然后就可以下拉根据终端类型选择客户端进行登录认证，电脑选择“windows”下载后登录上网，手机则可以下载哆点APP后连接相应的WIFI信号登录认证。</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>路由器问题</tag>
+      </tags>
   </entry>
   <entry>
     <title>电脑基础硬件讲解</title>
@@ -771,6 +925,12 @@ matplotlib.pyplot.show()</code></p>
 <p>（1）CPU的安装：组装一台电脑主机的第一步就是要将CPU安装在主板上，主板和CPU都是电脑最核心的部件，所以千万不能出错，其实稍加注意你会发现，想出错都难，因为在主板跟CPU上都有明确的缺口箭头（防呆接口）指示。</p>
 <p>（2）散热器的安装：不光是组装电脑的时候会动到这个，后期维护（包括更换散热膏、清理灰尘、风扇润滑）都会涉及，所以这个要好好掌握。首先是散热膏的涂抹，也有叫导热硅脂的，总之就是涂抹在CPU表面的一种东西，这个必须涂， 涂抹散热硅脂最关键的是涂抹要均匀，不能产生气泡、掺杂杂质，还要尽可能的涂薄，CPU要表面全覆盖，但是又不能有太明显的溢出，所以这也算是个细心技术活</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+      </tags>
   </entry>
   <entry>
     <title>全栈人工智能-AI发展新趋势</title>
@@ -798,6 +958,9 @@ matplotlib.pyplot.show()</code></p>
 <p>AI产业横跨电商、金融、物流、云计算、大数据、全球化等场景，只有咱们国内厂商跟随全场景云AI平台的趋势，才能释放出AI全部的潜能，产生规模效应。</p>
 <p><strong>阅读原文：</strong><br><a href="https://blog.csdn.net/BEYONDMA/article/details/102986125" target="_blank" rel="noopener">https://blog.csdn.net/BEYONDMA/article/details/102986125</a></p>
 ]]></content>
+      <categories>
+        <category>艺术宣传</category>
+      </categories>
   </entry>
   <entry>
     <title>河南农业大学计算机模拟考试系统安装教程</title>
@@ -853,6 +1016,9 @@ matplotlib.pyplot.show()</code></p>
 <li>关闭IE，打开桌面上的考试客户端图标即可使用。</li>
 </ol>
 ]]></content>
+      <categories>
+        <category>学习考试</category>
+      </categories>
   </entry>
   <entry>
     <title>校园网客户端常见问题解决方法汇总</title>
@@ -884,5 +1050,12 @@ matplotlib.pyplot.show()</code></p>
 <h1 id="问题10："><a href="#问题10：" class="headerlink" title="问题10："></a>问题10：</h1><p>内网认证没有发现Dr.com扩展数据</p>
 <h2 id="解决方法：-8"><a href="#解决方法：-8" class="headerlink" title="解决方法："></a>解决方法：</h2><p>这个情况让我也棘手了好久，因为本人没有遇到这种情况，至今还没有确切的办法，但是可以提供几个方向：<br>1、可能是客户端文件丢失，试试删除已安装客户端，重启笔记本，安装客户端<br>2、可能xp用户系统配置不完全，没有插件支持该客户端（win7不存在此情况），xp用户最好把系统换成win7，不要换win8（兼容性较差）<br>3、可能某些杀毒软件报毒，删除了某些文件。</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>路由器问题</tag>
+        <tag>上不了网</tag>
+      </tags>
   </entry>
 </search>
