@@ -50,7 +50,21 @@
     sidebarPadding: 40
   };
 </script>
-
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #98FB98; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #98FB98;    /*上边框颜色*/
+        border-left-color: #98FB98;    /*左边框颜色*/
+    }
+</style>
   <meta name="description" content="作者：18级 张贺林1.路由器的选取校园网每个寝室只有一个网络接口，大部分同学会选择路由器连接上网，一般同学会选择使用TP-Link或者D-Link无线路由器，但由于学校网络的特殊性，无论使用哪种路由器，网线都只能接LAN口，也就是说只使用路由器的交换机功能，并且要关闭DHCP功能，这样才可以保证上网的稳定性，具体设置可以参考下面步骤。">
 <meta name="keywords" content="硬件问题,路由器问题">
 <meta property="og:type" content="article">
