@@ -249,7 +249,7 @@ dd {
 }
 kbd {
   background-color: #f5f5f5;
-  background-image: linear-gradient(#eee, #fff, #eee);
+  background-image: linear-gradient(#fff, #fff, #fff);
   border: 1px solid #ccc;
   border-radius: 0.2em;
   box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.1);
@@ -389,8 +389,8 @@ td {
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  background-color: #fff;
+  background-image: linear-gradient(#fcfcfc, #fff);
   border: 1px solid #d5d5d5;
   border-radius: 3px;
   font-size: 0.8125em;
@@ -409,7 +409,7 @@ code {
   font-family: consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
 }
 code {
-  background: #eee;
+  background: #fff;
   border-radius: 3px;
   color: #555;
   padding: 2px 4px;
@@ -445,7 +445,7 @@ pre code {
   padding: 0;
 }
 .highlight figcaption {
-  background: #eee;
+  background: #fff;
   color: #4d4d4c;
   line-height: 1em;
   margin: 0;
@@ -730,7 +730,7 @@ pre .javascript .function {
   margin-bottom: 20px;
   padding: 15px;
   position: relative;
-  border: 1px solid #eee;
+  border: 1px solid #fff;
   border-left-width: 5px;
   border-radius: 3px;
 }
@@ -841,7 +841,7 @@ pre .javascript .function {
   }
 }
 .pagination {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #fff;
   margin: 120px 0 0;
   text-align: center;
 }
@@ -849,7 +849,7 @@ pre .javascript .function {
 .pagination .next,
 .pagination .page-number {
   border-bottom: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #fff;
   transition-property: border-color;
   transition-delay: 0s;
   transition-duration: 0.2s;
@@ -882,7 +882,7 @@ pre .javascript .function {
   .pagination .prev,
   .pagination .next,
   .pagination .page-number {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #fff;
     border-top: 0;
     margin-bottom: 10px;
     padding: 0 10px;
@@ -1115,8 +1115,8 @@ pre .javascript .function {
 }
 .sidebar a:hover,
 .sidebar span.exturl:hover {
-  border-bottom-color: #eee;
-  color: #eee;
+  border-bottom-color: #fff;
+  color: #fff;
 }
 @media (max-width: 991px) {
   .sidebar {
@@ -1147,7 +1147,7 @@ pre .javascript .function {
   display: inline-block;
 }
 .site-author-image {
-  border: 1px solid #eee;
+  border: 1px solid #fff;
   display: block;
   height: auto;
   margin: 0 auto;
@@ -1180,7 +1180,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #9658ba;
+  background: #af34ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1384,7 +1384,7 @@ pre .javascript .function {
   padding: 0 15px;
 }
 .site-state-item:not(:first-child) {
-  border-left: 1px solid #eee;
+  border-left: 1px solid #fff;
 }
 .site-state-item a {
   border-bottom: none;
@@ -1876,7 +1876,7 @@ pre .javascript .function {
   }
 }
 .post-nav {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #fff;
   display: table;
   margin-top: 15px;
   width: 100%;
@@ -1951,7 +1951,7 @@ pre .javascript .function {
   margin-right: 10px;
 }
 .post-widgets {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #fff;
   margin-top: 15px;
   text-align: center;
 }
@@ -2192,7 +2192,7 @@ ul.breadcrumb li + li:last-child {
   width: 18px;
 }
 .search-popup .popup-btn-close {
-  border-left: 1px solid #eee;
+  border-left: 1px solid #fff;
   cursor: pointer;
   float: right;
 }
@@ -2573,7 +2573,7 @@ ul.breadcrumb li + li:last-child {
 }
 .links-of-author-item a:hover,
 .links-of-author-item span.exturl:hover {
-  background: #eee;
+  background: #fff;
   border-radius: 4px;
 }
 .links-of-author-item .fa {
