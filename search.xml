@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>关于win10系统安装office出现“1907 无法注册字体 请确认有足够权限”的解决方法</title>
+    <url>/blog/2019/11/29/191129wjx01/</url>
+    <content><![CDATA[<center>作者：19级 王镓璇</center>
+<center>审核：18级 吉时德</center>
+
+<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p><img src="http://www.diannao120.top/blog/image/2019/11/29/wjx01/01.jpg" alt=""></p>
+<a id="more"></a>
+
+<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p>在网上有很多方法，都无非是说没卸载干净，或是用命令修复，但经测试都无法有效解决此问题，究其原因是我们在用U盘装机时一些ghost版的win10系统对字体进行了精简优化导致安装时出现错误，解决方法是找到win10原版系统自带的完整字体文件（文末附有链接）进行覆盖即可，但是在此方法需要在PE环境下进行操作。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/29/wjx01/02.png" alt=""></p>
+<h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><p>首先进入PE</p>
+<h2 id="2．"><a href="#2．" class="headerlink" title="2．"></a>2．</h2><p>进入PE后直接对Fonts文件夹（C盘Windows目录下）操作会提示权限问题，我们先将Fonts文件夹重命名（名字任意），接着在Window目录下新建一个Fonts文件夹，然后将win10原版字体全部复制到新建的Fonts文件夹里，最后重启安装office</p>
+<h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><p>字体包链接：<br><a href="https://pan.baidu.com/s/1No7YZTOx77P_MRvsWnTGLQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1No7YZTOx77P_MRvsWnTGLQ</a><br>提取码：mxye</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>宏碁（acer）笔记本关闭安全启动(Secure Boot)</title>
+    <url>/blog/2019/11/29/191129zs01/</url>
+    <content><![CDATA[<center>作者：19级 周森</center><center>审核：18级 李翱</center><h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>宏碁笔记本的UEFI BIOS中的安全启动(Secure Boot)是默认为是启动的，而且无法选择关闭，就像下图这样的情况，他的<strong>secure boot是灰色的(无法更改)</strong>，但是有的软件运行或者做系统等操作就需要关闭这个安全启动。</p><p><img src="http://www.diannao120.top/blog/image/2019/11/29/zs01/01.jpg" alt></p><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>这就需要我们切换到旁边的security页面</p><a id="more"></a>
+
+
+
+
+
+<p><img src="http://www.diannao120.top/blog/image/2019/11/29/zs01/02.jpg" alt></p>
+<p>然后在这个选项(set supervisor password)进入后设置密码(注意这个时候需要用键盘上方的数字，因为右边的九键是被锁住的)，设置完密码后再转到旁边的Boot然后就会变成这个样子：</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/29/zs01/03.jpg" alt></p>
+<p>那个安全启动项就变蓝了就是可以进行修改操作了，改完之后就可以按F10保存就可以了</p>
+<p>注意事项:密码还是设置为自己熟悉的最好，不要设置的最后自己忘了就有点麻烦了。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>快闪制作方法</title>
     <url>/blog/2019/11/26/191126cyh01/</url>
     <content><![CDATA[<center>作者：18级 陈义会</center>
@@ -260,8 +292,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
         <tag>U盘问题</tag>
       </tags>
@@ -309,8 +341,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>上不了网</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
@@ -406,8 +438,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -573,8 +605,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -661,8 +693,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
       </tags>
   </entry>
   <entry>
@@ -849,8 +881,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
       </tags>
   </entry>
   <entry>
