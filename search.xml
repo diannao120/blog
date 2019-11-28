@@ -15,6 +15,13 @@
 <h2 id="2．"><a href="#2．" class="headerlink" title="2．"></a>2．</h2><p>进入PE后直接对Fonts文件夹（C盘Windows目录下）操作会提示权限问题，我们先将Fonts文件夹重命名（名字任意），接着在Window目录下新建一个Fonts文件夹，然后将win10原版字体全部复制到新建的Fonts文件夹里，最后重启安装office</p>
 <h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><p>字体包链接：<br><a href="https://pan.baidu.com/s/1No7YZTOx77P_MRvsWnTGLQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1No7YZTOx77P_MRvsWnTGLQ</a><br>提取码：mxye</p>
 ]]></content>
+      <categories>
+        <category>软件安装</category>
+      </categories>
+      <tags>
+        <tag>需要激活</tag>
+        <tag>显示异常</tag>
+      </tags>
   </entry>
   <entry>
     <title>宏碁（acer）笔记本关闭安全启动(Secure Boot)</title>
@@ -31,6 +38,14 @@
 <p>那个安全启动项就变蓝了就是可以进行修改操作了，改完之后就可以按F10保存就可以了</p>
 <p>注意事项:密码还是设置为自己熟悉的最好，不要设置的最后自己忘了就有点麻烦了。</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>开不了机</tag>
+        <tag>显示异常</tag>
+      </tags>
   </entry>
   <entry>
     <title>快闪制作方法</title>
@@ -292,8 +307,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
         <tag>U盘问题</tag>
       </tags>
@@ -341,8 +356,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
@@ -438,8 +453,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -605,8 +620,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -693,8 +708,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
       </tags>
   </entry>
   <entry>
@@ -881,8 +896,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
       </tags>
   </entry>
   <entry>
