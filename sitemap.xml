@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://diannao120.github.io/blog/about/index.html</loc>
+    
+    <lastmod>2019-11-29T15:58:36.860Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://diannao120.github.io/blog/free/index.html</loc>
     
     <lastmod>2019-11-29T15:33:58.648Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://diannao120.github.io/blog/mark/index.html</loc>
     
     <lastmod>2019-11-29T15:29:50.433Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://diannao120.github.io/blog/about/index.html</loc>
-    
-    <lastmod>2019-11-29T15:08:35.648Z</lastmod>
     
   </url>
   
