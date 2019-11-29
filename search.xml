@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>在电脑120“学习小组”学习总结（2019.12之前）</title>
+    <url>/blog/2019/11/29/191129wst01/</url>
+    <content><![CDATA[<center>作者：19级 王树涛</center><center>审核：18级 李嘉琦</center><h1 id="问题一：笔记本电脑的开机密码忘了怎么办？"><a href="#问题一：笔记本电脑的开机密码忘了怎么办？" class="headerlink" title="问题一：笔记本电脑的开机密码忘了怎么办？"></a>问题一：笔记本电脑的开机密码忘了怎么办？</h1><h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><p><strong>1、</strong>百度下载“U大师”（老毛桃、大白菜也可以），把这个软件下载并安装在电脑上。</p><p><strong>2、</strong>插上U盘，选择一键制作U盘启动（制作前，把资料全部移走，U盘会被格式化），等待完成。</p><p><strong>3、</strong>把U盘插到要装系统的电脑上，开机之后一直按delete（F12、F2、F9，根据电脑不同略有不同）进入BOIS设置，在boot项（也有的写着startup）里把first boot device 设置为USB(或者带有USB的字项，按F10保存。</p><a id="more"></a>
+
+
+
+
+
+<p><strong>4、</strong>进入PE，选择桌面上的一键清除电脑密码工具即可。</p>
+<h1 id="问题二：怎样重装系统："><a href="#问题二：怎样重装系统：" class="headerlink" title="问题二：怎样重装系统："></a>问题二：怎样重装系统：</h1><h2 id="准备阶段："><a href="#准备阶段：" class="headerlink" title="准备阶段："></a>准备阶段：</h2><p><strong>一、</strong>U盘一个</p>
+<p><strong>二、</strong>电脑（注意：重装前最好做好备份，系统重装只动C盘里的东西，所以桌面上的东西最好做好备份）</p>
+<p><strong>三、</strong>准备一个系统</p>
+<p><strong>四、</strong>下载好网卡驱动，之前有离线版的驱动精灵，里面有网卡驱动，在重装之前最好找个网卡驱动，能联网。</p>
+<h2 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h2><p><strong>1.</strong>制作启动U盘，如果U盘里有文件最好做好备份。在制作启动盘的时候会格式化U盘。</p>
+<p><strong>2.</strong>    把自己下载好的Ghost系统拷到自己做好的启动盘里。</p>
+<p><strong>3.</strong>    设置BIOS。（一般的电脑进BIOS的按键是（（Fn+）F2）和ESC，还有的是按Enter键，或者是delete键。电脑在开机的时候会有一个短暂的时间在屏幕下方显示一个信息，那个就是进BIOS设置的按键）</p>
+<p><strong>4.</strong>    分区和硬盘格式设置（一般为5~6个分区）。（后续要用到亦是美网络）</p>
+<p><strong>下面为常见笔记本的启动按键</strong><br>联想笔记本，宏基笔记本，戴尔笔记本，神州笔记本，东芝笔记本，三星笔记本启动键均为F12;</p>
+<p>华硕笔记本，索尼笔记本启动键为ESC;</p>
+<p>惠普笔记本和明基笔记本启动键为F9；</p>
+<h1 id="问题三：笔记本电脑的清灰步骤"><a href="#问题三：笔记本电脑的清灰步骤" class="headerlink" title="问题三：笔记本电脑的清灰步骤"></a>问题三：笔记本电脑的清灰步骤</h1><p><strong>1.</strong>    拆卸电脑的后盖。<strong>（注意:拆卸时先在网上输入此电脑的型号，查找后盖螺丝的位置，不要只把表面的螺丝拆掉就直接拆后盖，否则易损坏电脑。）(还有一种笔记本电脑需要吧前面的键盘拆除才可以将所有的螺丝拆除。）</strong></p>
+<p><strong>2.</strong>    使用专用的工具吹掉灰尘，并用毛刷进行轻刷后盖里的设施；</p>
+<p><strong>3.</strong>    安装后盖，清灰完毕。</p>
+<h1 id="问题四：制作网线步骤"><a href="#问题四：制作网线步骤" class="headerlink" title="问题四：制作网线步骤"></a>问题四：制作网线步骤</h1><p><strong>1.</strong>按照 白橙 橙 白绿 蓝 白蓝 绿 白棕 棕  的顺序将八根线整齐的插入水晶头中。 <strong>注意（两头的顺序必须一样）</strong></p>
+<p><strong>2.</strong>用专用钳子将水晶头压紧 <strong>（会听到咔的声响）</strong></p>
+<p><strong>3.</strong>将制作好的水晶头两端插入检测器中，若两侧8个灯依次亮起，则制作成功，否则制作不成功；</p>
+]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>开不了机</tag>
+        <tag>上不了网</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于win10系统安装office出现“1907 无法注册字体 请确认有足够权限”的解决方法</title>
     <url>/blog/2019/11/29/191129wjx01/</url>
     <content><![CDATA[<center>作者：19级 王镓璇</center>
@@ -19,8 +56,8 @@
         <category>软件安装</category>
       </categories>
       <tags>
-        <tag>需要激活</tag>
         <tag>显示异常</tag>
+        <tag>需要激活</tag>
       </tags>
   </entry>
   <entry>
@@ -309,8 +346,8 @@ matplotlib.pyplot.show()</code></p>
       <tags>
         <tag>硬件问题</tag>
         <tag>开不了机</tag>
-        <tag>显示异常</tag>
         <tag>U盘问题</tag>
+        <tag>显示异常</tag>
       </tags>
   </entry>
   <entry>
@@ -846,8 +883,8 @@ matplotlib.pyplot.show()</code></p>
       <tags>
         <tag>开不了机</tag>
         <tag>上不了网</tag>
-        <tag>需要激活</tag>
         <tag>显示异常</tag>
+        <tag>需要激活</tag>
       </tags>
   </entry>
   <entry>
