@@ -264,6 +264,8 @@
             </span>
 
           
+  
+  
 
         </div>
       </header>
@@ -341,6 +343,8 @@
             </span>
 
           
+  
+  
 
         </div>
       </header>
@@ -421,6 +425,8 @@
             </span>
 
           
+  
+  
 
         </div>
       </header>
@@ -504,6 +510,8 @@
             </span>
 
           
+  
+  
 
         </div>
       </header>
@@ -590,6 +598,8 @@
             </span>
 
           
+  
+  
 
         </div>
       </header>
@@ -677,6 +687,8 @@
             </span>
 
           
+  
+  
 
         </div>
       </header>
@@ -764,6 +776,8 @@
             </span>
 
           
+  
+  
 
         </div>
       </header>
@@ -847,6 +861,8 @@
             </span>
 
           
+  
+  
 
         </div>
       </header>
@@ -1076,6 +1092,33 @@
   
 
   
+
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: false,
+    appId: 'plKvr6V9tRWaWhRMpovPeAhJ-gzGzoHsz',
+    appKey: 'nIvJYEjxFDT3m5FOW26zxHA0',
+    placeholder: "快来发表你的评论吧...",
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '3' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn',
+    path: location.pathname,
+    recordIP: true,
+    serverURLs: ''
+  });
+}, window.Valine);
+</script>
 
 </body>
 </html>
