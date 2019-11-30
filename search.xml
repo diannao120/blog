@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Web前端及其发展趋势</title>
+    <url>/blog/2019/11/30/191130wzw01/</url>
+    <content><![CDATA[<center>作者：18级 吴志伟</center><h1 id="概述："><a href="#概述：" class="headerlink" title="概述："></a>概述：</h1><p><strong>前端开发</strong>是创建Web页面或app等前端界面呈现给用户的过程，通过HTML，CSS及JavaScript以及衍生出来的各种技术、框架、解决方案，来实现互联网产品的用户界面交互   。它从网页制作演变而来，名称上有很明显的时代特征。在互联网的演化进程中，早期网站主要内容都是静态，以图片和文字为主，用户使用网站的行为也以浏览为主。随着互联网技术的发展和HTML5、CSS3的应用，现代网页更加美观，交互效果显著，功能更加强大。</p><a id="more"></a>
+
+
+<p>Web前端开发核心技术主要有HTML,CSS及JavaScript，下面详细介绍这些语言。</p>
+<h1 id="HTML语言："><a href="#HTML语言：" class="headerlink" title="HTML语言："></a>HTML语言：</h1><p>掌握HTML是网页的核心，是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言，它消除了不同计算机之间信息交流的障碍。因此，它是网络上应用最为广泛的语言，也是构成网页文档的主要语言，学好HTML是成为Web开发人员的基本条件。</p>
+<p>HTML是一种标记语言，能够实现Web页面并在浏览器中显示。HTML5作为HTML的最新版本，引入了多项新技术，大大增强了对于应用的支持能力，使得Web技术不再局限于呈现网页内容。</p>
+<p>随着CSS、JavaScript、Flash等技术的发展，Web对于应用的处理能力逐渐增强，用户浏览网页的体验已经有了较大的改善。不过HTML5中的几项新技术实现了质的突破，使得Web技术首次被认为能够接近于本地原生应用技术，开发Web应用真正成为开发者的一个选择。</p>
+<p>HTML5可以使开发者的工作大大简化，理论上单次开发就可以在不同平台借助浏览器运行，降低开发的成本，这也是产业界普遍认为HTML5技术的主要优点之一。AppMobi、摩托罗拉、Sencha等公司均已推出了较为成熟的开发工具，支持HTML5应用的发展</p>
+<h1 id="CSS-语言："><a href="#CSS-语言：" class="headerlink" title="CSS 语言："></a>CSS 语言：</h1><p>学好CSS是网页外观的重要一点，CSS可以帮助把网页外观做得更加美观。</p>
+<h1 id="JavaScript-语言："><a href="#JavaScript-语言：" class="headerlink" title="JavaScript 语言："></a>JavaScript 语言：</h1><p>学习JavaScript的基本语法，以及如何使用JavaScript编程将会提高开发人员的个人技能。</p>
+<p>熟悉过这些语言之后，我们在开发的时候肯定也要注重开发的速度，为了提高开发速度所以就有了前端框架。</p>
+<p>随着Web越来越规范和标准统一，Web前端技术不管创新，以下是一些前端框架：</p>
+<h1 id="Bootstrap"><a href="#Bootstrap" class="headerlink" title="Bootstrap"></a>Bootstrap</h1><p>主流框架之一，Bootstrap 是基于 HTML、CSS、JavaScript的，它简洁灵活，使得 Web 开发更加快捷。</p>
+<h1 id="html5-boilerplate"><a href="#html5-boilerplate" class="headerlink" title="html5-boilerplate"></a>html5-boilerplate</h1><p>该框架可以快速构建健壮，且适应力强的web app或网站。</p>
+<p>Meteor<br>Meteor是新一代的开发即时web应用的开源框架，它能在较短时间内完成开发。</p>
+<h1 id="Semantic-UI"><a href="#Semantic-UI" class="headerlink" title="Semantic UI"></a>Semantic UI</h1><p>基于自然语言有效原则的UI组件框架</p>
+<h1 id="Foundation"><a href="#Foundation" class="headerlink" title="Foundation"></a>Foundation</h1><p>优秀的响应式前端框架</p>
+<h1 id="Materialize"><a href="#Materialize" class="headerlink" title="Materialize"></a>Materialize</h1><p>基于材料设计的现代化响应式前端框架。可提供默认的样式，自定义组件。此外，Materialize还改进动画和过渡，为开发人员提供流畅的体验。</p>
+<h1 id="Pure"><a href="#Pure" class="headerlink" title="Pure"></a>Pure</h1><p>几乎可以在每一个web项目中使用的一组小的和响应式的CSS模块。</p>
+<h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><p>Vue.js 是用于构建交互式的 Web 界面的库。它提供了 MVVM 数据绑定和一个可组合的组件系统，具有简单、灵活的 API。</p>
+<h1 id="Skeleton"><a href="#Skeleton" class="headerlink" title="Skeleton"></a>Skeleton</h1><p>Skeleton 是一个小的 JS 和 CSS 文件的集合,可快速开发漂亮的网站,适合各种屏幕设备包括手机。Skeleton 基于 960 grid 开发。它是一个 UI 框架。</p>
+<h1 id="Amaze-UI"><a href="#Amaze-UI" class="headerlink" title="Amaze UI"></a>Amaze UI</h1><p>国内首个开源HTML5跨屏前端框架产品系列，中文排版支持更优、本土化组件丰富。该产品系列中有专门针对移动端的HTML5混合应用开发框架Amaze UI Touch以及针对跨屏HTML5网页开发的Amaze UI Web。其中，Amaze UI Touch可以帮助开发者通过丰富的组件，快速构建出与原生APP相媲美的专属移动端的HTML5应用。</p>
+<h1 id="UIkit"><a href="#UIkit" class="headerlink" title="UIkit"></a>UIkit</h1><p>一个轻量级的和模块化的前端框架,用于快速开发和功能强大的web接口。</p>
+<h1 id="Yui"><a href="#Yui" class="headerlink" title="Yui"></a>Yui</h1><p>Yahoo! UI Library (YUI) 是一个开放源代码的 JavaScript 函数库，为了能建立一个高互动的网页，它采用了AJAX, DHTML 和 DOM 等程式码技术。它也包含了许多 CSS 资源。使用授权为 BSD许可证。</p>
+<h1 id="kissy"><a href="#kissy" class="headerlink" title="kissy"></a>kissy</h1><p>一款跨终端、模块化、高性能、使用简单的 JavaScript 框架。</p>
+<h1 id="MUI"><a href="#MUI" class="headerlink" title="MUI"></a>MUI</h1><p>最接近原生App体验的前端框架的框架。</p>
+<h1 id="Arale"><a href="#Arale" class="headerlink" title="Arale"></a>Arale</h1><p>一个开放、简单、易用的前端基础类库。</p>
+<h1 id="JX"><a href="#JX" class="headerlink" title="JX"></a>JX</h1><p>JX 是模块化的非侵入式Web前端框架，特别适合构建和组织大规模、工业级的Web App。</p>
+<h1 id="GMU"><a href="#GMU" class="headerlink" title="GMU"></a>GMU</h1><p>GMU是基于zepto的mobile UI组件库，提供webapp、pad端简单易用的UI组件! Web App。</p>
+<h1 id="ZUI"><a href="#ZUI" class="headerlink" title="ZUI"></a>ZUI</h1><p>开源HTML5前端框架。</p>
+<p>若想成为一个出众的前端工程师你需要具备很多方面的技能，来看一个图就知道自己多菜（反正看到这个图我是觉得我是个小菜鸡 qaq）。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/30/wzw01/01.jpg" alt></p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/30/wzw01/02.jpg" alt></p>
+<p>把那些技能掌握完，确实有点不现实呢。那么我们先看看离我们比较近的，要是想做一个一般优秀的Web技术人员，我们学要掌握这些知识，从前端到后端做一个优秀的Web全栈工程师，学习完这些之后，我们可能具备一些差不多Web开发的能力。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/30/wzw01/03.jpg" alt></p>
+<p>（此图中P3指的是阿里巴巴他们通过不同技能掌握给分的等级，从P1-P14，这里是P3）</p>
+<h1 id="下面介绍Web前端的趋势："><a href="#下面介绍Web前端的趋势：" class="headerlink" title="下面介绍Web前端的趋势："></a>下面介绍Web前端的趋势：</h1><h2 id="趋势一：更加移动优先"><a href="#趋势一：更加移动优先" class="headerlink" title="趋势一：更加移动优先"></a>趋势一：更加移动优先</h2><p>响应式设计显然是目前Web前端开发领域的主要趋势之一，并且这一趋势在未来还将持续一段时间。虽然现在的响应式设计大部分还是以PC版优先，然而如果有一天我们把PC版放到比移动版次要的位置上，也没有什么好奇怪的。因为，目前许多Web前端开发者已经开始转向以移动优先方案来做他们的响应式设计和开发，这就象征着一个重大转变，值得我们跟进的。</p>
+<h2 id="趋势二：更多使用快速原型开发工具"><a href="#趋势二：更多使用快速原型开发工具" class="headerlink" title="趋势二：更多使用快速原型开发工具"></a>趋势二：更多使用快速原型开发工具</h2><p>众多Web前端开发者从2016年开始尝试使用快速原型开发工具，而在2018年将是这种技术真正爆发的一年。“UXpin、Webflow、Invision以及其它许多快速原型开发工具，让设计师不用写一行代码，就能为网站和服务快速创建低保真和高保真原型，便于设计师衡量它们的可用性和美观性。” Web设计师Jamie Leeson says如是说，“许多工具也允许你在浏览器中设计原型并从工具里真正启动网站自身。”</p>
+<h2 id="趋势三：简化的Web设计"><a href="#趋势三：简化的Web设计" class="headerlink" title="趋势三：简化的Web设计"></a>趋势三：简化的Web设计</h2><p>在 2018年，我们看到简化的Web设计得到广泛认可。事实上极简设计成为大部分行业的主要趋势。在 2019年，极简设计会继续流行，即使有变化也是一些微小的改变。</p>
+<h2 id="趋势四：更加重视人工智能"><a href="#趋势四：更加重视人工智能" class="headerlink" title="趋势四：更加重视人工智能"></a>趋势四：更加重视人工智能</h2><p>你已经听说了人工智能AI，但是你对Web前端开发设计中的人工智能熟悉吗?Web与AI碰撞，带来更强大的网页，为网站主和用户同时带来价值。提供网络主机服务的Wix，是这一领域的领头羊。他们现在提供了一个过程来询问用户一些问题，然后使用一个基于AI的平台，根据用户的回答提供给用户最符合他们需求的Web设计。这非常酷，值得一看。</p>
+<h2 id="趋势五：更多单页站点"><a href="#趋势五：更多单页站点" class="headerlink" title="趋势五：更多单页站点"></a>趋势五：更多单页站点</h2><p>由于用户更喜欢用滚屏方式浏览网页，各公司将会引起重视并停止浪费时间在设计和开发用户不喜欢的层层相套的子页面上。这一趋势将简化互联网并带来更迷人和身临其境的网页浏览体验，每个人都会感觉到愉悦。2019年，你可以期待看到更多的单页站点。</p>
+<h2 id="趋势六：虚拟现实"><a href="#趋势六：虚拟现实" class="headerlink" title="趋势六：虚拟现实"></a>趋势六：虚拟现实</h2><p>如果要讨论2018年的技术趋势怎能不提到虚拟现实技术VR呢，2019年将是VR成为主流的一年，这也就意味着web开发者将通过VR来吸引用户，我们已经看到一些公司比如Mozilla和Google投资开发VR与Web之间的API。越来越多的VR应用程序将相继问世，所以如果看到越来越多的虚拟现实元素出现在Web上，也别觉得奇怪。</p>
+<p>最后再给大家推荐几个自学的网站：我要自学网，中国大学mooc，B站！<br>以上文章部分摘抄与网络。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Linux命令篇</title>
     <url>/blog/2019/11/30/191130lzh01/</url>
     <content><![CDATA[<center>作者：17级 刘志煌</center><p><img src="https://www.educoder.net/api/attachments/182886" alt></p><center>
@@ -1080,8 +1128,8 @@
       </categories>
       <tags>
         <tag>开不了机</tag>
-        <tag>硬件问题</tag>
         <tag>上不了网</tag>
+        <tag>硬件问题</tag>
       </tags>
   </entry>
   <entry>
@@ -1127,8 +1175,8 @@
       </categories>
       <tags>
         <tag>开不了机</tag>
-        <tag>硬件问题</tag>
         <tag>显示异常</tag>
+        <tag>硬件问题</tag>
       </tags>
   </entry>
   <entry>
@@ -1205,8 +1253,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>上不了网</tag>
+        <tag>硬件问题</tag>
       </tags>
   </entry>
   <entry>
@@ -1392,8 +1440,8 @@ matplotlib.pyplot.show()</code></p>
       </categories>
       <tags>
         <tag>开不了机</tag>
-        <tag>硬件问题</tag>
         <tag>显示异常</tag>
+        <tag>硬件问题</tag>
         <tag>U盘问题</tag>
       </tags>
   </entry>
@@ -1441,9 +1489,9 @@ matplotlib.pyplot.show()</code></p>
       </categories>
       <tags>
         <tag>开不了机</tag>
-        <tag>硬件问题</tag>
         <tag>上不了网</tag>
         <tag>显示异常</tag>
+        <tag>硬件问题</tag>
         <tag>没有声音</tag>
       </tags>
   </entry>
@@ -1538,8 +1586,8 @@ matplotlib.pyplot.show()</code></p>
       </categories>
       <tags>
         <tag>开不了机</tag>
-        <tag>硬件问题</tag>
         <tag>显示异常</tag>
+        <tag>硬件问题</tag>
       </tags>
   </entry>
   <entry>
@@ -1705,8 +1753,8 @@ matplotlib.pyplot.show()</code></p>
       </categories>
       <tags>
         <tag>开不了机</tag>
-        <tag>硬件问题</tag>
         <tag>上不了网</tag>
+        <tag>硬件问题</tag>
       </tags>
   </entry>
   <entry>
@@ -1728,10 +1776,10 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
-        <tag>路由器问题</tag>
         <tag>上不了网</tag>
+        <tag>硬件问题</tag>
         <tag>U盘问题</tag>
+        <tag>路由器问题</tag>
       </tags>
   </entry>
   <entry>
@@ -2185,8 +2233,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>路由器问题</tag>
         <tag>上不了网</tag>
+        <tag>路由器问题</tag>
       </tags>
   </entry>
 </search>
