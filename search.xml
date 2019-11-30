@@ -47,6 +47,9 @@
 <h2 id="趋势六：虚拟现实"><a href="#趋势六：虚拟现实" class="headerlink" title="趋势六：虚拟现实"></a>趋势六：虚拟现实</h2><p>如果要讨论2018年的技术趋势怎能不提到虚拟现实技术VR呢，2019年将是VR成为主流的一年，这也就意味着web开发者将通过VR来吸引用户，我们已经看到一些公司比如Mozilla和Google投资开发VR与Web之间的API。越来越多的VR应用程序将相继问世，所以如果看到越来越多的虚拟现实元素出现在Web上，也别觉得奇怪。</p>
 <p>最后再给大家推荐几个自学的网站：我要自学网，中国大学mooc，B站！<br>以上文章部分摘抄与网络。</p>
 ]]></content>
+      <categories>
+        <category>学习考试</category>
+      </categories>
   </entry>
   <entry>
     <title>Linux命令篇</title>
@@ -1128,8 +1131,8 @@
       </categories>
       <tags>
         <tag>开不了机</tag>
-        <tag>上不了网</tag>
         <tag>硬件问题</tag>
+        <tag>上不了网</tag>
       </tags>
   </entry>
   <entry>
@@ -1175,8 +1178,8 @@
       </categories>
       <tags>
         <tag>开不了机</tag>
-        <tag>显示异常</tag>
         <tag>硬件问题</tag>
+        <tag>显示异常</tag>
       </tags>
   </entry>
   <entry>
@@ -1253,8 +1256,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>上不了网</tag>
         <tag>硬件问题</tag>
+        <tag>上不了网</tag>
       </tags>
   </entry>
   <entry>
@@ -1440,8 +1443,8 @@ matplotlib.pyplot.show()</code></p>
       </categories>
       <tags>
         <tag>开不了机</tag>
-        <tag>显示异常</tag>
         <tag>硬件问题</tag>
+        <tag>显示异常</tag>
         <tag>U盘问题</tag>
       </tags>
   </entry>
@@ -1489,9 +1492,9 @@ matplotlib.pyplot.show()</code></p>
       </categories>
       <tags>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>上不了网</tag>
         <tag>显示异常</tag>
-        <tag>硬件问题</tag>
         <tag>没有声音</tag>
       </tags>
   </entry>
@@ -1586,8 +1589,8 @@ matplotlib.pyplot.show()</code></p>
       </categories>
       <tags>
         <tag>开不了机</tag>
-        <tag>显示异常</tag>
         <tag>硬件问题</tag>
+        <tag>显示异常</tag>
       </tags>
   </entry>
   <entry>
@@ -1753,8 +1756,8 @@ matplotlib.pyplot.show()</code></p>
       </categories>
       <tags>
         <tag>开不了机</tag>
-        <tag>上不了网</tag>
         <tag>硬件问题</tag>
+        <tag>上不了网</tag>
       </tags>
   </entry>
   <entry>
@@ -1776,10 +1779,10 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>上不了网</tag>
         <tag>硬件问题</tag>
-        <tag>U盘问题</tag>
         <tag>路由器问题</tag>
+        <tag>上不了网</tag>
+        <tag>U盘问题</tag>
       </tags>
   </entry>
   <entry>
@@ -2233,8 +2236,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>上不了网</tag>
         <tag>路由器问题</tag>
+        <tag>上不了网</tag>
       </tags>
   </entry>
 </search>
