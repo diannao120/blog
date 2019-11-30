@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="alternate" href="/blog/atom.xml" title="电脑120" type="application/atom+xml">
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+
+<link rel="stylesheet" href="/blog/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/blog/',
+    scheme: 'Gemini',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":"default","style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":5},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #98FB98; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #98FB98;    /*上边框颜色*/
+        border-left-color: #98FB98;    /*左边框颜色*/
+    }
+</style>
+  <meta name="description" content="作者：17级 刘志煌 原始地址：http:&#x2F;&#x2F;anoyer.cn&#x2F;article&#x2F;Linux-command.html  序言废话就不多说了，还没想好说啥废话，暂时直接先上干货吧。QAQ如发现问题还请联系博主进行修改，谢谢！！！文章版权为Anoyer博客所有，转载请以链接形式标明本文地址Linux常用命令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux命令篇">
+<meta property="og:url" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;2019&#x2F;11&#x2F;30&#x2F;191130lzh01&#x2F;index.html">
+<meta property="og:site_name" content="电脑120">
+<meta property="og:description" content="作者：17级 刘志煌 原始地址：http:&#x2F;&#x2F;anoyer.cn&#x2F;article&#x2F;Linux-command.html  序言废话就不多说了，还没想好说啥废话，暂时直接先上干货吧。QAQ如发现问题还请联系博主进行修改，谢谢！！！文章版权为Anoyer博客所有，转载请以链接形式标明本文地址Linux常用命令">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;182886">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;182887">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;182889">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184104">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184105">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183134">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183135">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183138">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183141">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184065">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183144">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183189">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183239">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183240">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183243">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183246">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184101">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184102">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184103">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184312">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184337">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184627">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184628">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184629">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184637">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184638">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184639">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;185056">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;185057">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;185058">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;185059">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;185060">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;185061">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;185066">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;185068">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;185102">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;185103">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183646">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183647">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183648">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183649">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183652">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183653">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183654">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183656">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183670">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183943">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183944">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183945">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183946">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184020">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183949">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183951">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183966">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;183967">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184012">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184013">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184011">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;184015">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;186930">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;186931">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;186932">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;186933">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188050">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;186930">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;186931">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188053">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188054">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188089">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188090">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188091">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188092">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188093">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188094">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188095">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188096">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188093">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188097">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188098">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188089">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188090">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188108">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188109">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188093">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188110">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188111">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188112">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188113">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188114">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;188115">
+<meta property="og:updated_time" content="2019-11-30T09:27:09.291Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;www.educoder.net&#x2F;api&#x2F;attachments&#x2F;182886">
+
+<link rel="canonical" href="https://diannao120.github.io/blog/2019/11/30/191130lzh01/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>Linux命令篇 | 电脑120</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?9d665843674b57854ba63a6609a4f43d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/blog/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">电脑120</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="http://www.diannao120.top/" rel="noopener" target="_blank"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/blog/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-留言">
+
+    <a href="/blog/mark/" rel="section"><i class="fa fa-fw fa-heartbeat"></i>留言</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/blog/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://diannao120.github.io/blog/blog/2019/11/30/191130lzh01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="电脑120">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="电脑120">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          Linux命令篇
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-11-30 16:56:19 / 修改时间：17:27:09" itemprop="dateCreated datePublished" datetime="2019-11-30T16:56:19+08:00">2019-11-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/%E5%AD%A6%E4%B9%A0%E8%80%83%E8%AF%95/" itemprop="url" rel="index">
+                    <span itemprop="name">学习考试</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/blog/2019/11/30/191130lzh01/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/blog/2019/11/30/191130lzh01/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <center>作者：17级 刘志煌</center><p><img src="https://www.educoder.net/api/attachments/182886" alt></p><center>
+原始地址：http://anoyer.cn/article/Linux-command.html 
+</center><h3 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h3><p>废话就不多说了，还没想好说啥废话，暂时直接先上<del>干货</del>吧。<code>QAQ</code><br><strong>如发现问题还请联系博主进行修改，谢谢！！！</strong><br><strong>文章版权为Anoyer博客所有，转载请以链接形式标明本文地址</strong></p><h3 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h3><a id="more"></a>
+
+
+
+
+
+<h4 id="1、pwd-命令"><a href="#1、pwd-命令" class="headerlink" title="1、pwd 命令"></a>1、pwd 命令</h4><blockquote>
+<p><code>pwd</code>(Print Working Directory )：显示当前所在目录。</p>
+<p> <img src="https://www.educoder.net/api/attachments/182887" alt></p>
+</blockquote>
+<h4 id="2、cd-命令"><a href="#2、cd-命令" class="headerlink" title="2、cd 命令"></a>2、cd 命令</h4><blockquote>
+<p><code>cd</code>(Change Directory): 切换当前目录。</p>
+<p>常用特殊目录表示：</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd 进入用户主目录；</span><br><span class="line">cd ~ 进入用户主目录；</span><br><span class="line">cd - 返回进入此目录之前所在的目录；</span><br><span class="line">cd .. 返回上级目录(若当前目录为"/"，则执行完后还在"/"；".."为上级目录的意思)；</span><br><span class="line">cd ../.. 返回上两级目录； </span><br><span class="line">cd !$ 把上个命令的参数作为cd参数使用。</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h4 id="3、ls-命令"><a href="#3、ls-命令" class="headerlink" title="3、ls 命令"></a>3、ls 命令</h4><blockquote>
+<p><code>ls</code>(list): 列出指定目录列表信息，如果没有参数默认列出当前目录下的所有文件和文件夹(隐藏文件和文件夹除外)。</p>
+<p>常见<code>ls</code>命令选项:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">-l：以长格式显示目录下的内容列表。输出的信息从左到右依次包括文件名，文件类型、权限模式、硬连接数、所有者、组、文件大小和文件的最后修改时间等；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-a：显示所有文件和文件夹(包括隐藏文件/文件夹)；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-a：显示所有档案及目录（ls内定将档案名或目录名称为“.”的视为影藏，不会列出）；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-A：显示除影藏文件“.”和“..”以外的所有文件列表；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-l：列出内容的详细信息；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-r：以文件名反序排列并输出目录内容列表；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-s：显示文件和目录的大小，以区块为单位；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-i：显示文件索引节点号（inode）。一个索引节点代表一个文件；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-R：递归处理，将指定目录下的所有文件及子目录一并处理。</span></span><br></pre></td></tr></table></figure>
+
+<p>例如：显示根目录下所有文件和文件夹。</p>
+<ul>
+<li>如果一次查看多个目录，则每个目录名用空格隔开。</li>
+</ul>
+<p><img src="https://www.educoder.net/api/attachments/182889" alt></p>
+<p>应用示例一: </p>
+<p>查看目录<code>/mnt</code>下的所有信息(包括隐藏内容)，则可以使用如下命令:</p>
+<p><code>ls -a /mnt</code></p>
+<p><img src="https://www.educoder.net/api/attachments/184104" alt="img"> </p>
+<p>应用示例二: </p>
+<p>查看目录<code>/mnt</code>下的所有信息(包括隐藏内容)，同时显示每个文件的详细信息，则可以使用如下命令:</p>
+<p><code>ls -al /mnt</code></p>
+<p><img src="https://www.educoder.net/api/attachments/184105" alt="img"> </p>
+</blockquote>
+<h3 id="Linux文件操作"><a href="#Linux文件操作" class="headerlink" title="Linux文件操作"></a>Linux文件操作</h3><h4 id="1、touch-创建文件"><a href="#1、touch-创建文件" class="headerlink" title="1、touch 创建文件"></a>1、touch 创建文件</h4><blockquote>
+<p>linux中创建文件的常用命令是<code>touch</code>，命令格式如下:</p>
+<p><code>touch filename</code></p>
+<p>有时可能需要创建一个空的文件的情况。在这种情况下，可以使用<code>touch</code>命令来轻松创建一个空文件。</p>
+<p>例如：创建一个新的文件<code>testfile</code>可以使用如下命令。</p>
+<p><code>touch testfile</code></p>
+<p><img src="https://www.educoder.net/api/attachments/183134" alt></p>
+<p>如果想同时创建多个文件也可以使用<code>touch</code>命令完成，具体格式如下：</p>
+<p><code>touch file1 file2 ...</code></p>
+<p>只需将不同的文件名用空格分隔即可完成创建多个文件。</p>
+</blockquote>
+<h4 id="2、rm-删除文件"><a href="#2、rm-删除文件" class="headerlink" title="2、rm 删除文件"></a>2、rm 删除文件</h4><blockquote>
+<p>Linux中常用的删除文件的命令是<code>rm</code>，使用格式如下：</p>
+<p><code>rm [命令选项] filename</code></p>
+<p>常用命令选项：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">-f：强制删除文件或目录；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-r或-R：递归处理，将指定目录下的所有文件与子目录一并处理；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-i：删除已有文件或目录之前先询问用户；</span></span><br></pre></td></tr></table></figure>
+
+<p>例如，删除我们刚刚创建的文件<code>testfile</code>可以使用如下命令。</p>
+<p><code>rm -f testfile</code></p>
+<p><img src="https://www.educoder.net/api/attachments/183135" alt></p>
+</blockquote>
+<h4 id="3、mkdir-创建文件夹"><a href="#3、mkdir-创建文件夹" class="headerlink" title="3、mkdir 创建文件夹"></a>3、mkdir 创建文件夹</h4><blockquote>
+<p>Linux中创建文件夹命令是<code>mkdir</code>，命令格式如下：</p>
+<p><code>mkdir [命令选项] dirname</code></p>
+<p>常用命令选项：</p>
+<p><code>-p或--parents 若所要建立目录的上层目录目前尚未建立，则会一并建立上层目录；</code></p>
+<p>例如：我们新创建一个文件夹<code>testdir</code>可以使用如下命令。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">mkdir testdir</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://www.educoder.net/api/attachments/183138" alt></p>
+<p>因为新创建的文件夹是一个空的文件夹，所以使用<code>ls -l</code>显示的结果是空。 </p>
+</blockquote>
+<h4 id="4、rmdir删除文件夹"><a href="#4、rmdir删除文件夹" class="headerlink" title="4、rmdir删除文件夹"></a>4、rmdir删除文件夹</h4><blockquote>
+<p>Linux中删除文件夹的命令是<code>rmdir</code>或者<code>rm -r</code>，命令格式如下：</p>
+<p><code>rmdir [命令选项] dirname</code></p>
+<p>常用命令选项：</p>
+<p><code>-p或--parents：删除指定目录后，若该目录的上层目录已变成空目录，则将其一并删除；</code></p>
+<p>例如：将刚刚新创建的文件夹<code>testdir</code>删除可以使用如下命令。</p>
+<p><code>rmdir testdir</code></p>
+<p><img src="https://www.educoder.net/api/attachments/183141" alt></p>
+<p>在<code>Linux</code>系统命令行下删除一个不为空的目录，则可以使用如下命令：</p>
+<p><code>rm -r Dir</code></p>
+<p><img src="https://www.educoder.net/api/attachments/184065" alt></p>
+</blockquote>
+<h4 id="5、cp-文件和文件夹拷贝"><a href="#5、cp-文件和文件夹拷贝" class="headerlink" title="5、cp 文件和文件夹拷贝"></a>5、cp 文件和文件夹拷贝</h4><blockquote>
+<p>Linux使用<code>cp</code>命令用来将一个或多个源文件或者目录复制到指定的目录中，命令格式如下：</p>
+<p><code>cp [命令选项] 源文件 目的文件</code></p>
+<p>常用命令选项：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">-f：强行复制文件或目录，不论目标文件或目录是否已存在； -i：覆盖既有文件之前先询问用户；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-p：保留源文件或目录的属性；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-R/r：递归处理，将指定目录下的所有文件与子目录一并处理；</span></span><br></pre></td></tr></table></figure>
+
+<p>例如：新建一个文件<code>newfile</code>和一个文件夹<code>newdir</code>，将<code>newfile</code>复制到<code>newdir</code>目录下。具体命令如下。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">touch newfile</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">mkdir newdir</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">cp newfile newdir</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://www.educoder.net/api/attachments/183144" alt></p>
+</blockquote>
+<h4 id="6、mv-文件和文件夹移动-重命名"><a href="#6、mv-文件和文件夹移动-重命名" class="headerlink" title="6、mv 文件和文件夹移动/重命名"></a>6、mv 文件和文件夹移动/重命名</h4><blockquote>
+<p>Linux使用<code>mv</code>命令用来对文件或目录重新命名，或者将文件从一个目录移到另一个目录中，命令格式如下：</p>
+<p><code>mv [命令选项] 源文件 目标文件</code></p>
+<p>常用命令选项：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">-f：强行复制文件或目录，不论目标文件或目录是否已存在； -i：覆盖既有文件之前先询问用户；-p：保留源文件或目录的属性；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-R/r：递归处理，将指定目录下的所有文件与子目录一并处理；</span></span><br></pre></td></tr></table></figure>
+
+<p>例如：新建一个文件<code>newfile</code>和一个文件夹<code>newdir</code>，将<code>newfile</code>剪切到<code>newdir</code>目录下，并重新命名为<code>newfileCpy</code>。具体命令如下。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">touch newfile</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">mkdir newdir</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">mv newfile newdir/newfileCpy</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://www.educoder.net/api/attachments/183189" alt></p>
+</blockquote>
+<h3 id="Linux命令查询"><a href="#Linux命令查询" class="headerlink" title="Linux命令查询"></a>Linux命令查询</h3><h4 id="1、man-查询命令的帮助文件"><a href="#1、man-查询命令的帮助文件" class="headerlink" title="1、man 查询命令的帮助文件"></a>1、man 查询命令的帮助文件</h4><blockquote>
+<p>linux中使用<code>man</code>命令来查询命令的帮助文件,命令格式如下:</p>
+<p><code>man [章节] command</code></p>
+<p>常用命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">d, Ctrl+D: 向文件尾部翻半屏</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">u, Ctrl+U: 向文件首部翻半屏 </span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">q: 退出 </span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash"><span class="comment">#：跳转至第#行 </span></span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">1G: 回到文件首部 </span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">G：翻至文件尾部</span></span><br></pre></td></tr></table></figure>
+
+<p>命令的帮助文件通常存放在<code>/usr/share/man</code>目录下。</p>
+<p><code>man</code>包含<code>9</code>个章节，章节用数字表示，分别是：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">1.用户命令</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">2.系统调用</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">3.C库调用</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">4.设备文件及特殊文件 </span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">5.配置文件格式 </span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">6.游戏</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">7.杂项 </span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">8.管理类的命令Linux </span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">9.内核API</span></span><br></pre></td></tr></table></figure>
+
+<p>如果查询命令的时候不追加章节，则默认从第一个章节开始查询，以此类推，直到找到对应要查询的命令为止。</p>
+<p>例如：使用<code>man</code>命令查询<code>open</code>命令的使用方法。</p>
+<p><code>man open</code></p>
+<p><img src="https://www.educoder.net/api/attachments/183239" alt></p>
+<p>如果想查询系统库函数的<code>open</code>函数的使用方法，则使用如下命令：</p>
+<p><code>man 2 open</code></p>
+<p><strong><img src="https://www.educoder.net/api/attachments/183240" alt></strong></p>
+<p>使用<code>man</code>搜索命令</p>
+<p><code>/KEYWORD:</code></p>
+<p>以<code>KEYWORD</code>指定的字符串为关键字，从当前位置向文件尾部搜索，不区分字符大小写；</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">n: 下一个 </span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">N：上一个</span></span><br></pre></td></tr></table></figure>
+
+<p><code>?KEYWORD:</code></p>
+<p>以<code>KEYWORD</code>指定的字符串为关键字，从当前位置向文件首部搜索，不区分字符大小写；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;n: 跟搜索命令同方向，下一个 </span><br><span class="line">&gt;N：跟搜索命令反方向，上一个 </span><br></pre></td></tr></table></figure>
+</blockquote>
+<h4 id="2、info-查询命令的帮助文件"><a href="#2、info-查询命令的帮助文件" class="headerlink" title="2、info 查询命令的帮助文件"></a>2、info 查询命令的帮助文件</h4><blockquote>
+<p>linux中使用<code>info</code>命令来查询命令的帮助文件。<code>info</code>页面比<code>man page</code>编写得要更好、更容易理解，也更友好，但<code>man page</code>使用起来确实要更容易得多。一个<code>man page</code>只有一页，而<code>info</code>页面几乎总是将它们的内容组织成多个区段（称为节点），每个区段也可能包含子区段（称为子节点）。</p>
+<p>命令格式如下：</p>
+<p><code>info [命令参数] command</code></p>
+<p>常用命令参数选项：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">-d：添加包含info格式帮助文档的目录；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-f：指定要读取的info格式的帮助文档；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-n：指定首先访问的info帮助文件的节点；</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-o：输出被选择的节点内容到指定文件。</span></span><br></pre></td></tr></table></figure>
+
+<p>常见命令如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;?键：它就会显示info的常用快捷键。</span><br><span class="line">&gt;N键：显示（相对于本节点的）下一节点的文档内容。</span><br><span class="line">&gt;P键：显示（相对于本节点的）前一节点的文档内容。</span><br><span class="line">&gt;U键：进入当前命令所在的主题。</span><br><span class="line">&gt;M键：敲M键后输入命令的名称就可以查看该命令的帮助文档了。</span><br><span class="line">&gt;G键：敲G键后输入主题名称，进入该主题。</span><br><span class="line">&gt;L键：回到上一个访问的页面。</span><br><span class="line">&gt;SPACE键：向前滚动一页。</span><br><span class="line">&gt;BACKUP或DEL键：向后滚动一页。</span><br><span class="line">&gt;Q：退出info。</span><br></pre></td></tr></table></figure>
+
+<p>例如：我们使用<code>info</code>来查询<code>info</code>的帮助手册。</p>
+<p><code>info info</code></p>
+<p><img src="https://www.educoder.net/api/attachments/183243" alt></p>
+</blockquote>
+<h4 id="3、whatis-显示命令的简短描述"><a href="#3、whatis-显示命令的简短描述" class="headerlink" title="3、whatis 显示命令的简短描述"></a>3、whatis 显示命令的简短描述</h4><blockquote>
+<p><code>whatis</code>用来显示命令的简短描述。</p>
+<p>命令格式如下：</p>
+<p><code>whatis command</code></p>
+<p>例如：我们使用<code>whatis</code>来查询<code>ls</code>的使用方法。</p>
+<p><img src="https://www.educoder.net/api/attachments/183246" alt></p>
+</blockquote>
+<h3 id="Linux之文件-目录内容查看"><a href="#Linux之文件-目录内容查看" class="headerlink" title="Linux之文件/目录内容查看"></a>Linux之文件/目录内容查看</h3><h4 id="1、cat-查看文件内容"><a href="#1、cat-查看文件内容" class="headerlink" title="1、cat 查看文件内容"></a>1、cat 查看文件内容</h4><blockquote>
+<p>具体命令如下：<code>cat 参数 文件名</code> </p>
+<p>常用参数如下：</p>
+<ul>
+<li><code>-n 或 --number</code>：由<code>1</code>开始对所有输出的行数编号；<br>-<code>-b 或 --number-nonblank</code>：和<code>-n</code>相似，只不过对于空白行不编号。</li>
+</ul>
+<p>具体说明：</p>
+<ul>
+<li><code>cat</code>命令支持同时查看多个文件，当一次查看多个文件时，每个文件的内容都会被打印到屏幕上；</li>
+<li><code>cat</code>命令不能对文件进行编辑操作，只能查看文件内容。</li>
+</ul>
+<p>应用示例: </p>
+<p>查看文件<code>/etc/passwd</code>内容，则可以使用如下命令：</p>
+<p><code>cat /etc/passwd</code></p>
+<p><img src="https://www.educoder.net/api/attachments/184101" alt="img"> </p>
+</blockquote>
+<h4 id="2、head-查看文件前n行内容"><a href="#2、head-查看文件前n行内容" class="headerlink" title="2、head 查看文件前n行内容"></a>2、head 查看文件前n行内容</h4><blockquote>
+<p>具体命令如下：<code>head 参数 文件名</code></p>
+<p>常用参数如下：</p>
+<ul>
+<li><code>-n number</code>：显示文件的前<code>number</code>行内容；</li>
+</ul>
+<p>具体说明：</p>
+<ul>
+<li><code>head</code>命令是从文件的开头显示内容，默认情况下只显示前<code>10</code>行的内容；</li>
+<li><code>head</code>命令不能对文件进行编辑操作，只能查看文件内容。</li>
+</ul>
+<p>应用示例: </p>
+<p>查看文件<code>/etc/passwd</code>的前<code>8</code>行内容，则可以使用如下命令：</p>
+<p><code>head -n 8 /etc/passwd</code></p>
+<p><img src="https://www.educoder.net/api/attachments/184102" alt="img"> </p>
+</blockquote>
+<h4 id="3、tail-查看文件后n行内容"><a href="#3、tail-查看文件后n行内容" class="headerlink" title="3、tail 查看文件后n行内容"></a>3、tail 查看文件后n行内容</h4><blockquote>
+<p>具体命令如下：<code>tail 参数 文件名</code></p>
+<p>常用参数如下：</p>
+<ul>
+<li><code>-n number</code>：显示文件的最后<code>number</code>行内容；</li>
+</ul>
+<p>具体说明：</p>
+<ul>
+<li><code>tail</code>命令是从文件的结尾显示内容，默认情况下只显示最后<code>10</code>行的内容；</li>
+<li><code>tail</code>命令不能对文件进行编辑操作，只能查看文件内容。</li>
+</ul>
+<p>应用示例: </p>
+<p>查看文件<code>/etc/passwd</code>末尾<code>5</code>行内容，则可以使用如下命令：</p>
+<p><code>tail -n 5 /etc/passwd</code></p>
+<p><img src="https://www.educoder.net/api/attachments/184103" alt="img"> </p>
+</blockquote>
+<h3 id="Linux文件-目录高级管理一"><a href="#Linux文件-目录高级管理一" class="headerlink" title="Linux文件/目录高级管理一"></a>Linux文件/目录高级管理一</h3><h4 id="1、chmod-用户文件-目录权限修改"><a href="#1、chmod-用户文件-目录权限修改" class="headerlink" title="1、chmod  用户文件/目录权限修改"></a>1、chmod  用户文件/目录权限修改</h4><blockquote>
+<p><code>Linux</code>中使用<code>chmod</code>命令来修改文件或者目录权限。</p>
+<p>文字设定法具体命令如下：</p>
+<p><code>chmod ［who］ ［+ | - | =］ ［mode] 文件名/目录名</code></p>
+<p><code>who</code>参数如下：</p>
+<ul>
+<li>u 表示“用户<code>（user）</code>”，即文件或目录的所有者；</li>
+<li>g 表示“同组<code>（group）</code>用户”，即与文件属主有相同组ID的所有用户；</li>
+<li>o 表示“其他<code>（others）</code>用户”；</li>
+<li>a 表示“所有<code>（all）</code>用户”，它是系统默认值。</li>
+</ul>
+<p>操作符如下：</p>
+<ul>
+<li>+：添加某个权限；</li>
+<li>-：取消某个权限；</li>
+<li>=：赋予给定权限并取消其他所有权限。</li>
+</ul>
+<p><code>mode</code>参数如下：</p>
+<ul>
+<li>r 可读；</li>
+<li>w 可写；</li>
+<li>x 可执行。</li>
+</ul>
+<p>数字设定法具体命令如下：</p>
+<p><code>chmod ［mode］ 文件名/目录名</code></p>
+<p><code>mode</code>为具体的数字。</p>
+<p>首先了解用数字表示的属性的含义：<code>0</code>表示没有权限，<code>1</code>表示可执行权限，<code>2</code>表示可写权限，<code>4</code>表示可读权限，然后将其相加。所以数字属性的格式应为<code>3</code>个从<code>0</code>到<code>7</code>的八进制数，其顺序是<code>u</code>、<code>g</code>和<code>o</code>。 </p>
+<p>将文件<code>testFile</code>的所有权限设置为仅读权限，可以使用如下命令：</p>
+<p><code>chmod a=r testFile</code></p>
+<p><img src="https://www.educoder.net/api/attachments/184312" alt="img"> </p>
+<p>案例演示二: </p>
+<p>将文件<code>testFile</code>的所有权限设置为可读可写，同组用户权限设置为只读，可以使用如下命令：</p>
+<p><code>chmod u=rw,g=r testFile</code></p>
+<p><img src="https://www.educoder.net/api/attachments/184337" alt="img"> </p>
+</blockquote>
+<h4 id="2、chown-修改目录所有者命令"><a href="#2、chown-修改目录所有者命令" class="headerlink" title="2、chown  修改目录所有者命令"></a>2、chown  修改目录所有者命令</h4><blockquote>
+<p>Linux中使用<code>chown</code>命令来修改目录所有者。</p>
+<p>具体命令如下：</p>
+<p><code>chown 参数 用户名/用户ID 目录名</code></p>
+<p>常见命令参数：</p>
+<ul>
+<li><code>-R或——recursive</code>：递归处理，将指定目录下的所有文件及子目录一并处理；</li>
+<li><code>--help</code>：在线帮助；</li>
+</ul>
+<p>执行权限</p>
+<p><code>chown</code>必须以<code>root</code>权限才能执行，如果是普通用户想执行<code>chown</code>时，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<p>案例演示一：</p>
+<p>将系统中已存在的目录<code>testDir</code>的所有者设置为<code>newUser</code>，可以使用如下命令:</p>
+<p><code>sudo chown newUser testDir</code></p>
+<p><img src="https://www.educoder.net/api/attachments/184627" alt="img"> </p>
+<p>可以使用<code>ls -l</code>或<code>ll</code>命令查看目录所有者是否修改成功。 </p>
+<p><img src="https://www.educoder.net/api/attachments/184628" alt="img"> </p>
+<p>将系统中已存在的目录<code>Dir</code>以及其所有子目录和子文件的所有者设置为<code>newUser</code>，可以使用如下命令:</p>
+<p><code>sudo chown -R newUser Dir</code></p>
+<p><img src="https://www.educoder.net/api/attachments/184629" alt="img"> </p>
+<p>可以看到<code>Dir</code>目录下的所有子目录和子文件的所有者都已经修改成了<code>newUser</code>。 </p>
+</blockquote>
+<h4 id="3、chgrp-修改目录所属组命令"><a href="#3、chgrp-修改目录所属组命令" class="headerlink" title="3、chgrp 修改目录所属组命令"></a>3、chgrp 修改目录所属组命令</h4><blockquote>
+<p>Linux中使用<code>chgrp</code>命令来修改目录所属组。</p>
+<p>具体命令如下：</p>
+<p><code>chgrp 参数 用户组名/组ID 目录名</code></p>
+<p>常见命令参数：</p>
+<ul>
+<li><code>-R或——recursive</code>：递归处理，将指定目录下的所有文件及子目录一并处理；</li>
+<li><code>--help</code>：在线帮助；</li>
+</ul>
+<p>执行权限</p>
+<p>执行权限</p>
+<p><code>chgrp</code>必须以<code>root</code>权限才能执行，如果是普通用户想执行<code>chgrp</code>时，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<p>案例演示一：</p>
+<p>将系统中已存在的目录<code>testDir</code>的所属组设置为<code>newGroup</code>，可以使用如下命令:</p>
+<p><code>sudo chgrp newGroup testDir</code></p>
+<p><img src="https://www.educoder.net/api/attachments/184637" alt="img"> </p>
+<p>案例演示二：</p>
+<p>将系统中已存在的目录<code>Dir</code>以及其所有子目录和子文件的所属组设置为<code>newGroup</code>，可以使用如下命令:</p>
+<p><code>sudo chgrp -R newGroup Dir</code></p>
+<p><img src="https://www.educoder.net/api/attachments/184638" alt="img"> </p>
+<p><code>linux</code>中也可以使用<code>chown</code>命令来修改目录的所属组，其使用方法与修改文件的使用方法一致。</p>
+<p>案例演示一：</p>
+<p>使用<code>chown</code>命令将系统已存在的文件<code>Dir</code>以及其所有子目录和子文件的所有者设置为<code>fzm</code>所属组设置为<code>fzm</code>，可以使用如下命令:</p>
+<p><code>sudo chown -R fzm:fzm Dir</code></p>
+<p><img src="https://www.educoder.net/api/attachments/184639" alt="img"> </p>
+</blockquote>
+<h3 id="Linux文件-目录高级管理二"><a href="#Linux文件-目录高级管理二" class="headerlink" title="Linux文件/目录高级管理二"></a>Linux文件/目录高级管理二</h3><h4 id="1、df-显示磁盘分区上的可使用的磁盘空间"><a href="#1、df-显示磁盘分区上的可使用的磁盘空间" class="headerlink" title="1、df  显示磁盘分区上的可使用的磁盘空间"></a>1、df  显示磁盘分区上的可使用的磁盘空间</h4><blockquote>
+<p><code>df</code>命令用于显示磁盘分区上的可使用的磁盘空间。默认显示单位为<code>KB</code>。可以利用该命令来获取硬盘被占用了多少空间，目前还剩下多少空间等信息。</p>
+<p>具体命令如下：</p>
+<p><code>df　命令参数　参数</code></p>
+<p>常用参数如下：</p>
+<ul>
+<li><code>-a或--all</code>：包含全部的文件系统，包括系统特有的<code>/proc</code>等文件系统;</li>
+<li><code>-k</code> : 以KB为单位显示各文件系统;</li>
+<li><code>-m</code> : 以MB为单位显示各文件系统;</li>
+<li><code>-h</code> : 以可读性较高的方式来显示信息;</li>
+<li><code>-i或--inodes</code>：显示<code>inode</code>的信息。</li>
+</ul>
+<p>案例演示一: </p>
+<p>查看系统所有磁盘设备，默认是<code>KB</code>为单位，可以使用如下命令：</p>
+<p><code>df</code></p>
+<p><img src="https://www.educoder.net/api/attachments/185056" alt="img"> </p>
+<p>案例演示二: </p>
+<p>使用<code>-h</code>选项以<code>KB</code>以上的单位来显示，可读性高，可以使用如下命令：</p>
+<p><code>df -h</code></p>
+<p><img src="https://www.educoder.net/api/attachments/185057" alt="img"> </p>
+<p>案例演示三: </p>
+<p>将<code>/etc</code>目录下的可用的磁盘容量以易读的格式显示出来，可以使用如下命令：</p>
+<p><code>df -h /etc</code></p>
+<p><img src="https://www.educoder.net/api/attachments/185058" alt="img"> </p>
+</blockquote>
+<h4 id="2、du-对文件和目录磁盘使用的空间的查看"><a href="#2、du-对文件和目录磁盘使用的空间的查看" class="headerlink" title="2、du 对文件和目录磁盘使用的空间的查看"></a>2、du 对文件和目录磁盘使用的空间的查看</h4><blockquote>
+<p>du命令也是查看使用空间的，但是与<code>df</code>命令不同的是<code>Linux</code> <code>du</code>命令是对文件和目录磁盘使用的空间的查看，还是和<code>df</code>命令有一些区别的。</p>
+<p>具体命令如下：</p>
+<p><code>du　命令参数　参数</code></p>
+<p>常用参数如下：</p>
+<ul>
+<li>-a : 列出所有的文件与目录容量，因为默认仅统计目录下面的文件量而已;</li>
+<li>-h : 以可读性较高的方式来显示信息;</li>
+<li>-k : 以<code>KB</code>为单位显示容量;</li>
+<li>-m : 以<code>MB</code>为单位显示容量;</li>
+<li>-s : 列出总量，不列出每个目录占用的容量。</li>
+</ul>
+<p>案例演示一: </p>
+<p>列出当前目录下的所有文件的总容量，可以使用如下命令：</p>
+<p><code>du</code></p>
+<p><img src="https://www.educoder.net/api/attachments/185059" alt="img"> </p>
+<p><strong>注</strong>: 直接输入<code>du</code>命令没有加任何参数时，则<code>du</code>会分析当前所在目录的文件与目录所占用的磁盘空间，但是，实际显示时仅会显示目录容量。</p>
+<p>案例演示二: </p>
+<p>列出当前目录下的所有文件的总容量，同时将每个文件大小也列出来，可以使用如下命令：</p>
+<p><code>du -a</code></p>
+<p><img src="https://www.educoder.net/api/attachments/185060" alt="img"> </p>
+<p>以可读性较高的方式显示多个文件所占磁盘大小，可以使用如下命令：</p>
+<p><code>du -h c++ g++</code></p>
+<p><img src="https://www.educoder.net/api/attachments/185061" alt="img"> </p>
+</blockquote>
+<h4 id="3、ln-创建链接和软链接"><a href="#3、ln-创建链接和软链接" class="headerlink" title="3、ln 创建链接和软链接"></a>3、ln 创建链接和软链接</h4><blockquote>
+<p><strong>硬链接</strong>指通过索引节点来进行链接。在<code>Linux</code>的文件系统中，保存在磁盘分区中的文件不管是什么类型都给它分配一个编号，称为索引节点号(<code>Inode Index</code>)。在<code>Linux</code>中，多个文件名指向同一索引节点是存在的。一般这种链接就是硬链接。</p>
+<p>硬链接的作用是允许一个文件拥有多个有效路径名，这样用户就可以建立硬链接到重要文件，以防止误删的功能。其原因如上所述，因为对应该目录的索引节点有一个以上的链接。只删除一个链接并不影响索引节点本身和其它的链接，只有当最后一个链接被删除后，文件的数据块及目录的链接才会被释放。也就是说，文件真正删除的条件是与之相关的所有硬链接文件均被删除。</p>
+<p>硬链接特点如下：</p>
+<ul>
+<li>文件有相同的<code>inode</code>及<code>data block</code>；</li>
+<li>只能对已存在的文件进行创建；</li>
+<li>不能交叉文件系统进行硬链接的创建；</li>
+<li>不能对目录进行创建，只可对文件创建；</li>
+<li>删除一个硬链接文件并不影响其他有相同<code>inode</code>号的文件。</li>
+</ul>
+<p>具体命令如下：</p>
+<p><code>ln　源文件　目标文件</code></p>
+<p>案例演示一: </p>
+<p>为当前目录下的文件<code>testFile</code>创建一个硬链接<code>testFileLink</code>，可以使用如下命令：</p>
+<p><code>ln testFile testFileLink</code></p>
+<p><img src="https://www.educoder.net/api/attachments/185066" alt="img"> </p>
+<p>在<code>ls</code>结果的最左边一列，是文件的<code>inode</code>值，你可以简单把它想成<code>C</code>语言中的指针。它指向了物理硬盘的一个区块，事实上文件系统会维护一个引用计数，只要有文件指向这个区块，它就不会从硬盘上消失。可以看到，这两个文件就如同一个文件一样，<code>inode</code>值相同，都指向同一个区块。 </p>
+<hr>
+<p><strong>软链接</strong>文件有类似于<code>Windows</code>的快捷方式。它实际上是一个特殊的文件。在符号链接中，文件实际上是一个文本文件，其中包含的有另一文件的位置信息。</p>
+<p>与硬链接不同的是，符号链接确实是一个新文件，当然它具有不同的I节点号；而硬链接并没有建立新文件。</p>
+<p>软链接特点如下：</p>
+<ul>
+<li>源文件和目标文件有不相同的<code>inode</code>及<code>data block</code>；</li>
+<li>软链接没有硬链接的限制，可以对目录文件做符号链接；</li>
+<li>软链接可以在不同文件系统之间做软链接；</li>
+<li>在目录长列表中，符号链接作为一种特殊的文件类型显示出来，其第一个字母是<code>l</code>；</li>
+<li>符号链接的大小是其链接文件的路径名中的字节数；</li>
+</ul>
+<p>具体命令如下：</p>
+<p><code>ln -s　源文件　目标文件</code></p>
+<p>案例演示一·: </p>
+<p>为当前目录下的文件<code>testFile</code>创建一个软链接<code>myLink</code>，可以使用如下命令：</p>
+<p><code>ln -s testFile myLink</code></p>
+<p><img src="https://www.educoder.net/api/attachments/185068" alt="img"> </p>
+</blockquote>
+<h4 id="4、mount-挂载"><a href="#4、mount-挂载" class="headerlink" title="4、mount 挂载"></a>4、mount 挂载</h4><blockquote>
+<h5 id="mount命令详解"><a href="#mount命令详解" class="headerlink" title="mount命令详解"></a>mount命令详解</h5><p><code>mount</code>是 <code>Linux</code> 下的一个命令，它可以将分区挂接到 <code>Linux</code> 的一个文件夹下，从而将分区和该目录联系起来，因此我们只要访问这个文件夹，就相当于访问该分区了。</p>
+<p><code>mount</code>命令的最常用于挂载<code>cdrom</code>，使我们可以访问<code>cdrom</code>中的数据，因为你将光盘插入<code>cdrom</code>中，早先 <code>Linux</code> 发行版并不会自动挂载，必须使用<code>mount</code>命令来手动完成挂载。</p>
+<p>具体命令如下：</p>
+<p><code>mount　命令参数　设备文件名　挂载点</code></p>
+<p>常用命令参数：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">-r：将文件系统加载为只读模式;</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-h：显示帮助信息并退出;</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-t &lt;list&gt;：指定文件系统类型;</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">-o &lt;list&gt;：描述设备的挂载方式;</span></span><br></pre></td></tr></table></figure>
+
+<p>常用文件系统类型：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">光盘或光盘镜像：iso9660</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">DOS fat16文件系统：msdos</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">Windows 9x fat32文件系统：vfat</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">Windows NT ntfs文件系统：ntfs</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">Mount Windows文件网络共享：smbfs</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">UNIX(LINUX) 文件网络共享：nfs</span></span><br></pre></td></tr></table></figure>
+
+<p>常用设备的挂载方式：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">loop：用来把一个文件当成硬盘分区挂接上系统</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">ro：采用只读方式挂接设备</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">rw：采用读写方式挂接设备</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">iocharset：指定访问文件系统所用字符集</span></span><br></pre></td></tr></table></figure>
+<p><strong>注意：</strong>通常在挂载设备时不需要指定文件系统类型，<code>mount</code>会自动选择正确的类型。</p>
+<p><strong>执行权限：</strong><code>mount</code>必须以root权限才能执行，如果是普通用户想执行<code>mount</code>时，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<p>案例演示：</p>
+<p>将文件<code>/etc/passwd</code>制作成一个光盘镜像文件<code>mydisk.iso</code>，创建一个挂载点<code>/home/vcdrom</code>，将镜像文件<code>mydisk.iso</code>挂载到<code>/home/vcdrom</code>目录下，列出镜像文件中的内容，具体使用如下命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">sudo mkisofs -r -J -V mydisk -o ./mydisk.iso /etc/passwd 2&gt; /dev/nullsudo mkdir /home/vcdromsudo mount -o loop -t iso9660 ./mydisk.iso /home/vcdrom</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">ls -l /home/vcdrom</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://www.educoder.net/api/attachments/185102" alt="img"> </p>
+<p>第一条命令是将<code>/etc/passwd</code>文件制作成一个<code>iso</code>镜像文件；</p>
+<p>第二条命令是创建一个挂载点；</p>
+<p>第三条命令是将创建好的镜像文件挂载到<code>/home/vcdrom</code>目录下；</p>
+<p>第四条命令是查看镜像文件的内容；</p>
+</blockquote>
+<h4 id="5、umount-卸载已经加载的文件系统"><a href="#5、umount-卸载已经加载的文件系统" class="headerlink" title="5、umount 卸载已经加载的文件系统"></a>5、umount 卸载已经加载的文件系统</h4><blockquote>
+<p><code>umount</code>命令用于卸载已经加载的文件系统。利用设备名或挂载点都能<code>umount</code>文件系统，不过最好还是通过挂载点卸载，以免使用绑定挂载（一个设备，多个挂载点）时产生混乱。</p>
+<p>具体命令如下：</p>
+<p><code>umount　命令参数　挂载点/设备名</code></p>
+<p>常用命令参数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;-r：若无法成功卸除，则尝试以只读的方式重新挂入文件系统;-h：显示帮助信息并退出;</span><br></pre></td></tr></table></figure>
+
+<p>执行权限：</p>
+<p><code>mount</code>必须以<code>root</code>权限才能执行，如果是普通用户想执行<code>mount</code>时，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<p>案例演示：</p>
+<p>将上一个案例已经挂载好的镜像文件（<code>mydisk.iso</code>）卸载，然后看到挂载点目录内容，可以使用如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;sudo umount /home/vcdromls -l /home/vcdrom</span><br></pre></td></tr></table></figure>
+
+<p>将镜像文件从<code>/home/vcdrom</code>目录卸载后，该目录还原为原有的内容，即为空目录。</p>
+<p><img src="https://www.educoder.net/api/attachments/185103" alt="img"> </p>
+</blockquote>
+<h3 id="Linux之用户管理"><a href="#Linux之用户管理" class="headerlink" title="Linux之用户管理"></a>Linux之用户管理</h3><h4 id="1、useradd-创建用户"><a href="#1、useradd-创建用户" class="headerlink" title="1、useradd 创建用户"></a>1、useradd 创建用户</h4><blockquote>
+<h5 id="Linux创建用户命令"><a href="#Linux创建用户命令" class="headerlink" title="Linux创建用户命令"></a>Linux创建用户命令</h5><p><code>Linux</code>中使用<code>useradd</code>命令来创建一个新用户。</p>
+<p>命令格式格式：<code>useradd [命令参数] 参数</code></p>
+<p>常见命令参数：</p>
+<ul>
+<li>-d&lt;登入目录&gt;：指定用户登入时的启始目录；</li>
+<li>-D：查看或变更预设值；</li>
+<li>-g&lt;群组&gt;：指定用户所属的群组；</li>
+<li>-m：自动建立用户的登入目录；</li>
+<li>-M：不要自动建立用户的登入目录；</li>
+<li>-s：指定用户登入后所使用的<code>shell</code>。</li>
+</ul>
+<p><code>useradd</code>必须以<code>root</code>权限才能执行，如果是普通用户想创建一个新用户时，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<h5 id="案例演示"><a href="#案例演示" class="headerlink" title="案例演示"></a>案例演示</h5><p>1 .  查看<code>useradd</code>系统默认属性值，使用命令<code>useradd -D</code>。</p>
+<p>笔者使用的系统是<code>Ubuntu16.04</code>，<code>useradd</code>系统默认值如下所示：</p>
+<p><img src="https://www.educoder.net/api/attachments/183646" alt="img"></p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GROUP</td>
+<td>指新创建的用户将被添加到用户组ID为100的公共用户组中</td>
+</tr>
+<tr>
+<td>HOME</td>
+<td>指新创建的用户将在/home目录下创建一个HOME账户</td>
+</tr>
+<tr>
+<td>INACTIVE</td>
+<td>指当密码逾期时，用户将不会被禁用</td>
+</tr>
+<tr>
+<td>EXPIRE</td>
+<td>指新创建的用户不会在设定日期被设置为逾期</td>
+</tr>
+<tr>
+<td>SHELL</td>
+<td>指新创建的用户使用/bin/sh(也就是bash)作为默认shell</td>
+</tr>
+<tr>
+<td>SKEL</td>
+<td>指系统会将/etc/skel目录中的内容复制到新创建的用户的HOME目录</td>
+</tr>
+<tr>
+<td>CREATE_MAIL_SPOOL</td>
+<td>指系统不会在邮件目录中创建一个文件用于新创建用户账户接受邮件</td>
+</tr>
+</tbody></table>
+<p>2 .  使用<code>useradd</code>命令新创建一个用户<code>test</code>，并且自动建立用户的登入目录。</p>
+<p><img src="https://www.educoder.net/api/attachments/183647" alt="img"> </p>
+<p>在背景介绍中，我们了解到，<code>Linux</code>中用户信息是保存在<code>/etc/passwd</code>文件中，我们可以使用命令<code>tail /etc/passwd</code>命令查看<code>/etc/passwd</code>文件最后10行中是否存在刚刚新创建的<code>test</code>用户信息。 </p>
+<p><img src="https://www.educoder.net/api/attachments/183648" alt="img"> </p>
+</blockquote>
+<h4 id="2、userdel-删除用户"><a href="#2、userdel-删除用户" class="headerlink" title="2、userdel 删除用户"></a>2、userdel 删除用户</h4><blockquote>
+<h5 id="Linux删除用户命令"><a href="#Linux删除用户命令" class="headerlink" title="Linux删除用户命令"></a>Linux删除用户命令</h5><p><code>Linux</code>中使用<code>userdel</code>命令来删除一个已经存在的用户。</p>
+<p>命令格式：<code>userdel [命令参数] 参数</code></p>
+<p>常见命令参数：</p>
+<ul>
+<li>-f：强制删除用户，即使用户当前已登录；</li>
+<li>-r：删除用户的同时，删除与用户相关的所有文件。</li>
+</ul>
+<p><code>userdel</code>必须以<code>root</code>权限才能执行，如果是普通用户想使用该命令时，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<h5 id="案例演示-1"><a href="#案例演示-1" class="headerlink" title="案例演示"></a>案例演示</h5><p>1 . 使用<code>userdel</code>命令删除一个已经存在的用户<code>test</code>，并且自动删除其家目录文件。</p>
+<p><img src="https://www.educoder.net/api/attachments/183649" alt="img"></p>
+<p>因为系统默认是不会给新创建的用户自动创建一个文件夹用于用户账户接收邮件，所以在使用<code>userdel -r</code>命令删除的时候会提醒<code>/var/mail/test</code>文件夹不存在。</p>
+<p><strong>2、将当前工作目录切换到新创建的用户<code>newUser</code>家目录；</strong></p>
+<p><code>cd /home/newUser</code></p>
+</blockquote>
+<h4 id="3、passwd-修改用户密码"><a href="#3、passwd-修改用户密码" class="headerlink" title="3、passwd 修改用户密码"></a>3、passwd 修改用户密码</h4><blockquote>
+<h5 id="用户密码存放地及方式"><a href="#用户密码存放地及方式" class="headerlink" title="用户密码存放地及方式"></a>用户密码存放地及方式</h5><p>Linux中用户的登录密码是存放在<code>/etc/shadow</code>文件中，<code>/etc/shadow</code>文件中存放的是加密过后的密码，所以在<code>/etc/shadow</code>文件中看到的密码是加密过后的密文。</p>
+<p>看下笔者的电脑中<code>/etc/shadow</code>文件存放的内容格式。</p>
+<p><img src="https://www.educoder.net/api/attachments/183652" alt="img"></p>
+<p>可以看到第一个冒号前是用户名，用户名是以明文的方式存放。</p>
+<p>在第一个冒号和第二个冒号之间存放的是加密过后的密码，密码是以密文的方式存放，其中密文是由用户密码和其它信息加密后组成的，这里不做详细讲解，我们只需要知道如果第一个冒号和第二个冒号之间是<code>*</code>或者<code>!</code>或者空，则表示该用户没有密码，否则，则表示该用户是有密码。</p>
+<p>例如：用户名<code>fzm</code>是存在密码，而<code>mysql</code>是不存在密码的。</p>
+<h5 id="使用passwd命令修改用户密码"><a href="#使用passwd命令修改用户密码" class="headerlink" title="使用passwd命令修改用户密码"></a>使用passwd命令修改用户密码</h5><p>命令格式：<code>passwd [命令参数] 参数</code></p>
+<p>常见命令参数：</p>
+<ul>
+<li>-d 删除密码；</li>
+<li>-l 停止账号使用；</li>
+<li>-S 显示密码信息。</li>
+</ul>
+<p><code>passwd</code>必须以<code>root</code>权限才能执行，如果是普通用户想执行<code>passwd</code>时，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<h5 id="案例演示-2"><a href="#案例演示-2" class="headerlink" title="案例演示"></a>案例演示</h5><p>1:  使用<code>useradd</code>命令来新创建一个用户，使用<code>passwd</code>命令来设置登录密码。</p>
+<p><img src="https://www.educoder.net/api/attachments/183653" alt="img"></p>
+<p>使用<code>useradd</code>命令创建一个新用户(<code>test</code>)，此时<code>test</code>用户是没有密码的，所以使用<code>tail -n 1 /etc/shadow</code>命令查看<code>/etc/shadow</code>文件的最后一行可以看出<code>test</code>用户密码部分为<code>!</code>。</p>
+<p>使用<code>passwd</code>命令为<code>test</code>用户设置密码时，可以看到需要输入两次密码，目的是为了确保两次输入的密码一致。当设置完密码后，可以看到<code>/etc/shadow</code>文件中<code>test</code>用户的密码部分已经为加密过后的密文。</p>
+<p>2: 使用<code>passwd</code>命令来清除用户的密码。</p>
+<p><img src="https://www.educoder.net/api/attachments/183654" alt="img"></p>
+<p>使用<code>passwd</code>命令清除用户<code>test</code>的登录密码，使用<code>tail -n 1 /etc/shadow</code>命令查看<code>/etc/shadow</code>文件的最后一行可以看出<code>test</code>用户密码部分为空，此时<code>test</code>用户是没有密码的。</p>
+</blockquote>
+<p>####　4、chpasswd 修改用户密码</p>
+<blockquote>
+<p><code>chpasswd</code>命令通常是用于批量修改用户密码，从标准输入批量读取成对的用户名和密码，其中输入的用户名和密码的格式为<strong>用户名:密码</strong>。</p>
+<p>例如要批量更新用户密码，将用户名和密码写入到一个文件中，格式如下所示：</p>
+<p>然后执行执行如下命令来更新密码：</p>
+<p><code>sudo chpasswd &lt; batch.txt</code></p>
+<p><code>&lt;</code>符号表示输入重定向，接下来的实训中我们会详细的介绍。</p>
+<p>命令格式：<code>chpasswd [命令参数] 参数</code></p>
+<p>常见命令参数</p>
+<ul>
+<li>-e：输入的密码是加密后的密文；</li>
+<li>-h：显示帮助信息并退出。</li>
+</ul>
+<p><code>chpasswd</code>必须以<code>root</code>权限才能执行，如果是普通用户执行时，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<h5 id="案例演示-3"><a href="#案例演示-3" class="headerlink" title="案例演示"></a>案例演示</h5><p>1: 使用<code>chpasswd</code>命令来更新用户登录密码。</p>
+<p><img src="https://www.educoder.net/api/attachments/183656" alt="img"></p>
+<p><code>chpasswd</code>是从键盘不断的读入指令，我们可以使用<code>Ctrl+D</code>组合键来结束键盘输入。</p>
+</blockquote>
+<h4 id="5、login-让用户登录系统"><a href="#5、login-让用户登录系统" class="headerlink" title="5、login 让用户登录系统"></a>5、login 让用户登录系统</h4><blockquote>
+<h5 id="使用login命令登录"><a href="#使用login命令登录" class="headerlink" title="使用login命令登录"></a>使用<code>login</code>命令登录</h5><p><code>login</code>命令是让用户登录系统，可通过它的功能随时更换登入身份。当<code>/etc</code>目录里含名称为<code>nologin</code>的文件时，系统只允许<code>root</code>帐号登入系统，其他用户一律不准登入。</p>
+<p>当使用<code>login</code>命令登录系统后，可以使用<code>logout</code>命令或者<code>exit</code>命令来退出当前用户登录，返回到登录前的用户状态。</p>
+<p>命令格式：<code>login [命令参数] 参数</code></p>
+<p>参数为登录的用户名，可以不输入登录的用户名，直接输入<code>login</code>命令后回车，然后根据提示再输入用户名和密码。</p>
+<p><strong>常见命令参数</strong></p>
+<ul>
+<li>-p：告诉login指令不销毁环境变量；</li>
+<li>-h：指定远程服务器的主机名。</li>
+</ul>
+<p><code>login</code>必须以<code>root</code>权限才能执行，如果是普通用户执行时，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<h5 id="案例演示-4"><a href="#案例演示-4" class="headerlink" title="案例演示"></a>案例演示</h5><p>1: 使用<code>login</code>命令来登录系统(文件<code>/etc/nologin</code>不存在)。</p>
+<p>首先查看当前登录的用户名是<code>fzm</code>。</p>
+<p>使用<code>newUser</code>用户来登录系统，然后查看当前登录的用户名。</p>
+<p><img src="https://www.educoder.net/api/attachments/183670" alt="img"></p>
+<p>使用<code>logout</code>或者<code>exit</code>命令退出<code>newUser</code>用户，然后在查看当前登录用户是否为<code>fzm</code>。</p>
+<p>2: 使用<code>login</code>命令来登录系统(文件<code>/etc/nologin</code>存在)。</p>
+<p>首先查看当前登录的用户名是<code>fzm</code>。</p>
+<p>在<code>/etc</code>目录下新创建一个<code>nologin</code>文件，使用如下命令创建：</p>
+<p><code>sudo touch /etc/nologin</code></p>
+<p>使用普通用户<code>newUser</code>来登录系统，查看是否可以登录成功。</p>
+<p>发现使用<code>newUser</code>用户是无法登录系统的，只有使用<code>root</code>用户才能登录系统。</p>
+</blockquote>
+<h4 id="6、su-切换用户身份"><a href="#6、su-切换用户身份" class="headerlink" title="6、su 切换用户身份"></a>6、su 切换用户身份</h4><blockquote>
+<h5 id="使用su命令切换用户身份"><a href="#使用su命令切换用户身份" class="headerlink" title="使用su命令切换用户身份"></a>使用<code>su</code>命令切换用户身份</h5><p><code>su</code>命令用于切换当前用户身份到其他用户身份，变更时须输入所要变更的用户帐号的密码。 </p>
+<p>当使用<code>su</code>命令切换用户后，使用<code>exit</code>命令退出当前身份，返回原有登录用户身份。</p>
+<p><strong>注：如果当前用户身份是root，则使用su命令切换到其他用户的时候不需要相应用户的密码</strong></p>
+<p>命令格式：<code>su [命令参数] 参数</code></p>
+<p>参数为登录的用户名，如果没有参数，则默认切换为<code>root</code>用户。</p>
+<p><strong>常见命令参数</strong></p>
+<ul>
+<li><code>-c&lt;指令&gt;</code>或<code>--command=&lt;指令&gt;</code>：执行完指定的指令后，即恢复原来的身份；</li>
+<li><code>-l</code>或<code>--login</code>：改变身份时，也同时变更工作目录，以及<code>HOME</code>,<code>SHELL</code>,<code>USER</code>,<code>logname</code>。此外，也会变更PATH变量；</li>
+<li><code>-m</code>,<code>-p</code>或<code>--preserve-environment</code>：变更身份时，不要变更环境变量；</li>
+<li><code>-s&lt;shell&gt;</code>或<code>--shell=&lt;shell&gt;</code>：指定要执行的<code>shell</code>。</li>
+</ul>
+<p><code>su</code>命令所有使用者都可以执行。</p>
+<h5 id="案例演示-5"><a href="#案例演示-5" class="headerlink" title="案例演示"></a>案例演示</h5><p>1: 使用<code>su</code>命令切换当前用户身份(不改变当前工作目录)。</p>
+<p>首先查看当前登录的用户名是<code>fzm</code>，当前工作目录是<code>/home/fzm</code>。</p>
+<p>切换当前用户为<code>newUser</code>用户，然后查看当前用户身份和当前工作目录。</p>
+<p>使用<code>exit</code>命令退出<code>newUser</code>用户，然后在查看当前登录用户身份和当前工作目录。</p>
+<p>2: 使用<code>su</code>命令切换当前用户身份(改变当前工作目录)。</p>
+<p>首先查看当前登录的用户名是<code>fzm</code>，当前工作目录是<code>/home/fzm</code>。</p>
+<p>切换当前用户为<code>newUser</code>用户，然后查看当前用户身份和当前工作目录。</p>
+<p>使用<code>exit</code>命令退出<code>newUser</code>用户，然后在查看当前登录用户身份和当前工作目录。</p>
+<p>*<em>3、使用su命令切换当前用户身份为newUser，并且执行whoami指令，然后恢复原来的身份 *</em></p>
+<p><code>su -c whoami newUser</code></p>
+</blockquote>
+<h3 id="用户高级管理"><a href="#用户高级管理" class="headerlink" title="用户高级管理"></a>用户高级管理</h3><h4 id="1、groupadd-创建一个新用户组"><a href="#1、groupadd-创建一个新用户组" class="headerlink" title="1、groupadd 创建一个新用户组"></a>1、groupadd 创建一个新用户组</h4><blockquote>
+<h5 id="Linux创建用户组命令"><a href="#Linux创建用户组命令" class="headerlink" title="Linux创建用户组命令"></a>Linux创建用户组命令</h5><p><code>Linux</code> 中使用<code>groupadd</code>命令来创建一个新用户组。</p>
+<p>命令格式：<code>groupadd [命令参数] 参数</code></p>
+<p>常见命令参数：</p>
+<ul>
+<li>-g：指定新建工作组的id；</li>
+<li>-r：创建系统工作组，系统工作组的组ID小于500；</li>
+</ul>
+<p><code>groupadd</code>必须以<code>root</code>权限才能执行，如果是普通用户想使用该命令，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<h5 id="案例演示一"><a href="#案例演示一" class="headerlink" title="案例演示一"></a>案例演示一</h5><p>使用<code>groupadd</code>命令新创建一个用户组<code>testGroup</code> </p>
+<p><img src="https://www.educoder.net/api/attachments/183943" alt="img"> </p>
+<p>在背景介绍中，我们了解到，<code>Linux</code>中用户组信息是保存在<code>/etc/group</code>文件中，我们可以使用命令<code>tail /etc/group</code>命令查看<code>/etc/group</code>文件最后10行中是否存在刚刚新创建的<code>testGroup</code>用户信息。 </p>
+<p><img src="https://www.educoder.net/api/attachments/183944" alt="img"> </p>
+<h5 id="案例演示二"><a href="#案例演示二" class="headerlink" title="案例演示二"></a>案例演示二</h5><p>使用<code>groupadd</code>命令新创建一个用户组<code>testGroupID</code>，并且指定组的ID</p>
+<p><img src="https://www.educoder.net/api/attachments/183945" alt="img"> </p>
+<p><strong>注意</strong>：我们可以看到有时执行<code>sudo</code>命令就不需要输入密码，这是因为每次都输入密码比较麻烦，所以<code>Linux</code>会设置一个<code>sudo</code>的会话时间，就是说我们在第一次执行<code>sudo</code>的时候是要输入密码，那么在接下来的一段时间内在执行<code>sudo</code>的时候就不需要输入密码，这个会话时间默认是<code>5</code>分钟，用户也可以通过编辑<code>/etc/sudoers</code>来修改这个会话时间的大小。</p>
+<p>同样我们可以使用命令<code>tail /etc/group</code>命令查看<code>/etc/group</code>文件最后<code>10</code>行中是否存在刚刚新创建的<code>testGroupID</code>用户信息。</p>
+<p><img src="https://www.educoder.net/api/attachments/183946" alt="img"> </p>
+</blockquote>
+<h4 id="2、groupdel-删除一个已经存在的用户组"><a href="#2、groupdel-删除一个已经存在的用户组" class="headerlink" title="2、groupdel  删除一个已经存在的用户组"></a>2、groupdel  删除一个已经存在的用户组</h4><blockquote>
+<h5 id="Linux删除用户组命令"><a href="#Linux删除用户组命令" class="headerlink" title="Linux删除用户组命令"></a>Linux删除用户组命令</h5><p><code>Linux</code> 中使用<code>groupdel</code>命令来删除一个已经存在的用户组。</p>
+<p>命令格式：<code>groupdel 参数</code></p>
+<p>参数为要删除的用户组名</p>
+<p><code>groupdel</code>必须以<code>root</code>权限才能执行，如果是普通用户想使用该命令，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<h5 id="案例演示一-1"><a href="#案例演示一-1" class="headerlink" title="案例演示一"></a>案例演示一</h5><p>使用<code>groupdel</code>命令删除上面创建的<code>testGroup</code>和<code>testGroupID</code>组</p>
+<p><img src="https://www.educoder.net/api/attachments/184020" alt="img"> </p>
+</blockquote>
+<h4 id="3、id-用于显示用户的ID，以及所属群组的ID"><a href="#3、id-用于显示用户的ID，以及所属群组的ID" class="headerlink" title="3、id 用于显示用户的ID，以及所属群组的ID"></a>3、id 用于显示用户的ID，以及所属群组的ID</h4><blockquote>
+<h5 id="Linux查看用户所属组"><a href="#Linux查看用户所属组" class="headerlink" title="Linux查看用户所属组"></a>Linux查看用户所属组</h5><h6 id="使用id命令查看。"><a href="#使用id命令查看。" class="headerlink" title="使用id命令查看。"></a>使用<code>id</code>命令查看。</h6><p>命令格式：<code>id [命令参数] 参数</code></p>
+<p>参数为要查询的用户名，默认是当前登录用户。</p>
+<p>常见命令参数：</p>
+<ul>
+<li><code>-g或--group</code>：显示用户所属群组的<code>ID</code>；</li>
+<li><code>-G或--groups</code>：显示用户所属附加群组的<code>ID</code>；</li>
+<li><code>-n或--name</code>：显示用户，所属群组或附加群组的名称。</li>
+<li>-r或–real 　显示实际ID。</li>
+<li>-u或–user 　显示用户ID。</li>
+<li>-help 　显示帮助。</li>
+<li>-version 　显示版本信息。</li>
+</ul>
+<p><code>id</code>命令的执行权限是面向所有用户。</p>
+<p>案例演示:  </p>
+<p>使用<code>id</code>命令查看用户<code>fzm</code>所属组。</p>
+<p><img src="https://www.educoder.net/api/attachments/183949" alt="img"> </p>
+</blockquote>
+<p>####4、groups 查看用户所属组 </p>
+<blockquote>
+<h6 id="使用group命令查看。"><a href="#使用group命令查看。" class="headerlink" title="使用group命令查看。"></a>使用<code>group</code>命令查看。</h6><p>命令格式：<code>groups 参数</code></p>
+<p>参数为要查询的用户名，默认是当前登录用户。</p>
+<p>执行权限：<code>groups</code>命令的执行权限是面向所有用户。</p>
+<p>案例演示:  </p>
+<p>使用<code>groups</code>命令查看用户<code>fzm</code>所属组。</p>
+<p><img src="https://www.educoder.net/api/attachments/183951" alt="img"></p>
+</blockquote>
+<h4 id="5、usermod-修改用户属性"><a href="#5、usermod-修改用户属性" class="headerlink" title="5、usermod 修改用户属性"></a>5、usermod 修改用户属性</h4><blockquote>
+<h5 id="Linux用户信息修改命令"><a href="#Linux用户信息修改命令" class="headerlink" title="Linux用户信息修改命令"></a>Linux用户信息修改命令</h5><p><code>Linux</code> 中<code>usermod</code>命令是最强大的用户账户修改实用工具。</p>
+<p><code>usermod</code>命令我们在上一关只是简单的用到其<code>-g</code>、<code>-G</code>参数对用户的所属组进行修改，本关我们将进一步使用<code>usermod</code>命令的其它属性进行修改更多的属性。</p>
+<p>命令格式：<code>usermod [命令参数] 参数</code></p>
+<p>常见命令参数：</p>
+<ul>
+<li>-c&lt;备注&gt;：修改用户帐号的备注文字；</li>
+<li>-d&lt;登入目录&gt;：修改用户登入时的目录；</li>
+<li>-e&lt;有效期限&gt;：修改帐号的有效期限；</li>
+<li>-f&lt;缓冲天数&gt;：修改在密码过期后多少天即关闭该帐号；</li>
+<li>-g&lt;群组&gt;：修改用户所属的群组；</li>
+<li>-G&lt;群组&gt;；修改用户所属的附加群组；</li>
+<li>-l&lt;帐号名称&gt;：修改用户帐号名称；</li>
+<li>-L：锁定用户密码，使密码无效；</li>
+<li>-s：修改用户登入后所使用的<code>shell</code>；</li>
+<li>-u：修改用户<code>ID</code>；</li>
+<li>-U:解除密码锁定。</li>
+</ul>
+<p><code>usermod</code>必须以<code>root</code>权限才能执行，如果是普通用户想使用该命令时，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<h6 id="使用usermod命令修改用户组"><a href="#使用usermod命令修改用户组" class="headerlink" title="使用usermod命令修改用户组"></a>使用usermod命令修改用户组</h6><p>如果要一个用户仅仅属于某一个组，而不是同时属于多个组，则使用如下命令：</p>
+<p>命令格式：<code>usermod -g 组名  用户名</code></p>
+<p>如果要给一个用户添加一个新的组，同时保留原来有所的组，则使用如下命令：</p>
+<p>命令格式：<code>usermod -a -G 组名  用户名</code></p>
+<p><code>usermod</code>必须以<code>root</code>权限才能执行，如果是普通用户想执行<code>usermod</code>时，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<p>案例演示一: </p>
+<p>新创建一个用户<code>newUser</code>和新创建一个用户组<code>newGroup</code>，使用<code>usermod</code>命令将<code>newUser</code>用户所属组修改为<code>newGroup</code>。</p>
+<p><img src="https://www.educoder.net/api/attachments/183966" alt="img"> </p>
+<p>首先，创建用户<code>newUser</code>和组<code>newGroup</code>，使用<code>groups</code>命令查看用户<code>newUser</code>所属的组，因为默认情况下新创建用户的时候会默认创建一个与用户名同名的私有组，并将新创建的用户所属组设置为私有组。接下来使用<code>usermod</code>命令来修改用户所属组，最后查看修改是否成功。 </p>
+<p>案例演示二: </p>
+<p>新创建一个用户<code>newUser</code>和新创建一个用户组<code>newGroup</code>，使用<code>usermod</code>命令为<code>newUser</code>用户新添加一个组<code>newGroup</code>。</p>
+<p><img src="https://www.educoder.net/api/attachments/183967" alt="img"> </p>
+<p>首先，创建用户<code>newUser</code>和组<code>newGroup</code>，使用<code>groups</code>命令查看用户<code>newUser</code>所属的组。接下来使用<code>usermod</code>命令来为用户添加一个新的组，最后查看添加是否成功。 </p>
+<p>案例演示三: </p>
+<p>使用<code>usermod</code>命令修改用户名。</p>
+<p>例如，在系统中已经存在一个用户名为<code>oldUser</code>的用户，由于某种原因，现在必须将其修改成<code>newUser</code>。</p>
+<p><img src="https://www.educoder.net/api/attachments/184012" alt="img"> </p>
+<p>案例演示四: </p>
+<p>使用<code>usermod</code>命令修改用户登录目录。</p>
+<p><img src="https://www.educoder.net/api/attachments/184013" alt="img"> </p>
+<p>首先使用<code>finger</code>命令查看用户<code>newUser</code>的登录目录为<code>/home/oldUser</code>，然后新创建一个<code>/home/newUser</code>，使用<code>usermod</code>将用户<code>newUser</code>的登录目录修改成<code>/home/newUser</code>，最后使用<code>finger</code>命令查看是否修改成功。 </p>
+</blockquote>
+<h4 id="6、finger-查看用户属性"><a href="#6、finger-查看用户属性" class="headerlink" title="6、finger 查看用户属性"></a>6、finger 查看用户属性</h4><blockquote>
+<p><strong>注意</strong>：<code>Ubuntu</code>系统中默认没有安装<code>finger</code>命令，用户可以通过以下命令来安装<code>finger</code>，然后就可以使用<code>finger</code>。</p>
+<p><code>sudo apt-get install finger</code></p>
+<p>具体使用方法如下：</p>
+<p>命令格式：<code>finger [命令参数] 参数</code></p>
+<p>常见命令参数</p>
+<ul>
+<li>-l：多行显示；</li>
+<li>-s：单行显示。这个选项只显示登入名称、真实姓名、终端机名称、闲置时间、登入时间、办公室号码及电话号码。如果所查询的使用者是远端服务器的使用者，这个选项无效。</li>
+</ul>
+<p>案例演示: </p>
+<p>使用<code>finger</code>命令查看用户信息。</p>
+<p>例如，查看系统中已经存在的用户<code>newUser</code>信息。</p>
+<p><img src="https://www.educoder.net/api/attachments/184011" alt="img"> </p>
+</blockquote>
+<h4 id="7、groupmod-修改用户组信息"><a href="#7、groupmod-修改用户组信息" class="headerlink" title="7、groupmod 修改用户组信息"></a>7、groupmod 修改用户组信息</h4><blockquote>
+<h5 id="Linux用户组信息修改命令"><a href="#Linux用户组信息修改命令" class="headerlink" title="Linux用户组信息修改命令"></a>Linux用户组信息修改命令</h5><p><code>Linux</code> 中使用<code>groupmod</code>命令来修改用户组信息。</p>
+<p>命令格式：<code>groupmod [命令参数] 参数</code></p>
+<p>常见命令参数：</p>
+<ul>
+<li>-g&lt;群组识别码&gt;：设置欲使用的群组识别码；</li>
+<li>-n&lt;新群组名称&gt;：设置欲使用的群组名称。</li>
+</ul>
+<p><code>groupmod</code>必须以<code>root</code>权限才能执行，如果是普通用户想使用该命令时，需要在命令前加<code>sudo</code>命令来提升权限为<code>root</code>权限。</p>
+<p>案例演示: </p>
+<p>使用<code>groupmod</code>命令修改已有用户组名称。</p>
+<p><img src="https://www.educoder.net/api/attachments/184015" alt="img"> </p>
+<p>首先通过<code>tail</code>命令查看一个已有用户组信息，可以看到该用户组名为<code>oldUser</code>，并且组ID为1004，通过<code>groupmod</code>命令将其名由<code>oldUser</code>修改成<code>renameOldUser</code>，最后使用再查看是否修改成功。 </p>
+</blockquote>
+<h3 id="VIM基本用法"><a href="#VIM基本用法" class="headerlink" title="VIM基本用法"></a>VIM基本用法</h3><h4 id="1、打开文件和保存退出"><a href="#1、打开文件和保存退出" class="headerlink" title="1、打开文件和保存退出"></a>1、打开文件和保存退出</h4><blockquote>
+<p><code>vi</code>是<code>Unix</code>操作系统中最常用的全屏编辑器，Linux中常用的是<code>vi</code>的加强版<code>vim</code>，<code>vim</code>同<code>vi</code>完全兼容。在Linux系统中，<code>vi</code>和<code>vim</code>是完全等价的两条命令。</p>
+<p><code>vi/vim</code>编辑器可以执行输入、删除、查找、替换、块操作等众多文件操作，而且用户可以根据自己的需要对其进行定制，这是其他编辑器程序没有的工程。<code>vi/vim</code>编辑器以命令行的方式处理文件，尽管不如图形化处理方式直观，但它具有操作速度快、功能全面等优点。另外，<code>vi/vim</code>不是一个排版程序，它不像<code>Word</code>或<code>WPS</code>那样可以对字体、格式、段落等其他属性进行设置，它只是一个文本编辑器程序。</p>
+<h5 id="启动vi-vim编辑器"><a href="#启动vi-vim编辑器" class="headerlink" title="启动vi/vim编辑器"></a>启动<code>vi/vim</code>编辑器</h5><p><code>vi/vim</code>的基本格式如下:</p>
+<p><code>vi [option] [filename...]</code></p>
+<p>或</p>
+<p><code>vim [option] [filename...]</code></p>
+<p>其中，<code>[option]</code>是选项，<code>[filename]</code>是需要编辑的一个或多个文件名。</p>
+<p>案例演示1: </p>
+<p>启动<code>vi/vim</code>编辑器，同时打开文件<code>testFile</code>，可以使用如下命令：</p>
+<p><code>vi testFile</code></p>
+<p>或</p>
+<p><code>vim testFile</code></p>
+<p><img src="https://www.educoder.net/api/attachments/186930" alt="img"></p>
+<p><img src="https://www.educoder.net/api/attachments/186931" alt="img"></p>
+<p>[请在右侧“命令行”里直接体验]</p>
+<p>因为当前目录下没有<code>testFile</code>文件，所以此时打开的文件是空，并且在底部一行显示的是打开的文件名以及当前被打开的文件状态，因为是新建的文件，所以显示的是<code>&quot;testFile&quot; [New File]</code>标识。</p>
+<h5 id="退出vi-vim编辑器。"><a href="#退出vi-vim编辑器。" class="headerlink" title="退出vi/vim编辑器。"></a>退出<code>vi/vim</code>编辑器。</h5><p>案例演示2: </p>
+<p>退出<code>vi/vim</code>编辑器，同时保存新创建的文件<code>testFile</code>，具体操作如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;输入:wq命令后回车即可保存当前文件并退出vi/vim编辑器;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://www.educoder.net/api/attachments/186932" alt="img"></p>
+<p>[请在右侧“命令行”里直接体验]</p>
+<p>按下回车键后，我们将退出了当前<code>vi/vim</code>编辑器，如果不想保存<code>testFile</code>文件而是只想退出<code>vi/vim</code>编辑器，则我们输入<code>:q</code>命令后回车即可。</p>
+<p><img src="https://www.educoder.net/api/attachments/186933" alt="img"></p>
+</blockquote>
+<h4 id="2、工作模式切换与插入模式"><a href="#2、工作模式切换与插入模式" class="headerlink" title="2、工作模式切换与插入模式"></a>2、工作模式切换与插入模式</h4><blockquote>
+<p><code>vi/vim</code>编辑器有三种工作模式，每种工作模式都有不同的作用，以下是这三种工作模式的详细介绍:</p>
+<ol>
+<li><strong>命令模式: \</strong>查看当前文件内容，此时不能对文件内容进行写入操作，从该模式可以切换为插入模式和底线命令模式。</li>
+<li><strong>插入模式: \</strong>可以对文件内容进行编辑操作，从该模式可以切换为命令模式。</li>
+<li><strong>底线命令模式: \</strong>不可以对文件内容进行编辑，在此模式下可以执行一些<code>vi/vim</code>的命令，例如: 退出命令、保存内容命令等等。从该模式可以切换为命令模式。</li>
+</ol>
+<p><img src="https://www.educoder.net/api/attachments/188050" alt="img"></p>
+<p><strong>注意: 启动vi/vim后，首先进入的是命令模式。</strong></p>
+<h5 id="命令模式与插入模式相互切换"><a href="#命令模式与插入模式相互切换" class="headerlink" title="命令模式与插入模式相互切换"></a>命令模式与插入模式相互切换</h5><p>首先启动<code>vi/vim</code>编辑器后，首先进入的工作模式是命令模式，在当前模式下，我们只能查看文件内容，不能对文件内容进行写入操作。如果想对文件进行写入操作，那么我们只有进入插入模式下。</p>
+<ol>
+<li><strong>命令模式－&gt;插入模式方法</strong><br> 从命令模式到插入模式的切换方法有多种，我们介绍如下３中常用方法:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>输入命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>i, I</td>
+<td>i 为『从目前光标所在处输入』，I 为『在目前所在行的第一个非空格符处开始输入』。</td>
+</tr>
+<tr>
+<td>a, A</td>
+<td>a 为『从目前光标所在的下一个字符处开始输入』， A 为『从光标所在行的最后一个字符处开始输入』。</td>
+</tr>
+<tr>
+<td>o, O</td>
+<td>这是英文字母 o 的大小写。o 为『在目前光标所在的下一行处输入新的一行』； O 为在目前光标所在处的上一行输入新的一行。</td>
+</tr>
+</tbody></table>
+<ol>
+<li><strong>插入模式－&gt;命令模式方法</strong><br> 由插入模式切换到命令模式比较简单，我们只需要点击<code>ESC</code>键即可返回到命令模式。</li>
+</ol>
+<p>案例演示1: </p>
+<p>使用<code>vi/vim</code>编辑器打开文件<code>testFile</code>，并且将工作模式切换到插入模式，输入<code>Hello vi/vim</code>字符串，最后保存文件并退出，可以使用如下命令：</p>
+<p><code>vi testFile</code></p>
+<p>或</p>
+<p><code>vim testFile</code></p>
+<p>打卡<code>testFile</code>文件命令；</p>
+<p><img src="https://www.educoder.net/api/attachments/186930" alt="img"></p>
+<p>首先进入的是命令模式；</p>
+<p><img src="https://www.educoder.net/api/attachments/186931" alt="img"></p>
+<p>按下字母<code>i</code>后进入插入模式；</p>
+<p><img src="https://www.educoder.net/api/attachments/188053" alt="img"></p>
+<p>输入<code>Hello vi/vim</code>字符后，按下<code>ESC</code>键后返回命令模式，最后输入<code>:wq</code>保存退出文件；</p>
+<p><img src="https://www.educoder.net/api/attachments/188054" alt="img"></p>
+<p>[请在右侧“命令行”里直接体验]</p>
+<h5 id="命令模式与底线命令模式相互切换"><a href="#命令模式与底线命令模式相互切换" class="headerlink" title="命令模式与底线命令模式相互切换"></a>命令模式与底线命令模式相互切换</h5><p><code>vi/vim</code>底线命令模式下如何执行写复杂的命令，例如我们常用的保存退出命令(<code>wq</code>)等。</p>
+<ol>
+<li><strong>命令模式－&gt;底线命令模式方法</strong><br> 从命令模式到底线命令模式的切换比较简单，我们只需要输入<code>:</code>字符即可，<strong>注意:是英文输入法下的冒号。</strong></li>
+<li><strong>底线命令模式－&gt;命令模式方法</strong><br> 由底线命令模式切换到命令模式比较简单，我们只需要点击<code>ESC</code>键即可返回到命令模式。</li>
+</ol>
+</blockquote>
+<h4 id="3、命令模式"><a href="#3、命令模式" class="headerlink" title="3、命令模式"></a>3、命令模式</h4><blockquote>
+<p><code>vi/vim</code>编辑器与其它编辑器最大的不同之处是不能使用鼠标进行操作(可以在配置文件中设置鼠标属性，默认是禁止使用鼠标)，我们可以在命令模式下移动光标位置，常见移动命令如下所示:</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>h 或 向左箭头键(←)</td>
+<td>光标向左移动一个字符</td>
+</tr>
+<tr>
+<td>j 或 向下箭头键(↓)</td>
+<td>光标向下移动一个字符</td>
+</tr>
+<tr>
+<td>k 或 向上箭头键(↑)</td>
+<td>光标向上移动一个字符</td>
+</tr>
+<tr>
+<td>l 或 向右箭头键(→)</td>
+<td>光标向右移动一个字符</td>
+</tr>
+<tr>
+<td>[Ctrl] + [f]</td>
+<td>屏幕『向下』移动一页，相当于 [Page Down]按键</td>
+</tr>
+<tr>
+<td>[Ctrl] + [b]</td>
+<td>屏幕『向上』移动一页，相当于 [Page Up] 按键</td>
+</tr>
+<tr>
+<td>[Ctrl] + [d]</td>
+<td>屏幕『向下』移动半页</td>
+</tr>
+<tr>
+<td>[Ctrl] + [u]</td>
+<td>屏幕『向上』移动半页</td>
+</tr>
+</tbody></table>
+<p>案例演示1: </p>
+<p>使用<code>vi/vim</code>编辑器打开文件<code>oldFile</code>，移动当前光标到第一行的第二字符处，可以使用如下步骤：</p>
+<p>打卡<code>oldFile</code>文件命令；</p>
+<p><img src="https://www.educoder.net/api/attachments/188089" alt="img"></p>
+<p>首先进入的是命令模式；</p>
+<p><img src="https://www.educoder.net/api/attachments/188090" alt="img"></p>
+<p>移动光标到第一行的第５个字符处(按5次→)；</p>
+<p><img src="https://www.educoder.net/api/attachments/188091" alt="img"></p>
+<p>最后输入<code>:q</code>退出文件；</p>
+<p><img src="https://www.educoder.net/api/attachments/188092" alt="img"></p>
+<p>[请在右侧“命令行”里直接体验]</p>
+<h5 id="命令模式删除操作"><a href="#命令模式删除操作" class="headerlink" title="命令模式删除操作"></a>命令模式删除操作</h5><p>我们不光可以在插入模式下可以对文件内容进行删除操作，我们可以直接在命令模式下对文件进行删除操作，常见删除命令如下所示:</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>x, X</td>
+<td>在一行字当中，x 为向后删除一个字符 (相当于 [del] 按键)， X 为向前删除一个字符(相当于 [backspace] 亦即是退格键)</td>
+</tr>
+<tr>
+<td>nx</td>
+<td>n 为数字，连续向后删除 n 个字符。例如，我要连续删除 5 个字符 ，则可以使用<code>5x</code></td>
+</tr>
+<tr>
+<td>dd</td>
+<td>删除光标所在的那一整行</td>
+</tr>
+<tr>
+<td>ndd</td>
+<td>n 为数字。删除光标所在的向下 n 行，例如<code>10dd</code>则是删除 10 行</td>
+</tr>
+<tr>
+<td>d1G</td>
+<td>删除光标所在到第一行的所有数据</td>
+</tr>
+<tr>
+<td>dG</td>
+<td>删除光标所在到最后一行的所有数据</td>
+</tr>
+</tbody></table>
+<p>案例演示1: </p>
+<p>使用<code>vi/vim</code>编辑器打开文件<code>oldFile</code>，删除当前文件的第二行所有内容，最后保存文件并退出，可以使用如下步骤：</p>
+<p>打卡<code>oldFile</code>文件命令；</p>
+<p><img src="https://www.educoder.net/api/attachments/188093" alt="img"></p>
+<p>首先进入的是命令模式；</p>
+<p><img src="https://www.educoder.net/api/attachments/188094" alt="img"></p>
+<p>移动光标到文件第二行；</p>
+<p><img src="https://www.educoder.net/api/attachments/188095" alt="img"></p>
+<p>输入<code>dd</code>字符后删除当前行内容，最后输入<code>:wq</code>保存退出文件；</p>
+<p><img src="https://www.educoder.net/api/attachments/188096" alt="img"></p>
+<p>[请在右侧“命令行”里直接体验]</p>
+<h5 id="命令模式复制粘贴操作"><a href="#命令模式复制粘贴操作" class="headerlink" title="命令模式复制粘贴操作"></a>命令模式复制粘贴操作</h5><p>常见复制命令如下所示:</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>yy</td>
+<td>复制光标所在的那一行</td>
+</tr>
+<tr>
+<td>nyy</td>
+<td>n 为数字。复制光标所在的向下 n 行，例如 <code>10yy</code> 则是复制 10 行</td>
+</tr>
+<tr>
+<td>y1G</td>
+<td>复制光标所在行到第一行的所有数据</td>
+</tr>
+<tr>
+<td>yG</td>
+<td>复制光标所在行到最后一行的所有数据</td>
+</tr>
+<tr>
+<td>y0</td>
+<td>复制光标所在的那个字符到该行行首的所有数据</td>
+</tr>
+<tr>
+<td>y$</td>
+<td>复制光标所在的那个字符到该行行尾的所有数据</td>
+</tr>
+</tbody></table>
+<p>常见粘贴命令为<code>p, P</code>，<code>p</code> 为将已复制的数据在光标下一行贴上，<code>P</code> 则为贴在游标上一行！</p>
+<p>案例演示1: </p>
+<p>使用<code>vi/vim</code>编辑器打开文件<code>oldFile</code>，将第一行内容复制，然后粘贴到文件的末尾，最后保存文件并退出，可以使用如下步骤：</p>
+<p>打卡<code>oldFile</code>文件命令；</p>
+<p><img src="https://www.educoder.net/api/attachments/188093" alt="img"></p>
+<p>首先进入的是命令模式；</p>
+<p><img src="https://www.educoder.net/api/attachments/188097" alt="img"></p>
+<p>复制第一行内容(<code>yy</code>)，移动光标到最后一行，粘贴(<code>p</code>)内容到当前行的下一行，最后输入<code>:wq</code>保存退出文件；</p>
+<p><img src="https://www.educoder.net/api/attachments/188098" alt="img"></p>
+</blockquote>
+<p>####4、底线命令模式</p>
+<blockquote>
+<p>在<code>vi/vim</code>底线命令模式下，我们可以执行一些特殊的命令，同时可以完成特殊的操作，例如：执行linux系统中的命令、对文件的内容进行查找或替换操作等。</p>
+<h5 id="搜索替换"><a href="#搜索替换" class="headerlink" title="搜索替换"></a>搜索替换</h5><p><code>vi/vim</code>编辑器在底线命令模式下可以对文件内容进行查找和替换操作，常见查找和替换命令如下所示:</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/word</td>
+<td>向光标之下寻找一个名称为 word 的字符串。例如要在档案内搜寻 vbird 这个字符串，就输入 /vbird 即可。</td>
+</tr>
+<tr>
+<td>?word</td>
+<td>向光标之上寻找一个字符串名称为 word 的字符串。</td>
+</tr>
+<tr>
+<td>n</td>
+<td>这个 n 是英文字母。代表重复前一个搜寻的动作。举例来说， 如果刚刚我们执行 /vbird 去向下搜寻 vbird 这个字符串，则按下 n 后，会向下继续搜寻下一个名称为 vbird 的字符串。</td>
+</tr>
+<tr>
+<td>N</td>
+<td>这个 N 是英文按键。与 n 刚好相反，为『反向』进行前一个搜寻动作。 例如 /vbird 后，按下 N 则表示『向上』搜寻 vbird 。</td>
+</tr>
+<tr>
+<td>[:n1,n2s/word1/word2/g</td>
+<td>n1 与 n2 为数字。在第 n1 与 n2 行之间寻找 word1 这个字符串，并将该字符串取代为 word2 。</td>
+</tr>
+<tr>
+<td>:1,$s/word1/word2/g</td>
+<td>从第一行到最后一行寻找 word1 字符串，并将该字符串取代为 word2。</td>
+</tr>
+<tr>
+<td>:1,$s/word1/word2/gc</td>
+<td>从第一行到最后一行寻找 word1 字符串，并将该字符串取代为 word2 ！且在取代前显示提示字符给用户确认 (confirm) 是否需要取代。</td>
+</tr>
+</tbody></table>
+<p>案例演示1: </p>
+<p>使用<code>vi/vim</code>编辑器打开文件<code>oldFile</code>，将所有<code>line</code>单词替换为<code>words</code>单词，并保存退出，可以使用如下步骤：</p>
+<p>打卡<code>oldFile</code>文件命令；</p>
+<p><img src="https://www.educoder.net/api/attachments/188089" alt="img"></p>
+<p>首先进入的是命令模式；</p>
+<p><img src="https://www.educoder.net/api/attachments/188090" alt="img"></p>
+<p>首先输入<code>:</code>切换当前模式为底线命令模式，然后输入<code>1,$s/line/words/g</code>后回车；</p>
+<p><img src="https://www.educoder.net/api/attachments/188108" alt="img"></p>
+<p><img src="https://www.educoder.net/api/attachments/188109" alt="img"></p>
+<p>[请在右侧“命令行”里直接体验]</p>
+<h5 id="底线命令模式下执行特殊命令"><a href="#底线命令模式下执行特殊命令" class="headerlink" title="底线命令模式下执行特殊命令"></a>底线命令模式下执行特殊命令</h5><p>常见在底线命令模式执行的命令如下所示:</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>:w</td>
+<td>将编辑的数据写入硬盘档案中</td>
+</tr>
+<tr>
+<td>:w!</td>
+<td>若文件属性为『只读』时，强制写入该档案。不过，到底能不能写入， 还是跟你对该档案的档案权限有关啊！</td>
+</tr>
+<tr>
+<td>:q!</td>
+<td>若曾修改过档案，又不想储存，使用 ! 为强制离开不储存档案。</td>
+</tr>
+<tr>
+<td>:w [filename]</td>
+<td>将编辑的数据储存成另一个档案（类似另存新档）</td>
+</tr>
+<tr>
+<td>:n1,n2 w [filename]</td>
+<td>将 n1 到 n2 的内容储存成 filename 这个档案。</td>
+</tr>
+<tr>
+<td>:! command</td>
+<td>暂时离开 vi 到指令行模式下执行 command 的显示结果！</td>
+</tr>
+<tr>
+<td>:set nu</td>
+<td>显示行号，设定之后，会在每一行的前缀显示该行的行号</td>
+</tr>
+<tr>
+<td>:set nonu</td>
+<td>与 set nu 相反，为取消行号！</td>
+</tr>
+</tbody></table>
+<p>案例演示1: </p>
+<p>使用<code>vi/vim</code>编辑器打开文件<code>oldFile</code>，显示当前文件行号，将当前文件的第1-3行内容另存为<code>oldFileCpy</code>文件，使用<code>cat</code>命令查看新生成文件内容，可以使用如下步骤：</p>
+<p>打卡<code>oldFile</code>文件命令；</p>
+<p><img src="https://www.educoder.net/api/attachments/188093" alt="img"></p>
+<p>输入<code>:set nu</code>后回车，显示行号；</p>
+<p><img src="https://www.educoder.net/api/attachments/188110" alt="img"></p>
+<p><img src="https://www.educoder.net/api/attachments/188111" alt="img"></p>
+<p>输入<code>:1,3 w oldFileCpy</code>后回车</p>
+<p><img src="https://www.educoder.net/api/attachments/188112" alt="img"></p>
+<p>最后在<code>vi</code>中使用<code>cat</code>命令查看新生成的文件<code>oldFileCpy</code>内容；</p>
+<p><img src="https://www.educoder.net/api/attachments/188113" alt="img"></p>
+<p><img src="https://www.educoder.net/api/attachments/188114" alt="img"></p>
+<p>按下回车键后返回当前<code>vi</code>编辑器，最后输入<code>q</code>退出文件；</p>
+<p><img src="https://www.educoder.net/api/attachments/188115" alt="img"></p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/blog/2019/11/29/191130wst01/" rel="next" title="在电脑120“学习小组”学习总结（2019.12之前）">
+                  <i class="fa fa-chevron-left"></i> 在电脑120“学习小组”学习总结（2019.12之前）
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="comments"></div>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#序言"><span class="nav-number">1.</span> <span class="nav-text">序言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux常用命令"><span class="nav-number">2.</span> <span class="nav-text">Linux常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、pwd-命令"><span class="nav-number">2.1.</span> <span class="nav-text">1、pwd 命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、cd-命令"><span class="nav-number">2.2.</span> <span class="nav-text">2、cd 命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、ls-命令"><span class="nav-number">2.3.</span> <span class="nav-text">3、ls 命令</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux文件操作"><span class="nav-number">3.</span> <span class="nav-text">Linux文件操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、touch-创建文件"><span class="nav-number">3.1.</span> <span class="nav-text">1、touch 创建文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、rm-删除文件"><span class="nav-number">3.2.</span> <span class="nav-text">2、rm 删除文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、mkdir-创建文件夹"><span class="nav-number">3.3.</span> <span class="nav-text">3、mkdir 创建文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、rmdir删除文件夹"><span class="nav-number">3.4.</span> <span class="nav-text">4、rmdir删除文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、cp-文件和文件夹拷贝"><span class="nav-number">3.5.</span> <span class="nav-text">5、cp 文件和文件夹拷贝</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、mv-文件和文件夹移动-重命名"><span class="nav-number">3.6.</span> <span class="nav-text">6、mv 文件和文件夹移动/重命名</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux命令查询"><span class="nav-number">4.</span> <span class="nav-text">Linux命令查询</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、man-查询命令的帮助文件"><span class="nav-number">4.1.</span> <span class="nav-text">1、man 查询命令的帮助文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、info-查询命令的帮助文件"><span class="nav-number">4.2.</span> <span class="nav-text">2、info 查询命令的帮助文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、whatis-显示命令的简短描述"><span class="nav-number">4.3.</span> <span class="nav-text">3、whatis 显示命令的简短描述</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux之文件-目录内容查看"><span class="nav-number">5.</span> <span class="nav-text">Linux之文件/目录内容查看</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、cat-查看文件内容"><span class="nav-number">5.1.</span> <span class="nav-text">1、cat 查看文件内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、head-查看文件前n行内容"><span class="nav-number">5.2.</span> <span class="nav-text">2、head 查看文件前n行内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、tail-查看文件后n行内容"><span class="nav-number">5.3.</span> <span class="nav-text">3、tail 查看文件后n行内容</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux文件-目录高级管理一"><span class="nav-number">6.</span> <span class="nav-text">Linux文件/目录高级管理一</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、chmod-用户文件-目录权限修改"><span class="nav-number">6.1.</span> <span class="nav-text">1、chmod  用户文件/目录权限修改</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、chown-修改目录所有者命令"><span class="nav-number">6.2.</span> <span class="nav-text">2、chown  修改目录所有者命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、chgrp-修改目录所属组命令"><span class="nav-number">6.3.</span> <span class="nav-text">3、chgrp 修改目录所属组命令</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux文件-目录高级管理二"><span class="nav-number">7.</span> <span class="nav-text">Linux文件/目录高级管理二</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、df-显示磁盘分区上的可使用的磁盘空间"><span class="nav-number">7.1.</span> <span class="nav-text">1、df  显示磁盘分区上的可使用的磁盘空间</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、du-对文件和目录磁盘使用的空间的查看"><span class="nav-number">7.2.</span> <span class="nav-text">2、du 对文件和目录磁盘使用的空间的查看</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、ln-创建链接和软链接"><span class="nav-number">7.3.</span> <span class="nav-text">3、ln 创建链接和软链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、mount-挂载"><span class="nav-number">7.4.</span> <span class="nav-text">4、mount 挂载</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#mount命令详解"><span class="nav-number">7.4.1.</span> <span class="nav-text">mount命令详解</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、umount-卸载已经加载的文件系统"><span class="nav-number">7.5.</span> <span class="nav-text">5、umount 卸载已经加载的文件系统</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux之用户管理"><span class="nav-number">8.</span> <span class="nav-text">Linux之用户管理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、useradd-创建用户"><span class="nav-number">8.1.</span> <span class="nav-text">1、useradd 创建用户</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux创建用户命令"><span class="nav-number">8.1.1.</span> <span class="nav-text">Linux创建用户命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#案例演示"><span class="nav-number">8.1.2.</span> <span class="nav-text">案例演示</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、userdel-删除用户"><span class="nav-number">8.2.</span> <span class="nav-text">2、userdel 删除用户</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux删除用户命令"><span class="nav-number">8.2.1.</span> <span class="nav-text">Linux删除用户命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#案例演示-1"><span class="nav-number">8.2.2.</span> <span class="nav-text">案例演示</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、passwd-修改用户密码"><span class="nav-number">8.3.</span> <span class="nav-text">3、passwd 修改用户密码</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#用户密码存放地及方式"><span class="nav-number">8.3.1.</span> <span class="nav-text">用户密码存放地及方式</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用passwd命令修改用户密码"><span class="nav-number">8.3.2.</span> <span class="nav-text">使用passwd命令修改用户密码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#案例演示-2"><span class="nav-number">8.3.3.</span> <span class="nav-text">案例演示</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#案例演示-3"><span class="nav-number">8.3.4.</span> <span class="nav-text">案例演示</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、login-让用户登录系统"><span class="nav-number">8.4.</span> <span class="nav-text">5、login 让用户登录系统</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用login命令登录"><span class="nav-number">8.4.1.</span> <span class="nav-text">使用login命令登录</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#案例演示-4"><span class="nav-number">8.4.2.</span> <span class="nav-text">案例演示</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、su-切换用户身份"><span class="nav-number">8.5.</span> <span class="nav-text">6、su 切换用户身份</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#使用su命令切换用户身份"><span class="nav-number">8.5.1.</span> <span class="nav-text">使用su命令切换用户身份</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#案例演示-5"><span class="nav-number">8.5.2.</span> <span class="nav-text">案例演示</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用户高级管理"><span class="nav-number">9.</span> <span class="nav-text">用户高级管理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、groupadd-创建一个新用户组"><span class="nav-number">9.1.</span> <span class="nav-text">1、groupadd 创建一个新用户组</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux创建用户组命令"><span class="nav-number">9.1.1.</span> <span class="nav-text">Linux创建用户组命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#案例演示一"><span class="nav-number">9.1.2.</span> <span class="nav-text">案例演示一</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#案例演示二"><span class="nav-number">9.1.3.</span> <span class="nav-text">案例演示二</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、groupdel-删除一个已经存在的用户组"><span class="nav-number">9.2.</span> <span class="nav-text">2、groupdel  删除一个已经存在的用户组</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux删除用户组命令"><span class="nav-number">9.2.1.</span> <span class="nav-text">Linux删除用户组命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#案例演示一-1"><span class="nav-number">9.2.2.</span> <span class="nav-text">案例演示一</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、id-用于显示用户的ID，以及所属群组的ID"><span class="nav-number">9.3.</span> <span class="nav-text">3、id 用于显示用户的ID，以及所属群组的ID</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux查看用户所属组"><span class="nav-number">9.3.1.</span> <span class="nav-text">Linux查看用户所属组</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#使用id命令查看。"><span class="nav-number">9.3.1.1.</span> <span class="nav-text">使用id命令查看。</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#使用group命令查看。"><span class="nav-number">9.3.1.2.</span> <span class="nav-text">使用group命令查看。</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5、usermod-修改用户属性"><span class="nav-number">9.4.</span> <span class="nav-text">5、usermod 修改用户属性</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux用户信息修改命令"><span class="nav-number">9.4.1.</span> <span class="nav-text">Linux用户信息修改命令</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#使用usermod命令修改用户组"><span class="nav-number">9.4.1.1.</span> <span class="nav-text">使用usermod命令修改用户组</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6、finger-查看用户属性"><span class="nav-number">9.5.</span> <span class="nav-text">6、finger 查看用户属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7、groupmod-修改用户组信息"><span class="nav-number">9.6.</span> <span class="nav-text">7、groupmod 修改用户组信息</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux用户组信息修改命令"><span class="nav-number">9.6.1.</span> <span class="nav-text">Linux用户组信息修改命令</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VIM基本用法"><span class="nav-number">10.</span> <span class="nav-text">VIM基本用法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、打开文件和保存退出"><span class="nav-number">10.1.</span> <span class="nav-text">1、打开文件和保存退出</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#启动vi-vim编辑器"><span class="nav-number">10.1.1.</span> <span class="nav-text">启动vi/vim编辑器</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#退出vi-vim编辑器。"><span class="nav-number">10.1.2.</span> <span class="nav-text">退出vi/vim编辑器。</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、工作模式切换与插入模式"><span class="nav-number">10.2.</span> <span class="nav-text">2、工作模式切换与插入模式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#命令模式与插入模式相互切换"><span class="nav-number">10.2.1.</span> <span class="nav-text">命令模式与插入模式相互切换</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#命令模式与底线命令模式相互切换"><span class="nav-number">10.2.2.</span> <span class="nav-text">命令模式与底线命令模式相互切换</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、命令模式"><span class="nav-number">10.3.</span> <span class="nav-text">3、命令模式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#命令模式删除操作"><span class="nav-number">10.3.1.</span> <span class="nav-text">命令模式删除操作</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#命令模式复制粘贴操作"><span class="nav-number">10.3.2.</span> <span class="nav-text">命令模式复制粘贴操作</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#搜索替换"><span class="nav-number">10.3.3.</span> <span class="nav-text">搜索替换</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#底线命令模式下执行特殊命令"><span class="nav-number">10.3.4.</span> <span class="nav-text">底线命令模式下执行特殊命令</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="电脑120"
+    src="/blog/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">电脑120</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+  </nav>
+</div>
+
+电脑120成立于2006年3月，作为河南农业大学特色学生公益组织，为校内外广大师生免费解决电脑问题，力求创新。值班时间是每天晚上7~9点（除节假日等特殊情况），值班地点是兰亭116。在首届“河南农业大学最美大学生”评选活动中作为唯一入选的学生组织荣获“最美大学生”称号。
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+
+
+<div class="visit">
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                <span id="busuanzi_container_site_pv">本站到访数：<span id="busuanzi_value_site_uv"></span></span>
+                <span class="post-meta-divider">|</span>
+    			<span id="busuanzi_container_page_pv">本页阅读量：<span id="busuanzi_value_page_pv"></span></span>
+                
+            </div>
+
+<div class="qqqun">
+				<span>电脑120服务群：</span>
+				<a href="http://shang.qq.com/wpa/qunwpa?idkey=6ba6d55616eaad2ba859efff4d9ffa2c7a73afe936f790a24b7a9bc9ccb74960" target="_blank" rel="noopener noreferrer">①群</a>
+				<span>  |  </span>
+				<a href="http://shang.qq.com/wpa/qunwpa?idkey=e42f5389280d1b46ff70e7e75058e0c202922891e7ecaafc30a4110a9869055f" target="_blank" rel="noopener noreferrer">②群</a>
+
+            </div>
+
+<span id="sitetime"></span>
+<script language=javascript>
+    function siteTime(){
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth()+1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2019,11,09,01,30,00); //北京时间2019-11-09 01:30:00
+        var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+        var diff = t2-t1;
+        var diffYears = Math.floor(diff/years);
+        var diffDays = Math.floor((diff/days)-diffYears*365);
+        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+        document.getElementById("sitetime").innerHTML=" 本站已稳定运行："+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>    
+<br>
+
+
+
+<div class="copyright">
+  Copyright
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">电脑120</span>
+ 版权所有
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/blog/lib/anime.min.js"></script>
+  <script src="/blog/lib/velocity/velocity.min.js"></script>
+  <script src="/blog/lib/velocity/velocity.ui.min.js"></script>
+<script src="/blog/js/utils.js"></script><script src="/blog/js/motion.js"></script>
+<script src="/blog/js/schemes/pisces.js"></script>
+<script src="/blog/js/next-boot.js"></script>
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  <script src="/blog/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<style type="text/css">
+    div.info{
+        display: none;
+    }
+</style>
+
+<script>
+NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: 'plKvr6V9tRWaWhRMpovPeAhJ-gzGzoHsz',
+    appKey: 'nIvJYEjxFDT3m5FOW26zxHA0',
+    placeholder: "快来发表你的评论吧...留下你的邮箱，有回复就会提醒你~(邮箱不会被公开)",
+    avatar: 'robohash',
+    meta: guest,
+    pageSize: '5' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn',
+    path: location.pathname,
+    recordIP: true,
+    serverURLs: ''
+  });
+}, window.Valine);
+</script>
+
+</body>
+</html>
