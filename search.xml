@@ -55,7 +55,8 @@
     <title>Linux命令篇</title>
     <url>/blog/2019/11/30/191130lzh01/</url>
     <content><![CDATA[<center>作者：17级 刘志煌</center><p><img src="https://www.educoder.net/api/attachments/182886" alt></p><center>
-原始地址：http://anoyer.cn/article/Linux-command.html 
+原始地址：http://blog.anoyer.cn/article/Linux-command.html
+
 </center><h3 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h3><p>废话就不多说了，还没想好说啥废话，暂时直接先上<del>干货</del>吧。<code>QAQ</code><br><strong>如发现问题还请联系博主进行修改，谢谢！！！</strong><br><strong>文章版权为Anoyer博客所有，转载请以链接形式标明本文地址</strong></p><h3 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h3><a id="more"></a>
 
 
@@ -1130,8 +1131,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -1177,8 +1178,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -1442,8 +1443,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
         <tag>U盘问题</tag>
       </tags>
@@ -1491,8 +1492,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
@@ -1588,8 +1589,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -1755,8 +1756,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -1843,8 +1844,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
       </tags>
   </entry>
   <entry>
@@ -2031,8 +2032,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
       </tags>
   </entry>
   <entry>
