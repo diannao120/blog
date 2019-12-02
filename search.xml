@@ -25,6 +25,14 @@
 <p>2.选择boot选项选择usb boot，将disabled改为enabled，按F10保存设置；</p>
 <p>3.esc退出，再开机即可。</p>
 ]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>硬件问题</tag>
+        <tag>开不了机</tag>
+        <tag>显示异常</tag>
+      </tags>
   </entry>
   <entry>
     <title>在电脑120“学习小组”学习总结（2019.12之前）</title>
@@ -61,8 +69,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -121,8 +129,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
       </tags>
@@ -1258,8 +1266,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -1305,8 +1313,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -1570,8 +1578,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
         <tag>U盘问题</tag>
       </tags>
@@ -1619,8 +1627,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
@@ -1716,8 +1724,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -1883,8 +1891,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -1971,8 +1979,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
       </tags>
   </entry>
   <entry>
@@ -2159,8 +2167,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
       </tags>
   </entry>
   <entry>
