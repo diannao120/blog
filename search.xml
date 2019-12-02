@@ -2,6 +2,32 @@
 <search>
   <entry>
     <title>在电脑120“学习小组”学习总结（2019.12之前）</title>
+    <url>/blog/2019/12/02/191202mjjl01/</url>
+    <content><![CDATA[<center>作者：19级 马佳乐</center><center>审核：18级 王少磊</center><h1 id="一：问题：重装系统"><a href="#一：问题：重装系统" class="headerlink" title="一：问题：重装系统"></a>一：问题：重装系统</h1><h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><p>1.首先插入大白菜的系统盘，然后重启电脑，在电脑黑屏时按F12（参照启动快捷键）进入BIOS界面，选择U盘，enter回车进入；</p><p>2.在大白菜界面中选择分区图标，点击快速分区（若有文件需要，可部分分区），等待加载；</p><p>3.点击PE装机工具，选择映像文件路径，选择待装系统，选中C盘，点击确定，等待系统安装；</p><a id="more"></a>
+
+
+
+
+
+<ol start="4">
+<li>系统安装完成之后，激活系统；</li>
+</ol>
+<p>5.安装无线网卡，用驱动精灵（驱动人生）检查驱动，安装即可。</p>
+<h1 id="二：问题：安装软件后电脑白屏"><a href="#二：问题：安装软件后电脑白屏" class="headerlink" title="二：问题：安装软件后电脑白屏"></a>二：问题：安装软件后电脑白屏</h1><h2 id="解决方法：-1"><a href="#解决方法：-1" class="headerlink" title="解决方法："></a>解决方法：</h2><p>1.首先检查是否是硬件问题，可用其他电脑显示屏连接查看；</p>
+<p>2.硬件问题建议返厂维修，软件问题则可卸载已下载的应用</p>
+<h1 id="三：问题：安装office，ps等应用"><a href="#三：问题：安装office，ps等应用" class="headerlink" title="三：问题：安装office，ps等应用"></a>三：问题：安装office，ps等应用</h1><h2 id="解决方法：-2"><a href="#解决方法：-2" class="headerlink" title="解决方法："></a>解决方法：</h2><p>1.下载/拷贝安装包</p>
+<p>2.下载完成后，解压，双击setup即可</p>
+<h1 id="四：问题：电脑清灰"><a href="#四：问题：电脑清灰" class="headerlink" title="四：问题：电脑清灰"></a>四：问题：电脑清灰</h1><h2 id="解决方法：-3"><a href="#解决方法：-3" class="headerlink" title="解决方法："></a>解决方法：</h2><p>1.拆卸电脑的后盖；</p>
+<p>2.使用专用的工具吹掉风扇灰尘（顺着风扇方向吹），并用毛刷进行轻刷后盖里的设施；</p>
+<p>3.小心卸下内存条，用橡皮小心擦干净再装回去（有时电脑开机自检过不去就是因为它）；</p>
+<p>4.安装后盖，清灰完毕。</p>
+<h1 id="五：问题：重装系统进不去安装页面"><a href="#五：问题：重装系统进不去安装页面" class="headerlink" title="五：问题：重装系统进不去安装页面"></a>五：问题：重装系统进不去安装页面</h1><h2 id="解决方法：-4"><a href="#解决方法：-4" class="headerlink" title="解决方法："></a>解决方法：</h2><p>1.开机前按F2进入BIOS界面；</p>
+<p>2.选择boot选项选择usb boot，将disabled改为enabled，按F10保存设置；</p>
+<p>3.esc退出，再开机即可。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>在电脑120“学习小组”学习总结（2019.12之前）</title>
     <url>/blog/2019/12/01/191201hsj01/</url>
     <content><![CDATA[<center>作者：19级 郝帅杰</center>
 <center>审核：18级 王少磊</center>
@@ -35,8 +61,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -95,8 +121,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
       </tags>
@@ -1232,8 +1258,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -1279,8 +1305,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -1544,8 +1570,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
         <tag>U盘问题</tag>
       </tags>
@@ -1593,8 +1619,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>上不了网</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
@@ -1690,8 +1716,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -1857,8 +1883,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -1945,8 +1971,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
       </tags>
   </entry>
   <entry>
@@ -2133,8 +2159,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
       </tags>
   </entry>
   <entry>
