@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>如何关闭电脑自动更新功能</title>
+    <url>/blog/2019/12/04/191204wyl01/</url>
+    <content><![CDATA[<center>作者：19级 王云龙</center><center>审核：18级 蔡婷婷</center><h1 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h1><p>相信有很多人在关闭电脑时都会遇到一个问题。<br>就如下边图片所示。</p><p><img src="http://www.diannao120.top/blog/image/2019/12/04/wyl01/01.jpg" alt></p><p>要想关掉它，解决办法如下：按 win键+R，然后输入<code>services.msc</code>。</p><p><img src="http://www.diannao120.top/blog/image/2019/12/04/wyl01/02.jpg" alt></p><p>然后点击确定。<br> <br><img src="http://www.diannao120.top/blog/image/2019/12/04/wyl01/03.jpg" alt></p><p>点击箭头所指的名称</p><p><img src="http://www.diannao120.top/blog/image/2019/12/04/wyl01/04.jpg" alt></p><p>点开，选择手动</p><p><img src="http://www.diannao120.top/blog/image/2019/12/04/wyl01/05.jpg" alt></p><p>最后点击确定就欧克了。</p><p>如电脑需要更新，看上张图片圈住的地方，调至自动即可。或者打开任务管理器，工具栏右键选择任务管理器或者快捷键<code>ctrl+Alt+Del</code>打开服务，找到<code>windows Update</code>选择禁用即可。</p>]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>需要激活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>在电脑120“学习小组”学习总结（2019.12之前）</title>
     <url>/blog/2019/12/02/191202mjjl01/</url>
     <content><![CDATA[<center>作者：19级 马佳乐</center><center>审核：18级 王少磊</center><h1 id="一：问题：重装系统"><a href="#一：问题：重装系统" class="headerlink" title="一：问题：重装系统"></a>一：问题：重装系统</h1><h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><p>1.首先插入大白菜的系统盘，然后重启电脑，在电脑黑屏时按F12（参照启动快捷键）进入BIOS界面，选择U盘，enter回车进入；</p><p>2.在大白菜界面中选择分区图标，点击快速分区（若有文件需要，可部分分区），等待加载；</p><p>3.点击PE装机工具，选择映像文件路径，选择待装系统，选中C盘，点击确定，等待系统安装；</p><a id="more"></a>
@@ -2295,24 +2306,33 @@ matplotlib.pyplot.show()</code></p>
 <h1 id="方案一：使用360安全浏览器（其他国产双核浏览器类似）"><a href="#方案一：使用360安全浏览器（其他国产双核浏览器类似）" class="headerlink" title="方案一：使用360安全浏览器（其他国产双核浏览器类似）"></a>方案一：使用360安全浏览器（其他国产双核浏览器类似）</h1><ol>
 <li><p>打开360安全浏览器，在地址栏（尤其注意不要在搜索引擎搜索框）输入考试系统地址（开头已说，不赘述），按下回车键。</p>
 </li>
-<li><p>点击下载插件，下载完运行一次。</p>
+<li><p>点击下载插件，下载完运行一次，点击网页上的“返回登录”。</p>
 </li>
-<li><p>关闭浏览器，分别右键打开桌面上360安全浏览器和考试客户端快捷方式的属性。</p>
+<li><p>此时桌面上会有一个名为“计算机基础 客户端”的图标，在桌面上直接把它复制粘贴一下，得到“计算机基础 客户端 - 副本”图标。</p>
+</li>
+</ol>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/tubiao.jpg" alt></p>
+<ol start="4">
+<li><p>关闭浏览器，分别右键打开桌面上360安全浏览器和“计算机基础客户端 - 副本”的属性。</p>
 </li>
 <li><p>全选复制1处地址，粘贴到2处的引号里面，应用 –&gt; 确定。</p>
 </li>
 </ol>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/001.png" alt></p>
-<ol start="5">
+<ol start="6">
 <li>win 7直接跳过此步，win 10继续修改兼容性。</li>
 </ol>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/002.png" alt></p>
-<ol start="6">
+<ol start="7">
 <li><p>按图示修改，应用 –&gt; 确定 ，应用 –&gt; 确定。<br><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/003.png" alt></p>
 </li>
 <li><p>直接打开考试客户端快捷方式就OK了。</p>
 </li>
 </ol>
+<p>【注意】</p>
+<p>1.“计算机基础客户端”不要删除，使用时打开“计算机基础 客户端 - 副本”。</p>
+<p>2.如果安装插件后桌面上没有出现“计算机基础 客户端”快捷方式，点击网页上的“返回登录”即可出现。</p>
+<p>3.只要安装环境配置完成，不用理会网页上任何形式的报错。</p>
 <h1 id="方案二：使用IE浏览器"><a href="#方案二：使用IE浏览器" class="headerlink" title="方案二：使用IE浏览器"></a>方案二：使用IE浏览器</h1><ol>
 <li>Win 7直接打开IE浏览器，Win 10点击左下角右边的搜索（语音助手）图标，输入Internet Explorer，打开。</li>
 </ol>
