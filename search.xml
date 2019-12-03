@@ -40,8 +40,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -80,8 +80,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -140,8 +140,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
       </tags>
@@ -1277,8 +1277,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -1324,8 +1324,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -1589,8 +1589,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
         <tag>U盘问题</tag>
       </tags>
@@ -1638,8 +1638,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>上不了网</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
@@ -1735,8 +1735,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -1902,8 +1902,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -1990,8 +1990,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
       </tags>
   </entry>
   <entry>
@@ -2178,8 +2178,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
       </tags>
   </entry>
   <entry>
@@ -2294,7 +2294,7 @@ matplotlib.pyplot.show()</code></p>
   <entry>
     <title>河南农业大学计算机模拟考试系统安装教程</title>
     <url>/blog/2019/11/10/installtestsys/</url>
-    <content><![CDATA[<center>作者：18级 李翱</center><h1 id="准备操作："><a href="#准备操作：" class="headerlink" title="准备操作："></a>准备操作：</h1><p>1.windows系统的电脑一台</p><p>2.能连上校园网的位置（CMCC-Henau、路由器、网线均可）</p><h1 id="考试系统地址："><a href="#考试系统地址：" class="headerlink" title="考试系统地址："></a>考试系统地址：</h1><p><a href="http://172.31.0.59/sowerks" target="_blank" rel="noopener">http://172.31.0.59/sowerks</a></p><p>（注意：从“1”到“s”一个字都别漏）</p><h1 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h1><p>office类型考试需要安装office 2010，vc/vb考试使用老师指定的客户端。</p><a id="more"></a>
+    <content><![CDATA[<center>作者：18级 李翱</center><h1 id="准备操作："><a href="#准备操作：" class="headerlink" title="准备操作："></a>准备操作：</h1><p><strong>1.</strong>windows系统的电脑一台</p><p><strong>2.</strong>能连上校园网的位置（CMCC-Henau、路由器、网线均可）</p><h1 id="考试系统地址："><a href="#考试系统地址：" class="headerlink" title="考试系统地址："></a>考试系统地址：</h1><p><a href="http://172.31.0.59/sowerks" target="_blank" rel="noopener">http://172.31.0.59/sowerks</a></p><p>（注意：从“1”到“s”一个字都别漏）</p><h1 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h1><p>office类型考试需要安装office 2010，vc/vb考试使用老师指定的客户端。</p><a id="more"></a>
 
 
 
@@ -2303,56 +2303,29 @@ matplotlib.pyplot.show()</code></p>
 
 <h1 id="安装方法："><a href="#安装方法：" class="headerlink" title="安装方法："></a>安装方法：</h1><h2 id="法一："><a href="#法一：" class="headerlink" title="法一："></a>法一：</h2><p>把电脑拿到“电脑120”（兰亭116），让值班同学协助安装。<br>（“电脑120”值班时间：除节假日每天晚上7~9点）</p>
 <h2 id="法二："><a href="#法二：" class="headerlink" title="法二："></a>法二：</h2><p>动手安装（两种方案，任选其一）：</p>
-<h1 id="方案一：使用360安全浏览器（其他国产双核浏览器类似）"><a href="#方案一：使用360安全浏览器（其他国产双核浏览器类似）" class="headerlink" title="方案一：使用360安全浏览器（其他国产双核浏览器类似）"></a>方案一：使用360安全浏览器（其他国产双核浏览器类似）</h1><ol>
-<li><p>打开360安全浏览器，在地址栏（尤其注意不要在搜索引擎搜索框）输入考试系统地址（开头已说，不赘述），按下回车键。</p>
-</li>
-<li><p>点击下载插件，下载完运行一次，点击网页上的“返回登录”。</p>
-</li>
-<li><p>此时桌面上会有一个名为“计算机基础 客户端”的图标，在桌面上直接把它复制粘贴一下，得到“计算机基础 客户端 - 副本”图标。</p>
-</li>
-</ol>
+<h1 id="方案一：使用360安全浏览器（其他国产双核浏览器类似）"><a href="#方案一：使用360安全浏览器（其他国产双核浏览器类似）" class="headerlink" title="方案一：使用360安全浏览器（其他国产双核浏览器类似）"></a>方案一：使用360安全浏览器（其他国产双核浏览器类似）</h1><p><strong>1.</strong>    打开360安全浏览器，在地址栏（尤其注意不要在搜索引擎搜索框）输入考试系统地址（开头已说，不赘述），按下回车键。</p>
+<p><strong>2.</strong>    点击下载插件，下载完运行一次，点击网页上的“返回登录”。</p>
+<p><strong>3.</strong>    此时桌面上会有一个名为“计算机基础 客户端”的图标，在桌面上直接把它复制粘贴一下，得到“计算机基础 客户端 - 副本”图标。</p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/tubiao.jpg" alt></p>
-<ol start="4">
-<li><p>关闭浏览器，分别右键打开桌面上360安全浏览器和“计算机基础客户端 - 副本”的属性。</p>
-</li>
-<li><p>全选复制1处地址，粘贴到2处的引号里面，应用 –&gt; 确定。</p>
-</li>
-</ol>
+<p><strong>4.</strong>    关闭浏览器，分别右键打开桌面上360安全浏览器和“计算机基础客户端 - 副本”的属性。</p>
+<p><strong>5.</strong> 全选复制1处地址，粘贴到2处的引号里面，应用 –&gt; 确定。</p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/001.png" alt></p>
-<ol start="6">
-<li>win 7直接跳过此步，win 10继续修改兼容性。</li>
-</ol>
+<p><strong>6.</strong>    win 7直接跳过此步，win 10继续修改兼容性。</p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/002.png" alt></p>
-<ol start="7">
-<li><p>按图示修改，应用 –&gt; 确定 ，应用 –&gt; 确定。<br><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/003.png" alt></p>
-</li>
-<li><p>直接打开考试客户端快捷方式就OK了。</p>
-</li>
-</ol>
-<p>【注意】</p>
-<p>1.“计算机基础客户端”不要删除，使用时打开“计算机基础 客户端 - 副本”。</p>
-<p>2.如果安装插件后桌面上没有出现“计算机基础 客户端”快捷方式，点击网页上的“返回登录”即可出现。</p>
-<p>3.只要安装环境配置完成，不用理会网页上任何形式的报错。</p>
-<h1 id="方案二：使用IE浏览器"><a href="#方案二：使用IE浏览器" class="headerlink" title="方案二：使用IE浏览器"></a>方案二：使用IE浏览器</h1><ol>
-<li>Win 7直接打开IE浏览器，Win 10点击左下角右边的搜索（语音助手）图标，输入Internet Explorer，打开。</li>
-</ol>
-<ol start="2">
-<li>如图所示，打开兼容性视图。</li>
-</ol>
+<p><strong>7.</strong>    按图示修改，应用 –&gt; 确定 ，应用 –&gt; 确定。<br><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/003.png" alt></p>
+<p><strong>8.</strong>    直接打开考试客户端快捷方式就OK了。</p>
+<p><strong>【注意】</strong></p>
+<p><strong>1.</strong>“计算机基础客户端”不要删除，使用时打开“计算机基础 客户端 - 副本”。</p>
+<p><strong>2.</strong>如果安装插件后桌面上没有出现“计算机基础 客户端”快捷方式，点击网页上的“返回登录”即可出现。</p>
+<p><strong>3.</strong>只要安装环境配置完成，不用理会网页上任何形式的报错。</p>
+<h1 id="方案二：使用IE浏览器"><a href="#方案二：使用IE浏览器" class="headerlink" title="方案二：使用IE浏览器"></a>方案二：使用IE浏览器</h1><p><strong>1.</strong>    Win 7直接打开IE浏览器，Win 10点击左下角右边的搜索（语音助手）图标，输入Internet Explorer，打开。</p>
+<p><strong>2.</strong>    如图所示，打开兼容性视图。</p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/004.png" alt></p>
-<ol start="3">
-<li>弹出的兼容性视图设置窗口中，添加“172.31.0.59”网址。</li>
-</ol>
+<p><strong>3.</strong>    弹出的兼容性视图设置窗口中，添加“172.31.0.59”网址。</p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/005.png" alt></p>
-<ol start="4">
-<li>在地址栏（尤其注意不要在搜索引擎搜索框）输入考试系统地址（开头已说，不赘述），按下回车键。</li>
-</ol>
-<ol start="5">
-<li>点击下载插件，下载完运行一次。</li>
-</ol>
-<ol start="6">
-<li>关闭IE，打开桌面上的考试客户端图标即可使用。</li>
-</ol>
+<p><strong>4.</strong>    在地址栏（尤其注意不要在搜索引擎搜索框）输入考试系统地址（开头已说，不赘述），按下回车键。</p>
+<p><strong>5.</strong>    点击下载插件，下载完运行一次。</p>
+<p><strong>6.</strong>    关闭IE，打开桌面上的考试客户端图标即可使用。</p>
 ]]></content>
       <categories>
         <category>学习考试</category>
