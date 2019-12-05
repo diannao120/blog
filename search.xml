@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>安装PS的简单流程</title>
+    <url>/blog/2019/12/06/191206hj01/</url>
+    <content><![CDATA[<center>作者：19级 衡俊</center>
+<center>审核：18级 陈义会</center>
+
+<h1 id="一：下载安装包"><a href="#一：下载安装包" class="headerlink" title="一：下载安装包"></a>一：下载安装包</h1><p>打开电脑120官网 <a href="https://www.diannao120.top/" target="_blank" rel="noopener">https://www.diannao120.top/</a>，进入分类检索，然后再进入软件安装，找到Adobe，选择自己要下载的PS版本，找到链接，下载。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/06/hj01/01.png" alt=""></p>
+<a id="more"></a>
+
+<p><img src="http://www.diannao120.top/blog/image/2019/12/06/hj01/02.png" alt=""></p>
+<h1 id="二：解压"><a href="#二：解压" class="headerlink" title="二：解压"></a>二：解压</h1><p>在电脑上找到一个合适的位置解压。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/06/hj01/03.png" alt=""></p>
+<h1 id="三：安装PS"><a href="#三：安装PS" class="headerlink" title="三：安装PS"></a>三：安装PS</h1><p>双击Set-up.exe，选择位置进行安装（默认为C盘），几分钟后即可安装成功。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/06/hj01/04.jpg" alt=""></p>
+<p>安装成功后点击关闭</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/06/hj01/05.jpg" alt=""></p>
+<h1 id="四：创建快捷方式"><a href="#四：创建快捷方式" class="headerlink" title="四：创建快捷方式"></a>四：创建快捷方式</h1><p>选中 Photoshop.exe，点击右键</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/06/hj01/06.png" alt=""></p>
+<p> 右键选择发送快捷方式到桌面</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/06/hj01/07.png" alt=""></p>
+<h1 id="五：运行PS"><a href="#五：运行PS" class="headerlink" title="五：运行PS"></a>五：运行PS</h1><p>点击图标，打开PS</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/06/hj01/08.png" alt=""></p>
+<p>找到左上角的“文件”，选择打开，选择照片，就可以开始修了 </p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/06/hj01/09.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>软件安装</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>登陆农大计算机考试系统方法（便捷版）</title>
+    <url>/blog/2019/12/06/191206sh01/</url>
+    <content><![CDATA[<center>作者：19级 苏豪</center>
+<center>审核：18级 巩皓昕</center>
+
+<h1 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h1><p>1、浏览器访问 <a href="http://172.31.0.59/sowerks" target="_blank" rel="noopener">172.31.0.59/sowerks</a>下载计算机基础客户端；</p>
+<p>2、浏览器搜索<code>IEtester</code>并下载（下载的一般都是是安装包的压缩包）</p>
+<a id="more"></a>
+
+<p>3、解压文件点击安装包.exe并安装（不放在C盘最好）；</p>
+<p>4、然后进入以后上边有一栏新建IE6（其他版本可能也行可以自己试试）</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/06/sh01/01.png" alt=""></p>
+<p>5、地址栏输入计算机基础客户端地址 <a href="http://172.31.0.59/sowerks" target="_blank" rel="noopener">172.31.0.59/sowerks</a>即可</p>
+]]></content>
+      <categories>
+        <category>学习考试</category>
+      </categories>
+  </entry>
+  <entry>
     <title>在电脑120“学习小组”学习总结（2019.12之前）</title>
     <url>/blog/2019/12/05/191205lhj01/</url>
     <content><![CDATA[<center>作者：19级 刘浩杰</center>
@@ -167,8 +216,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -207,8 +256,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -267,8 +316,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
       </tags>
@@ -1404,8 +1453,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -1451,8 +1500,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -1716,8 +1765,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
         <tag>U盘问题</tag>
       </tags>
@@ -1765,8 +1814,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
@@ -1862,8 +1911,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -2029,8 +2078,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -2117,8 +2166,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
       </tags>
   </entry>
   <entry>
@@ -2305,8 +2354,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
       </tags>
   </entry>
   <entry>
@@ -2421,7 +2470,7 @@ matplotlib.pyplot.show()</code></p>
   <entry>
     <title>河南农业大学计算机模拟考试系统安装教程</title>
     <url>/blog/2019/11/10/installtestsys/</url>
-    <content><![CDATA[<center>作者：18级 李翱</center><h1 id="准备操作："><a href="#准备操作：" class="headerlink" title="准备操作："></a>准备操作：</h1><p><strong>1.</strong>windows系统的电脑一台</p><p><strong>2.</strong>能连上校园网的位置（CMCC-Henau、路由器、网线均可）</p><h1 id="考试系统地址："><a href="#考试系统地址：" class="headerlink" title="考试系统地址："></a>考试系统地址：</h1><p><a href="http://172.31.0.59/sowerks" target="_blank" rel="noopener">http://172.31.0.59/sowerks</a></p><p>（注意：从“1”到“s”一个字都别漏）</p><h1 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h1><p>office类型考试需要安装office 2010，vc/vb考试使用老师指定的客户端。</p><a id="more"></a>
+    <content><![CDATA[<center>作者：18级 李翱</center><h1 id="准备操作："><a href="#准备操作：" class="headerlink" title="准备操作："></a>准备操作：</h1><p><strong>1.</strong>windows系统的电脑一台</p><p><strong>2.</strong>能连上<strong>校园网</strong>的位置（CMCC-Henau、路由器、网线均可）</p><h1 id="考试系统地址："><a href="#考试系统地址：" class="headerlink" title="考试系统地址："></a>考试系统地址：</h1><p><a href="http://172.31.0.59/sowerks" target="_blank" rel="noopener">http://172.31.0.59/sowerks</a></p><p>（注意：从“1”到“s”一个字都别漏）</p><h1 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h1><p>office类型考试需要安装office 2010，vc/vb考试使用老师指定的客户端。</p><a id="more"></a>
 
 
 
@@ -2430,10 +2479,10 @@ matplotlib.pyplot.show()</code></p>
 
 <h1 id="安装方法："><a href="#安装方法：" class="headerlink" title="安装方法："></a>安装方法：</h1><h2 id="法一："><a href="#法一：" class="headerlink" title="法一："></a>法一：</h2><p>把电脑拿到“电脑120”（兰亭116），让值班同学协助安装。<br>（“电脑120”值班时间：除节假日每天晚上7~9点）</p>
 <h2 id="法二："><a href="#法二：" class="headerlink" title="法二："></a>法二：</h2><p>动手安装（两种方案，任选其一）：</p>
-<h1 id="方案一：使用360安全浏览器（其他国产双核浏览器类似）"><a href="#方案一：使用360安全浏览器（其他国产双核浏览器类似）" class="headerlink" title="方案一：使用360安全浏览器（其他国产双核浏览器类似）"></a>方案一：使用360安全浏览器（其他国产双核浏览器类似）</h1><p><strong>1.</strong>    打开360安全浏览器，在地址栏（尤其注意不要在搜索引擎搜索框）输入考试系统地址（开头已说，不赘述），按下回车键。</p>
+<h1 id="方案一：使用360安全浏览器（其他国产双核浏览器类似）"><a href="#方案一：使用360安全浏览器（其他国产双核浏览器类似）" class="headerlink" title="方案一：使用360安全浏览器（其他国产双核浏览器类似）"></a>方案一：使用360安全浏览器（其他国产双核浏览器类似）</h1><p><strong>1.</strong>    打开360安全浏览器，在<strong>地址栏</strong>（尤其注意不要在搜索引擎搜索框）输入考试系统地址（开头已说，不赘述），按下回车键。</p>
 <p><strong>2.</strong>    点击下载插件，下载完运行一次，点击网页上的“返回登录”。</p>
 <p><strong>3.</strong>    此时桌面上会有一个名为“计算机基础 客户端”的图标，在桌面上直接把它复制粘贴一下，得到“计算机基础 客户端 - 副本”图标。</p>
-<p><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/tubiao.jpg" alt></p>
+<p><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/tubiao.png" alt></p>
 <p><strong>4.</strong>    关闭浏览器，分别右键打开桌面上360安全浏览器和“计算机基础客户端 - 副本”的属性。</p>
 <p><strong>5.</strong> 全选复制1处地址，粘贴到2处的引号里面，应用 –&gt; 确定。</p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/001.png" alt></p>
@@ -2450,7 +2499,7 @@ matplotlib.pyplot.show()</code></p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/004.png" alt></p>
 <p><strong>3.</strong>    弹出的兼容性视图设置窗口中，添加“172.31.0.59”网址。</p>
 <p><img src="http://www.diannao120.top/blog/image/2019/11/10/001soarli001/005.png" alt></p>
-<p><strong>4.</strong>    在地址栏（尤其注意不要在搜索引擎搜索框）输入考试系统地址（开头已说，不赘述），按下回车键。</p>
+<p><strong>4.</strong>    在<strong>地址栏</strong>（尤其注意不要在搜索引擎搜索框）输入考试系统地址（开头已说，不赘述），按下回车键。</p>
 <p><strong>5.</strong>    点击下载插件，下载完运行一次。</p>
 <p><strong>6.</strong>    关闭IE，打开桌面上的考试客户端图标即可使用。</p>
 ]]></content>
