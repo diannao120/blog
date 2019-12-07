@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>PhotoShop简介</title>
+    <url>/blog/2019/12/08/191208wy01/</url>
+    <content><![CDATA[<center>作者：19级 王岩</center><center>审核：18级 李嘉琦</center><h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><p>到了大学相信每个小伙伴都拥有了自己的电脑，即使不经常用电脑，也一定听说过一款叫做ps的修图软件，其实它的全名叫做Adobe Photoshop。是一款由Adobe systems开发和发行的一款图形处理软件。</p><p>Ps不仅仅可以用来修整图片，还可以用作平面设计，广告摄影，网页制作，界面设计等多个领域。所以PS是一款应用范围很广的软件，下面对它作简单的了解。</p><a id="more"></a>
+
+
+
+
+<h1 id="一：操作界面"><a href="#一：操作界面" class="headerlink" title="一：操作界面"></a>一：操作界面</h1><p><img src="http://www.diannao120.top/blog/image/2019/12/08/wy01/01.jpg" alt></p>
+<h1 id="二：组成部分与功能使用"><a href="#二：组成部分与功能使用" class="headerlink" title="二：组成部分与功能使用"></a>二：组成部分与功能使用</h1><h2 id="标题栏"><a href="#标题栏" class="headerlink" title="标题栏"></a>标题栏</h2><p>位于主窗口顶端，最左边是Photoshop标记，右边分别是最小化、最大化/还原和关闭按钮。属性栏(又称工具选项栏)。选中某个工具后，属性栏就会改变成相应工具的属性设置选项，可更改相应的选项。</p>
+<h2 id="菜单栏"><a href="#菜单栏" class="headerlink" title="菜单栏"></a>菜单栏</h2><p>菜单栏为整个环境下所有窗口提供菜单控制，包括:文件、编辑、图像、图层、选择、滤镜、视图、窗口和帮助九项。Photoshop中通过两种方式执行所有命令，一是菜单，二是快捷键。</p>
+<h2 id="图像编辑窗口"><a href="#图像编辑窗口" class="headerlink" title="图像编辑窗口"></a>图像编辑窗口</h2><p>中间窗口是图像窗口，它是Photoshop的主要工作区，用于显示图像文件。图像窗口带有自己的标题栏，提供了打开文件的基本信息，如文件名、缩放比例、颜色模式等。如同时打开两副图像，可通过单击图像窗口进行切换。图像窗口切换可使用Ctrl+Tab。</p>
+<h1 id="三：状态栏：主窗口底部是状态栏，由三部分组成"><a href="#三：状态栏：主窗口底部是状态栏，由三部分组成" class="headerlink" title="三：状态栏：主窗口底部是状态栏，由三部分组成"></a>三：状态栏：主窗口底部是状态栏，由三部分组成</h1><h2 id="文本行"><a href="#文本行" class="headerlink" title="文本行"></a>文本行</h2><p>说明当前所选工具和所进行操作的功能与作用等信息。</p>
+<h2 id="缩放栏"><a href="#缩放栏" class="headerlink" title="缩放栏"></a>缩放栏</h2><p>显示当前图像窗口的显示比例，用户也可在此窗口中输入数值后按回车来改变显示比例。</p>
+<h2 id="预览框"><a href="#预览框" class="headerlink" title="预览框"></a>预览框</h2><p>单击右边的黑色三角按扭，打开弹出菜单，选择任一命令，相应的信息就会在预览框中显示。</p>
+<h1 id="四：工具箱"><a href="#四：工具箱" class="headerlink" title="四：工具箱"></a>四：工具箱</h1><p>工具箱中的工具可用来选择、绘画、编辑以及查看图像。拖动工具箱的标题栏，可移动工具箱；单击可选中工具或移动光标到该工具上，属性栏会显示该工具的属性。有些工具的右下角有一个小三角形符号，这表示在工具位置上存在一个工具组，其中包括若干个相关工具。</p>
+<h1 id="五：控制面板"><a href="#五：控制面板" class="headerlink" title="五：控制面板"></a>五：控制面板</h1><p>共有14个面板，可通过“窗口/显示”来显示面板。</p>
+<p>按Tab键，自动隐藏命令面板，属性栏和工具箱，再次按键，显示以上组件。</p>
+<p>按Shift+Tab，隐藏控制面板，保留工具箱。</p>
+<blockquote>
+<p>除此之外，ps的软件组成还包括绘图模式，档案格式文件格式，色彩等方面。<br>下面展示一些ps过后的图片的效果。</p>
+</blockquote>
+<h1 id="一：校色"><a href="#一：校色" class="headerlink" title="一：校色"></a>一：校色</h1><p><img src="http://www.diannao120.top/blog/image/2019/12/08/wy01/02.jpg" alt></p>
+<h1 id="二：美颜"><a href="#二：美颜" class="headerlink" title="二：美颜"></a>二：美颜</h1><p><img src="http://www.diannao120.top/blog/image/2019/12/08/wy01/03.jpg" alt></p>
+<h1 id="三：影像创意"><a href="#三：影像创意" class="headerlink" title="三：影像创意"></a>三：影像创意</h1><p><img src="http://www.diannao120.top/blog/image/2019/12/08/wy01/04.jpg" alt></p>
+<h1 id="四：字体logo设计"><a href="#四：字体logo设计" class="headerlink" title="四：字体logo设计"></a>四：字体logo设计</h1><p><img src="http://www.diannao120.top/blog/image/2019/12/08/wy01/05.jpg" alt></p>
+<p>当然，还有更多的功能等待你去探索哦。</p>
+]]></content>
+      <categories>
+        <category>学习考试</category>
+      </categories>
+  </entry>
+  <entry>
     <title>安装PS的简单流程</title>
     <url>/blog/2019/12/06/191206hj01/</url>
     <content><![CDATA[<center>作者：19级 衡俊</center>
