@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>python常用函数的时间复杂度</title>
+    <url>/blog/2019/12/10/191210pbh01/</url>
+    <content><![CDATA[<center>作者：18级 潘愽浩</center><h1 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h1><h2 id="算法时间复杂度的定义"><a href="#算法时间复杂度的定义" class="headerlink" title="算法时间复杂度的定义"></a>算法时间复杂度的定义</h2><p>在进行算法分析时，语句总的执行次数T(n)是关于问题规模n的函数，进而分析T(n)随n的变化情况并确定T(n)的数量级。算法的时间复杂度，也就是算法的时间度量，记作：T(n) = O(f(n))。它表示随问题规模n的增大，算法的执行时间的增长率和f(n)的增长率相同，称作算法的渐进时间复杂度，简称为时间复杂度。其中f(n)是问题规模n的某个函数。<br>（关键就是需要知道执行次数 == 时间）</p><a id="more"></a>
+
+
+<p>一般情况下，随着输入规模n的增大，T(n)增长最慢的算法为最优算法。</p>
+<h2 id="执行次数T-n-的计算"><a href="#执行次数T-n-的计算" class="headerlink" title="执行次数T(n)的计算"></a>执行次数T(n)的计算</h2><ol>
+<li>用常数1取代运行时间中的所有的加法常数（输入输出指令也全部被取代了）</li>
+</ol>
+<ol start="2">
+<li>只保留最高项</li>
+</ol>
+<ol start="3">
+<li>如果最高项存在且不是1，则去除与这个项相乘的常数（如3*n^2可记为O(n^2)）</li>
+</ol>
+<p>得到的最终结果就是时间复杂度（可记为大O阶）。</p>
+<h2 id="其他算法复杂度表示法"><a href="#其他算法复杂度表示法" class="headerlink" title="其他算法复杂度表示法"></a>其他算法复杂度表示法</h2><p><strong>大O表示法：</strong></p>
+<p>表示了所有上限中最小的那个上限。</p>
+<p><strong>大Ω表示法：</strong></p>
+<p>表示了所有下限中最大的那个下限。</p>
+<p>f(n) = Ω(g(n))当且仅当g(n) = o(f(n))</p>
+<p><strong>大θ表示法：</strong></p>
+<p>如果上下限相同，那么就可以用大θ表示</p>
+<p>f(n) = Θ(g(n))</p>
+<p>当且仅当f(n) = O(g(n))且f(n) = Ω(g(n))</p>
+<h2 id="列表和字典常用函数的时间复杂度"><a href="#列表和字典常用函数的时间复杂度" class="headerlink" title="列表和字典常用函数的时间复杂度"></a>列表和字典常用函数的时间复杂度</h2><p>sort()列表排序函数，时间复杂度为O(n*logn)</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/10/pbh01/01.png" alt></p>
+<h2 id="List列表常用操作性能"><a href="#List列表常用操作性能" class="headerlink" title="List列表常用操作性能"></a>List列表常用操作性能</h2><p><strong>最常用的是：按索引取值和赋值（v = a[i]，a[i] = v）</strong></p>
+<p>由于列表的随机访问特性，这两个操作执行时间与列表大小无关，均为O(1)。</p>
+<p><strong>另一个是列表增长，可以选择append()和<em>add</em>()”+”</strong></p>
+<p>ls.append(v)，执行时间是O(1)<br>ls = ls + [v]，执行时间是O(n+k)，其中k是被加的列表长度</p>
+<p><strong>pop()删除元素函数如果不设置参数（即删除最后一个元素）时时间复杂度为O（1），带参数则为O（n）。</strong></p>
+<p>原因是从中部移除元素的话，要把移除元素后面的元素全部向前挪位复制一遍，这个看起来有点笨拙，但这种实现方法能够保证列表按索引取值和赋值的操作很快，达到O（1）。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/10/pbh01/02.png" alt></p>
+<h2 id="Dict词典常用操作性能"><a href="#Dict词典常用操作性能" class="headerlink" title="Dict词典常用操作性能"></a>Dict词典常用操作性能</h2><p>最常用的取值get和赋值set，其性能为O（1），另一个重要操作contains（in）是判断字典中是否存在某个关键码（key），这个性能也是O（1）</p>
+<p><strong>注意：</strong>在字典里查找某个关键码为（key in dict）的时间复杂度为O（1），在列表里查找某个元素是否存在（yuan_su in list）的时间复杂度为O（n）。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/10/pbh01/03.png" alt></p>
+<h2 id="python更多算法复杂度"><a href="#python更多算法复杂度" class="headerlink" title="python更多算法复杂度"></a>python更多算法复杂度</h2><p>Python官方的算法复杂度网站：</p>
+<p><a href="http://wiki.python.org/moin/TimeComplexity" target="_blank" rel="noopener">http://wiki.python.org/moin/TimeComplexity</a></p>
+]]></content>
+      <categories>
+        <category>学习考试</category>
+      </categories>
+      <tags>
+        <tag>网络爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Pr的安装方法</title>
     <url>/blog/2019/12/09/191209zyl01/</url>
     <content><![CDATA[<center>作者：19级 张雨乐</center>
@@ -274,8 +322,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -314,8 +362,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -374,8 +422,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
       </tags>
@@ -1511,8 +1559,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -1558,8 +1606,8 @@
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -1823,8 +1871,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
         <tag>U盘问题</tag>
       </tags>
@@ -1872,8 +1920,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>上不了网</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
@@ -1969,8 +2017,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -2136,8 +2184,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -2224,8 +2272,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
       </tags>
   </entry>
   <entry>
@@ -2412,8 +2460,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>硬件问题</tag>
         <tag>开不了机</tag>
+        <tag>硬件问题</tag>
       </tags>
   </entry>
   <entry>
