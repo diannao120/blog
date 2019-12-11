@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>如何解决游戏本重装系统后打游戏出现掉帧、画面不流畅的问题</title>
+    <url>/blog/2019/12/11/191211wjx01/</url>
+    <content><![CDATA[<center>作者：19级 王镓璇</center><center>审核：18级 吉时德</center><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>平时我们大多数都是对一些轻薄本做维修，重装系统之后，一般用驱动软件安装驱动即可正常使用，但对于游戏本来说，打游戏才是核心，如果对于游戏本重复上述操作，那就会出现对于一些不吃显卡的游戏（cf、lol等），偶尔会出现一些掉帧的现象，而对于一些要求电脑配置比较高的游戏如GTA则是直接卡成ppt，原因是英伟达显卡驱动未安装，但是我们在安装英伟达显卡驱动时会出现驱动与系统不兼容的问题，以下是解决方法：</p><a id="more"></a>
+
+
+
+<ol>
+<li>本人建议安装学校官网系统（<a href="http://ms.henau.edu.cn/download/windows10.html" target="_blank" rel="noopener">http://ms.henau.edu.cn/download/windows10.html</a>），然后用激活软件激活windows</li>
+</ol>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/11/wjx01/01.png" alt></p>
+<ol start="2">
+<li>打开Microsoft Store，用户登录（没有账户可以注册一个）后，搜索Nvidia Control Panel，点击下方系统要求会提示windows更新，点击更新即可，随后根据操作提示下载更新工具进行更新，稍作等待</li>
+</ol>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/11/wjx01/02.png" alt></p>
+<ol start="3">
+<li>Windows更新完毕后，建议大家各品牌电脑官网安装合适驱动，然后在Microsoft Store安装Nvidia Control Panel</li>
+</ol>
+<ol start="4">
+<li>启动此控制面板（可能会提示不兼容的提示，不用担心，稍作等待会启动）</li>
+</ol>
+<ol start="5">
+<li>之后游戏本即可正常运行游戏</li>
+</ol>
+]]></content>
+      <categories>
+        <category>维修专栏</category>
+      </categories>
+      <tags>
+        <tag>需要激活</tag>
+        <tag>显示异常</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>python常用函数的时间复杂度</title>
     <url>/blog/2019/12/10/191210pbh01/</url>
     <content><![CDATA[<center>作者：18级 潘愽浩</center><h1 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h1><h2 id="算法时间复杂度的定义"><a href="#算法时间复杂度的定义" class="headerlink" title="算法时间复杂度的定义"></a>算法时间复杂度的定义</h2><p>在进行算法分析时，语句总的执行次数T(n)是关于问题规模n的函数，进而分析T(n)随n的变化情况并确定T(n)的数量级。算法的时间复杂度，也就是算法的时间度量，记作：T(n) = O(f(n))。它表示随问题规模n的增大，算法的执行时间的增长率和f(n)的增长率相同，称作算法的渐进时间复杂度，简称为时间复杂度。其中f(n)是问题规模n的某个函数。<br>（关键就是需要知道执行次数 == 时间）</p><a id="more"></a>
