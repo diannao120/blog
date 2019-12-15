@@ -73,24 +73,23 @@
         border-left-color: #98FB98;    /*左边框颜色*/
     }
 </style>
-  <meta name="description" content="作者：18级 潘愽浩栈Stack定义一种有次序的数据项集合，在栈中，数据项的加入和移除都仅发生在同一端。这一端叫做栈“顶top”，另一端叫栈“底base”。日常生活中有很多栈的应用，盘子、托盘、书堆等等都属于栈。性质1．后进先出距离栈底越近的数据项，留在栈中的时间就越长，而最新加入栈的数据项会被最先移除。">
+  <meta name="description" content="作者：18级 潘愽浩导言位运算符是用来操作二进制的。位运算共有  &amp;amp;  |  ^  ~  &amp;lt;&amp;lt;  &amp;gt;&amp;gt;六种操作方法二进制在python中表示为”0b”。例如 a = 0b100110。bin函数可以把十进制转化为二进制数。&amp;amp;   （与）如果两个二进制相同位数均为1，则返回的数字的二进制在该位置值也为1，否则为0。">
 <meta name="keywords" content="网络爬虫">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用python实现栈">
-<meta property="og:url" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;2019&#x2F;12&#x2F;12&#x2F;191212pbh01&#x2F;index.html">
+<meta property="og:title" content="python位运算符的使用方法">
+<meta property="og:url" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;2019&#x2F;12&#x2F;15&#x2F;191215pbh01&#x2F;index.html">
 <meta property="og:site_name" content="电脑120">
-<meta property="og:description" content="作者：18级 潘愽浩栈Stack定义一种有次序的数据项集合，在栈中，数据项的加入和移除都仅发生在同一端。这一端叫做栈“顶top”，另一端叫栈“底base”。日常生活中有很多栈的应用，盘子、托盘、书堆等等都属于栈。性质1．后进先出距离栈底越近的数据项，留在栈中的时间就越长，而最新加入栈的数据项会被最先移除。">
+<meta property="og:description" content="作者：18级 潘愽浩导言位运算符是用来操作二进制的。位运算共有  &amp;amp;  |  ^  ~  &amp;lt;&amp;lt;  &amp;gt;&amp;gt;六种操作方法二进制在python中表示为”0b”。例如 a = 0b100110。bin函数可以把十进制转化为二进制数。&amp;amp;   （与）如果两个二进制相同位数均为1，则返回的数字的二进制在该位置值也为1，否则为0。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;12&#x2F;12&#x2F;pbh01&#x2F;01.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;12&#x2F;12&#x2F;pbh01&#x2F;02.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;12&#x2F;12&#x2F;pbh01&#x2F;03.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;12&#x2F;12&#x2F;pbh01&#x2F;04.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;12&#x2F;12&#x2F;pbh01&#x2F;05.png">
-<meta property="og:updated_time" content="2019-12-12T05:11:57.142Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;12&#x2F;15&#x2F;pbh01&#x2F;01.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;12&#x2F;15&#x2F;pbh01&#x2F;02.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;12&#x2F;15&#x2F;pbh01&#x2F;03.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;12&#x2F;15&#x2F;pbh01&#x2F;04.png">
+<meta property="og:updated_time" content="2019-12-15T06:08:14.859Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;12&#x2F;12&#x2F;pbh01&#x2F;01.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;www.diannao120.top&#x2F;blog&#x2F;image&#x2F;2019&#x2F;12&#x2F;15&#x2F;pbh01&#x2F;01.png">
 
-<link rel="canonical" href="https://diannao120.github.io/blog/2019/12/12/191212pbh01/">
+<link rel="canonical" href="https://diannao120.github.io/blog/2019/12/15/191215pbh01/">
 
 
 <script id="page-configurations">
@@ -104,7 +103,7 @@
   };
 </script>
 
-  <title>用python实现栈 | 电脑120</title>
+  <title>python位运算符的使用方法 | 电脑120</title>
   
 
 
@@ -247,7 +246,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://diannao120.github.io/blog/blog/2019/12/12/191212pbh01/">
+    <link itemprop="mainEntityOfPage" href="https://diannao120.github.io/blog/blog/2019/12/15/191215pbh01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/blog/images/avatar.gif">
@@ -260,7 +259,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          用python实现栈
+          python位运算符的使用方法
         </h2>
 
         <div class="post-meta">
@@ -271,7 +270,7 @@
               <span class="post-meta-item-text">发表于：</span>
               
 
-              <time title="创建时间：：2019-12-12 13:00:26 / 修改时间：：13:11:57" itemprop="dateCreated datePublished" datetime="2019-12-12T13:00:26+08:00">2019-12-12</time>
+              <time title="创建时间：：2019-12-15 13:59:16 / 修改时间：：14:08:14" itemprop="dateCreated datePublished" datetime="2019-12-15T13:59:16+08:00">2019-12-15</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -294,8 +293,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/blog/2019/12/12/191212pbh01/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/blog/2019/12/12/191212pbh01/" itemprop="commentCount"></span>
+    <a title="valine" href="/blog/2019/12/15/191215pbh01/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/blog/2019/12/15/191215pbh01/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -310,57 +309,37 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <center>作者：18级 潘愽浩</center><h1 id="栈Stack"><a href="#栈Stack" class="headerlink" title="栈Stack"></a>栈Stack</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>一种有次序的数据项集合，在栈中，数据项的加入和移除都仅发生在同一端。这一端叫做栈“顶top”，另一端叫栈“底base”。</p><p>日常生活中有很多栈的应用，盘子、托盘、书堆等等都属于栈。</p><h2 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h2><h3 id="1．后进先出"><a href="#1．后进先出" class="headerlink" title="1．后进先出"></a>1．后进先出</h3><p><strong>距离栈底越近的数据项，留在栈中的时间就越长</strong>，而最新加入栈的数据项会被最先移除。</p><a id="more"></a>
+        <center>作者：18级 潘愽浩</center><h1 id="导言"><a href="#导言" class="headerlink" title="导言"></a>导言</h1><p>位运算符是用来操作二进制的。<br>位运算共有  &amp;  |  ^  ~  &lt;&lt;  &gt;&gt;六种操作方法<br>二进制在python中表示为”0b”。例如 a = 0b100110。bin函数可以把十进制转化为二进制数。</p><h1 id="amp-（与）"><a href="#amp-（与）" class="headerlink" title="&amp;   （与）"></a>&amp;   （与）</h1><p>如果两个二进制相同位数均为1，则返回的数字的二进制在该位置值也为1，否则为0。</p><a id="more"></a>
 
 
 
+<p><img src="http://www.diannao120.top/blog/image/2019/12/15/pbh01/01.png" alt="（其中，a = 50, b = 23, a &amp; b = 18，均为int）"></p>
+<h1 id="（或）"><a href="#（或）" class="headerlink" title="|     （或）"></a>|     （或）</h1><p>如果两个二进制相同位数至少有一个1，则返回的数字的二进制在该位置值也为1，否则为0。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/15/pbh01/02.png" alt="（其中，a = 50, b = 23, a | b = 55，均为int）"></p>
+<h1 id="（异或）"><a href="#（异或）" class="headerlink" title="^   （异或）"></a>^   （异或）</h1><p>如果两个二进制相同位数上的数字不同，则返回的数字的二进制在该位置值为1，否则为0。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/15/pbh01/03.png" alt="（其中，a = 50, b = 23, a ^b = 37）"></p>
+<p><strong>异或的性质：</strong></p>
+<p>•    满足交换律，即 a ^ b = b ^ a；</p>
+<p>•    相同两个数异或为0 ，即 a ^ a = 0；</p>
+<p>•    0异或一个数为那个数本身，即 0 ^ a  = a。</p>
+<h1 id="（取反）"><a href="#（取反）" class="headerlink" title="~   （取反）"></a>~   （取反）</h1><p>将数字转化为二进制后，数字前加一个负号，二进制加1，再返回变换后二进制对应的数。</p>
+<p><img src="http://www.diannao120.top/blog/image/2019/12/15/pbh01/04.png" alt="（ 可以理解为 ~a = - (a + 1) ）"></p>
+<h1 id="lt-lt-（左移）"><a href="#lt-lt-（左移）" class="headerlink" title="&lt;&lt;（左移）"></a>&lt;&lt;（左移）</h1><p>将数字转化为二进制后，向二进制里添加几个零（取决于左移的位数），再返回变换后二进制对应的数。</p>
+<h1 id="gt-gt-（右移）"><a href="#gt-gt-（右移）" class="headerlink" title="&gt;&gt;（右移）"></a>&gt;&gt;（右移）</h1><p>将数字转化为二进制后，将二进制里最后面的几个数剔除（取决于右移的位数），再返回变换后二进制对应的数。</p>
+<h1 id="位运符的妙用"><a href="#位运符的妙用" class="headerlink" title="位运符的妙用"></a>位运符的妙用</h1><h2 id="1-判断整数的奇偶性"><a href="#1-判断整数的奇偶性" class="headerlink" title="1.    判断整数的奇偶性"></a>1.    判断整数的奇偶性</h2><p>我们只需要使用&amp;运算，与1进行&amp;，如果为1，那么该数为奇数；如果为0，那么该数是偶数。（注意，1在python中也可以表示True，0为False）</p>
+<h2 id="2-左移一位相当于乘2，右移一位相当于地板除2"><a href="#2-左移一位相当于乘2，右移一位相当于地板除2" class="headerlink" title="2.    左移一位相当于乘2，右移一位相当于地板除2"></a>2.    左移一位相当于乘2，右移一位相当于地板除2</h2><p>这样更清晰明了，并且可提高算法速度（毕竟是运用二进制来进行运算的）！</p>
+<h2 id="3-找数据列表中独一的那个数"><a href="#3-找数据列表中独一的那个数" class="headerlink" title="3.    找数据列表中独一的那个数"></a>3.    找数据列表中独一的那个数</h2><p>有一个数据列表（2N+1个整数），只有一个数出现了1次，其余N个数都出现了2次。如何找到这个独一无二的数据？如果通过计数，建立列表，循环整个数据并计数，然后遍历这个列表找到出现次数为1的数据。这样，空间复杂度为O（N）。</p>
+<p>如何降低空间复杂度呢？</p>
+<blockquote>
+<p>注意看一下刚刚讲过的异或的特性：任意数和自身异或结果为0；0和任意数异或结果还是其本身。 那么，出现了2次的N个数异或的结果是0，再与出现次数为1次的数异或的结果即为该数。即：找到这个独一无二数据的办法是通过对全部的数据进行异或操作，空间复杂度降低为O（1）。例如：</p>
+</blockquote>
+<pre><code class="python">list_ = [<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">5</span>]
+res = <span class="number">0</span>
 
-<p><strong>这种次序通常称为“后进先出LIFO”：Lats in First out</strong><br>这是一种基于数据项保存时间的次序，时间越短的离栈顶越近，而时间越长的离栈底越近。</p>
-<h3 id="2．反转次序"><a href="#2．反转次序" class="headerlink" title="2．反转次序"></a>2．反转次序</h3><p>我们观察一个有混合的python原生数据对象形成的栈</p>
-<p><img src="http://www.diannao120.top/blog/image/2019/12/12/pbh01/01.png" alt></p>
-<p>可以发现，<strong>进栈和出栈的次序正好相反</strong>。</p>
-<p>其实，这种形式的数据存储结构我们每天都在计算机上接触。例如：浏览器的“后退back”按钮，最先back的是最近访问的网页，打开历史记录页面，它们的排列方式也是栈的形式；word的“Undo”按钮，最先撤销的也是最近操作。</p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>抽象数据类型“栈”是一个有次序的数据集，每个数据项仅从“栈顶”一端加入到数据集中、从数据集中移除，占据有后进先出LIFO的特性。</p>
-<p><img src="http://www.diannao120.top/blog/image/2019/12/12/pbh01/02.png" alt></p>
-<h2 id="常规操作"><a href="#常规操作" class="headerlink" title="常规操作"></a>常规操作</h2><p><strong>定义抽象数据类型栈的各种操作：</strong><br>Stack（）:创建一个空栈，不包含任何数据项<br>push（item）：将item加入栈顶，无返回值<br>pop（）：将栈顶数据项移除，并返回所移除的值，栈被修改<br>peek（）：“窥视”栈顶数据项，返回栈顶的数据项但不移除，栈不被修改<br>isEmpty（）：返回栈是否为空栈<br>size（）：返回栈中有多少个数据项</p>
-<p><strong>操作实例：</strong></p>
-<p><img src="http://www.diannao120.top/blog/image/2019/12/12/pbh01/03.png" alt></p>
-<h2 id="用python实现ADT-Stack"><a href="#用python实现ADT-Stack" class="headerlink" title="用python实现ADT Stack"></a>用python实现ADT Stack</h2><h3 id="大致思路"><a href="#大致思路" class="headerlink" title="大致思路"></a>大致思路</h3><p>在清楚地定义了抽象数据类型Stack之后，根据python良好的面向对象机制，可以用来实现用户自定义类型。</p>
-<ol>
-<li><p>将ADT Stack实现为python的一个class</p>
-</li>
-<li><p>由于Stack是一个数据集，所以可以采用python的原生数据集来实现，我们选用最常用的数据集List来实现。</p>
-</li>
-</ol>
-<h3 id="Stack的两端对应的list设置"><a href="#Stack的两端对应的list设置" class="headerlink" title="Stack的两端对应的list设置"></a>Stack的两端对应的list设置</h3><p>可以将List的任意一端（index = 0或者-1）设置为栈顶，不过，我们一般选用List的末端（index = -1）作为栈顶。这样的话栈的操作可以通过对list的append（添加元素）和pop（删除元素）来实现，使用起来相当方便。</p>
-<h3 id="对应代码"><a href="#对应代码" class="headerlink" title="对应代码"></a>对应代码</h3><pre><code class="python"><span class="class"><span class="keyword">class</span> <span class="title">Stack</span>:</span>
-    <span class="comment">#初始化</span>
-    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span>
-        self.items = []
+<span class="keyword">for</span> i <span class="keyword">in</span> list_ :
+    res = res ^ i
 
-    <span class="comment">#判断是否为空集</span>
-    <span class="function"><span class="keyword">def</span> <span class="title">isEmpty</span><span class="params">(self)</span>:</span>
-        <span class="keyword">return</span> self.items == []
-
-    <span class="comment">#添加新元素到栈顶</span>
-    <span class="function"><span class="keyword">def</span> <span class="title">push</span><span class="params">(self,item)</span>:</span>
-        self.items.append(item)
-
-    <span class="comment">#删除栈顶元素</span>
-    <span class="function"><span class="keyword">def</span> <span class="title">pop</span><span class="params">(self)</span>:</span>
-        <span class="keyword">return</span> self.items.pop()
-
-    <span class="comment">#窥探栈顶元素</span>
-    <span class="function"><span class="keyword">def</span> <span class="title">peek</span><span class="params">(self)</span>:</span>
-        <span class="keyword">return</span> self.items[<span class="number">-1</span>]
-
-    <span class="comment">#查看栈的大小</span>
-    <span class="function"><span class="keyword">def</span> <span class="title">size</span><span class="params">(self)</span>:</span>
-        <span class="keyword">return</span> len(self.items)</code></pre>
-<p><strong>使用操作：</strong></p>
-<p><img src="http://www.diannao120.top/blog/image/2019/12/12/pbh01/04.png" alt></p>
-<h3 id="另一种实现代码"><a href="#另一种实现代码" class="headerlink" title="另一种实现代码"></a>另一种实现代码</h3><p>我们知道，栈有两种实现形式——将list首段设为栈顶和将list末端设为栈顶。栈顶首段的版本（左边）push/pop的复杂度为O（n），而栈顶尾端的实现（右边），其push/pop的复杂度为O（1）。</p>
-<p><img src="http://www.diannao120.top/blog/image/2019/12/12/pbh01/05.png" alt></p>
+print(res)</code></pre>
 
     </div>
 
@@ -377,17 +356,14 @@
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/blog/2019/12/11/191211wjx01/" rel="next" title="如何解决游戏本重装系统后打游戏出现掉帧、画面不流畅的问题">
-                  <i class="fa fa-chevron-left"></i> 如何解决游戏本重装系统后打游戏出现掉帧、画面不流畅的问题
+                <a href="/blog/2019/12/12/191212pbh01/" rel="next" title="用python实现栈">
+                  <i class="fa fa-chevron-left"></i> 用python实现栈
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/blog/2019/12/15/191215pbh01/" rel="prev" title="python位运算符的使用方法">
-                  python位运算符的使用方法 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
       </footer>
@@ -427,7 +403,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#栈Stack"><span class="nav-number">1.</span> <span class="nav-text">栈Stack</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">1.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#性质"><span class="nav-number">1.2.</span> <span class="nav-text">性质</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1．后进先出"><span class="nav-number">1.2.1.</span> <span class="nav-text">1．后进先出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2．反转次序"><span class="nav-number">1.2.2.</span> <span class="nav-text">2．反转次序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.3.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常规操作"><span class="nav-number">1.4.</span> <span class="nav-text">常规操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用python实现ADT-Stack"><span class="nav-number">1.5.</span> <span class="nav-text">用python实现ADT Stack</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#大致思路"><span class="nav-number">1.5.1.</span> <span class="nav-text">大致思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Stack的两端对应的list设置"><span class="nav-number">1.5.2.</span> <span class="nav-text">Stack的两端对应的list设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对应代码"><span class="nav-number">1.5.3.</span> <span class="nav-text">对应代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#另一种实现代码"><span class="nav-number">1.5.4.</span> <span class="nav-text">另一种实现代码</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#导言"><span class="nav-number">1.</span> <span class="nav-text">导言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#amp-（与）"><span class="nav-number">2.</span> <span class="nav-text">&amp;   （与）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#（或）"><span class="nav-number">3.</span> <span class="nav-text">|     （或）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#（异或）"><span class="nav-number">4.</span> <span class="nav-text">^   （异或）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#（取反）"><span class="nav-number">5.</span> <span class="nav-text">~   （取反）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#lt-lt-（左移）"><span class="nav-number">6.</span> <span class="nav-text">&lt;&lt;（左移）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#gt-gt-（右移）"><span class="nav-number">7.</span> <span class="nav-text">&gt;&gt;（右移）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#位运符的妙用"><span class="nav-number">8.</span> <span class="nav-text">位运符的妙用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-判断整数的奇偶性"><span class="nav-number">8.1.</span> <span class="nav-text">1.    判断整数的奇偶性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-左移一位相当于乘2，右移一位相当于地板除2"><span class="nav-number">8.2.</span> <span class="nav-text">2.    左移一位相当于乘2，右移一位相当于地板除2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-找数据列表中独一的那个数"><span class="nav-number">8.3.</span> <span class="nav-text">3.    找数据列表中独一的那个数</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
