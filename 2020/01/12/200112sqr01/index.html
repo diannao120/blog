@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="alternate" href="/blog/atom.xml" title="电脑120" type="application/atom+xml">
+
+  <meta name="sogou_site_verification" content="U2A4Yj6DYd"/>
+
+
+  <meta name="360-site-verification" content="30177160f61b9c8c2e4c849761d96707"/>
+
+
+  <meta name="shenma-site-verification" content="8c3c6f7f676eadb704cb18065f95c634_1576316494"/>
+
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+
+<link rel="stylesheet" href="/blog/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/blog/',
+    scheme: 'Gemini',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":"default","style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: true,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":5},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #98FB98; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #98FB98;    /*上边框颜色*/
+        border-left-color: #98FB98;    /*左边框颜色*/
+    }
+</style>
+  <meta name="description" content="作者：19级 宋乾瑞   安装虚拟机进电脑120内网下载文件夹虚拟机hadoop（需要挂上校园网）。 首先打开文件夹宋的大白菜虚拟机15">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hadoop的安装教程">
+<meta property="og:url" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;2020&#x2F;01&#x2F;12&#x2F;200112sqr01&#x2F;index.html">
+<meta property="og:site_name" content="电脑120">
+<meta property="og:description" content="作者：19级 宋乾瑞   安装虚拟机进电脑120内网下载文件夹虚拟机hadoop（需要挂上校园网）。 首先打开文件夹宋的大白菜虚拟机15">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-8.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-9.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-10.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-11.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-12.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-13.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-14.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-15.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-16.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-17.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-18.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-19.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-22.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-23.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-24.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-25.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-26.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-27.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-28.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-29.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-30.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-31.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-32.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-33.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-34.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-35.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-36.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-37.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-38.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-39.png">
+<meta property="og:updated_time" content="2020-01-12T05:39:53.629Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;diannao120.github.io&#x2F;blog&#x2F;images&#x2F;pasted-8.png">
+
+<link rel="canonical" href="https://diannao120.github.io/blog/2020/01/12/200112sqr01/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>hadoop的安装教程 | 电脑120</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?9d665843674b57854ba63a6609a4f43d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/blog/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">电脑120</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="http://www.diannao120.top/" rel="noopener" target="_blank"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/blog/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-留言">
+
+    <a href="/blog/mark/" rel="section"><i class="fa fa-fw fa-heartbeat"></i>留言</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/blog/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://diannao120.github.io/blog/blog/2020/01/12/200112sqr01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="电脑120">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="电脑120">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          hadoop的安装教程
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于：</span>
+              
+
+              <time title="创建时间：：2020-01-12 13:11:00 / 修改时间：：13:39:53" itemprop="dateCreated datePublished" datetime="2020-01-12T13:11:00+08:00">2020-01-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/" itemprop="url" rel="index">
+                    <span itemprop="name">软件安装</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/blog/2020/01/12/200112sqr01/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/blog/2020/01/12/200112sqr01/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <center>作者：19级 宋乾瑞</center>
+
+
+<h1 id="安装虚拟机"><a href="#安装虚拟机" class="headerlink" title="安装虚拟机"></a>安装虚拟机</h1><p>进电脑120内网下载文件夹虚拟机hadoop（需要挂上校园网）。</p>
+<p>首先打开文件夹宋的大白菜虚拟机15</p>
+<p><img src="/blog/images/pasted-8.png" alt=""></p>
+<a id="more"></a>
+
+<p><img src="/blog/images/pasted-9.png" alt=""></p>
+<p>（如果右下角弹出无法安装，考虑是否曾经安装未删除安全；进入控制面板删除或者安装高版本。）</p>
+<p><img src="/blog/images/pasted-10.png" alt=""></p>
+<p>选择安装路径</p>
+<p><img src="/blog/images/pasted-11.png" alt=""></p>
+<p>（这一步容易卡如果停止打开任务管理器结束未响应的进程可能会重复几次）<br>没有请忽略</p>
+<p><img src="/blog/images/pasted-12.png" alt=""></p>
+<p>输入许可证“CG392-4PX5J-H816Z-HYZNG-PQRG2”（同一文件夹下有，就是注册码）注意：不同版本注册码不一样。</p>
+<p>安装完成</p>
+<p>桌面会出现vm图标打开应用</p>
+<p><img src="/blog/images/pasted-13.png" alt=""></p>
+<h1 id="新建虚拟机"><a href="#新建虚拟机" class="headerlink" title="新建虚拟机"></a>新建虚拟机</h1><p>无脑点击下一步即可</p>
+<p><img src="/blog/images/pasted-14.png" alt=""></p>
+<p>点击浏览找到刚才的文件夹</p>
+<p><img src="/blog/images/pasted-15.png" alt=""></p>
+<p>点击打开</p>
+<p>显示已检测到即可</p>
+<p><img src="/blog/images/pasted-16.png" alt=""></p>
+<p>自行设置名字密码</p>
+<p><img src="/blog/images/pasted-17.png" alt=""></p>
+<p>选择位置安装虚拟机</p>
+<p><img src="/blog/images/pasted-18.png" alt=""></p>
+<p><img src="/blog/images/pasted-19.png" alt=""></p>
+<p>建议选择40，单个文件（卸载方便）</p>
+<p>根据电脑配置虚拟机或者无脑点击下一步完成</p>
+<p><img src="/blog/images/pasted-22.png" alt=""></p>
+<p>慢长的等待。。。</p>
+<p><img src="/blog/images/pasted-23.png" alt=""></p>
+<p>登陆（ps：如果卡机重启就行了）输入刚才的密码</p>
+<p><img src="/blog/images/pasted-24.png" alt=""></p>
+<p>倒数第二行如果是灰色关闭虚拟机</p>
+<p><img src="/blog/images/pasted-25.png" alt=""></p>
+<p>点击设置</p>
+<p><img src="/blog/images/pasted-26.png" alt=""></p>
+<p>把这三个选择使用物理驱动</p>
+<p>开机再次点击就会发现变黑了！！！</p>
+<p><img src="/blog/images/pasted-27.png" alt=""></p>
+<p><img src="/blog/images/pasted-28.png" alt=""><br>双击进入</p>
+<p><img src="/blog/images/pasted-29.png" alt=""></p>
+<p>放入home/（用户名）</p>
+<p>打开命令行</p>
+<p><img src="/blog/images/pasted-30.png" alt=""></p>
+<p>解压缩然后回车</p>
+<p><img src="/blog/images/pasted-31.png" alt=""></p>
+<p>输入密码</p>
+<p>把提示框的内容完整打出并回车直到安装完成变成全屏，图标消失。</p>
+<p><img src="/blog/images/pasted-32.png" alt=""></p>
+<p>虚拟机打开设置<br>可以看到默认禁止点击添加找到宋的共享文件夹</p>
+<p><img src="/blog/images/pasted-33.png" alt=""></p>
+<p><img src="/blog/images/pasted-34.png" alt=""></p>
+<p><img src="/blog/images/pasted-35.png" alt=""></p>
+<p>点击倒最后出现</p>
+<p><img src="/blog/images/pasted-36.png" alt=""></p>
+<p><img src="/blog/images/pasted-37.png" alt=""></p>
+<p><img src="/blog/images/pasted-38.png" alt=""></p>
+<p>打开步骤一句句手打或者粘贴到命令行里（！！！注意：如果复制会有部分因译码不同出现错误，一定看仔细（来着学弟血的教训<img src="/blog/images/pasted-39.png" alt=""> ））。也可以看第三个文档，但里面可能会出现缺失的操作</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/blog/2019/12/15/191215pbh01/" rel="next" title="python位运算符的使用方法">
+                  <i class="fa fa-chevron-left"></i> python位运算符的使用方法
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/blog/2020/01/12/200112djw01/" rel="prev" title="电脑程序广告彻底关闭方法">
+                  电脑程序广告彻底关闭方法 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="comments"></div>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装虚拟机"><span class="nav-number">1.</span> <span class="nav-text">安装虚拟机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#新建虚拟机"><span class="nav-number">2.</span> <span class="nav-text">新建虚拟机</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="电脑120"
+    src="/blog/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">电脑120</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+  </nav>
+</div>
+
+电脑120成立于2006年3月，作为河南农业大学特色学生公益组织，为校内外广大师生免费解决电脑问题，力求创新。值班时间是每天晚上7~9点（除节假日等特殊情况），值班地点是兰亭116。在首届“河南农业大学最美大学生”评选活动中作为唯一入选的学生组织荣获“最美大学生”称号。
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+
+
+<div class="visit">
+                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                <span id="busuanzi_container_site_pv">本站到访数：<span id="busuanzi_value_site_uv"></span></span>
+                <span class="post-meta-divider">|</span>
+    			<span id="busuanzi_container_page_pv">本页阅读量：<span id="busuanzi_value_page_pv"></span></span>
+                
+            </div>
+
+<div class="qqqun">
+				<span>电脑120服务群：</span>
+				<a href="http://shang.qq.com/wpa/qunwpa?idkey=6ba6d55616eaad2ba859efff4d9ffa2c7a73afe936f790a24b7a9bc9ccb74960" target="_blank" rel="noopener noreferrer">①群</a>
+				<span>  |  </span>
+				<a href="http://shang.qq.com/wpa/qunwpa?idkey=e42f5389280d1b46ff70e7e75058e0c202922891e7ecaafc30a4110a9869055f" target="_blank" rel="noopener noreferrer">②群</a>
+
+            </div>
+
+<span id="sitetime"></span>
+<script language=javascript>
+    function siteTime(){
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth()+1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2019,11,09,01,30,00); //北京时间2019-11-09 01:30:00
+        var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+        var diff = t2-t1;
+        var diffYears = Math.floor(diff/years);
+        var diffDays = Math.floor((diff/days)-diffYears*365);
+        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+        document.getElementById("sitetime").innerHTML=" 本站已稳定运行："+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>    
+<br>
+
+
+
+<div class="copyright">
+  Copyright
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">电脑120</span>
+ 版权所有
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/blog/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/blog/lib/velocity/velocity.min.js"></script>
+  <script src="/blog/lib/velocity/velocity.ui.min.js"></script>
+<script src="/blog/js/utils.js"></script><script src="/blog/js/motion.js"></script>
+<script src="/blog/js/schemes/pisces.js"></script>
+<script src="/blog/js/next-boot.js"></script>
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  <script src="/blog/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<style type="text/css">
+    div.info{
+        display: none;
+    }
+</style>
+
+<script>
+NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: 'plKvr6V9tRWaWhRMpovPeAhJ-gzGzoHsz',
+    appKey: 'nIvJYEjxFDT3m5FOW26zxHA0',
+    placeholder: "快来发表你的评论吧...留下你的邮箱，有回复就会提醒你~(邮箱不会被公开)",
+    avatar: 'robohash',
+    meta: guest,
+    pageSize: '5' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn',
+    path: location.pathname,
+    recordIP: true,
+    serverURLs: ''
+  });
+}, window.Valine);
+</script>
+
+</body>
+</html>

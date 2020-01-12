@@ -1,6 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>电脑程序广告彻底关闭方法</title>
+    <url>/blog/2020/01/12/200112djw01/</url>
+    <content><![CDATA[<center>作者：18级 杜经纬（转）</center><p>广告先别关，然后打开任务管理器就能看到那个窗口的名字，然后右键单击，打开文件当前位置，进去把那个今日热点删了就行了，从根源灭除。这种广告弹窗一般都是你下的软件里面自带的，如果你按我的方式进到当前位置了，然后一级一级返回上级目录，你就会发现，些就是你下的软件里面带的，我的基本都被我删了，现在什么弹窗都不会弹了，一弹我直接从根源处把它删了。</p>]]></content>
+      <categories>
+        <category>实用技巧</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hadoop的安装教程</title>
+    <url>/blog/2020/01/12/200112sqr01/</url>
+    <content><![CDATA[<center>作者：19级 宋乾瑞</center>
+
+
+<h1 id="安装虚拟机"><a href="#安装虚拟机" class="headerlink" title="安装虚拟机"></a>安装虚拟机</h1><p>进电脑120内网下载文件夹虚拟机hadoop（需要挂上校园网）。</p>
+<p>首先打开文件夹宋的大白菜虚拟机15</p>
+<p><img src="/blog/images/pasted-8.png" alt=""></p>
+<a id="more"></a>
+
+<p><img src="/blog/images/pasted-9.png" alt=""></p>
+<p>（如果右下角弹出无法安装，考虑是否曾经安装未删除安全；进入控制面板删除或者安装高版本。）</p>
+<p><img src="/blog/images/pasted-10.png" alt=""></p>
+<p>选择安装路径</p>
+<p><img src="/blog/images/pasted-11.png" alt=""></p>
+<p>（这一步容易卡如果停止打开任务管理器结束未响应的进程可能会重复几次）<br>没有请忽略</p>
+<p><img src="/blog/images/pasted-12.png" alt=""></p>
+<p>输入许可证“CG392-4PX5J-H816Z-HYZNG-PQRG2”（同一文件夹下有，就是注册码）注意：不同版本注册码不一样。</p>
+<p>安装完成</p>
+<p>桌面会出现vm图标打开应用</p>
+<p><img src="/blog/images/pasted-13.png" alt=""></p>
+<h1 id="新建虚拟机"><a href="#新建虚拟机" class="headerlink" title="新建虚拟机"></a>新建虚拟机</h1><p>无脑点击下一步即可</p>
+<p><img src="/blog/images/pasted-14.png" alt=""></p>
+<p>点击浏览找到刚才的文件夹</p>
+<p><img src="/blog/images/pasted-15.png" alt=""></p>
+<p>点击打开</p>
+<p>显示已检测到即可</p>
+<p><img src="/blog/images/pasted-16.png" alt=""></p>
+<p>自行设置名字密码</p>
+<p><img src="/blog/images/pasted-17.png" alt=""></p>
+<p>选择位置安装虚拟机</p>
+<p><img src="/blog/images/pasted-18.png" alt=""></p>
+<p><img src="/blog/images/pasted-19.png" alt=""></p>
+<p>建议选择40，单个文件（卸载方便）</p>
+<p>根据电脑配置虚拟机或者无脑点击下一步完成</p>
+<p><img src="/blog/images/pasted-22.png" alt=""></p>
+<p>慢长的等待。。。</p>
+<p><img src="/blog/images/pasted-23.png" alt=""></p>
+<p>登陆（ps：如果卡机重启就行了）输入刚才的密码</p>
+<p><img src="/blog/images/pasted-24.png" alt=""></p>
+<p>倒数第二行如果是灰色关闭虚拟机</p>
+<p><img src="/blog/images/pasted-25.png" alt=""></p>
+<p>点击设置</p>
+<p><img src="/blog/images/pasted-26.png" alt=""></p>
+<p>把这三个选择使用物理驱动</p>
+<p>开机再次点击就会发现变黑了！！！</p>
+<p><img src="/blog/images/pasted-27.png" alt=""></p>
+<p><img src="/blog/images/pasted-28.png" alt=""><br>双击进入</p>
+<p><img src="/blog/images/pasted-29.png" alt=""></p>
+<p>放入home/（用户名）</p>
+<p>打开命令行</p>
+<p><img src="/blog/images/pasted-30.png" alt=""></p>
+<p>解压缩然后回车</p>
+<p><img src="/blog/images/pasted-31.png" alt=""></p>
+<p>输入密码</p>
+<p>把提示框的内容完整打出并回车直到安装完成变成全屏，图标消失。</p>
+<p><img src="/blog/images/pasted-32.png" alt=""></p>
+<p>虚拟机打开设置<br>可以看到默认禁止点击添加找到宋的共享文件夹</p>
+<p><img src="/blog/images/pasted-33.png" alt=""></p>
+<p><img src="/blog/images/pasted-34.png" alt=""></p>
+<p><img src="/blog/images/pasted-35.png" alt=""></p>
+<p>点击倒最后出现</p>
+<p><img src="/blog/images/pasted-36.png" alt=""></p>
+<p><img src="/blog/images/pasted-37.png" alt=""></p>
+<p><img src="/blog/images/pasted-38.png" alt=""></p>
+<p>打开步骤一句句手打或者粘贴到命令行里（！！！注意：如果复制会有部分因译码不同出现错误，一定看仔细（来着学弟血的教训<img src="/blog/images/pasted-39.png" alt=""> ））。也可以看第三个文档，但里面可能会出现缺失的操作</p>
+]]></content>
+      <categories>
+        <category>软件安装</category>
+      </categories>
+  </entry>
+  <entry>
     <title>python位运算符的使用方法</title>
     <url>/blog/2019/12/15/191215pbh01/</url>
     <content><![CDATA[<center>作者：18级 潘愽浩</center><h1 id="导言"><a href="#导言" class="headerlink" title="导言"></a>导言</h1><p>位运算符是用来操作二进制的。<br>位运算共有  &amp;  |  ^  ~  &lt;&lt;  &gt;&gt;六种操作方法<br>二进制在python中表示为”0b”。例如 a = 0b100110。bin函数可以把十进制转化为二进制数。</p><h1 id="amp-（与）"><a href="#amp-（与）" class="headerlink" title="&amp;   （与）"></a>&amp;   （与）</h1><p>如果两个二进制相同位数均为1，则返回的数字的二进制在该位置值也为1，否则为0。</p><a id="more"></a>
@@ -459,8 +539,8 @@ print(res)</code></pre>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -499,8 +579,8 @@ print(res)</code></pre>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -559,8 +639,8 @@ print(res)</code></pre>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
       </tags>
@@ -1696,8 +1776,8 @@ print(res)</code></pre>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -1743,8 +1823,8 @@ print(res)</code></pre>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -2008,10 +2088,10 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
-        <tag>显示异常</tag>
+        <tag>开不了机</tag>
         <tag>U盘问题</tag>
+        <tag>显示异常</tag>
       </tags>
   </entry>
   <entry>
@@ -2057,8 +2137,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
         <tag>显示异常</tag>
         <tag>没有声音</tag>
@@ -2154,8 +2234,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>显示异常</tag>
       </tags>
   </entry>
@@ -2321,8 +2401,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
         <tag>上不了网</tag>
       </tags>
   </entry>
@@ -2347,8 +2427,8 @@ matplotlib.pyplot.show()</code></p>
       <tags>
         <tag>硬件问题</tag>
         <tag>路由器问题</tag>
-        <tag>上不了网</tag>
         <tag>U盘问题</tag>
+        <tag>上不了网</tag>
       </tags>
   </entry>
   <entry>
@@ -2409,8 +2489,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
       </tags>
   </entry>
   <entry>
@@ -2597,8 +2677,8 @@ matplotlib.pyplot.show()</code></p>
         <category>维修专栏</category>
       </categories>
       <tags>
-        <tag>开不了机</tag>
         <tag>硬件问题</tag>
+        <tag>开不了机</tag>
       </tags>
   </entry>
   <entry>
