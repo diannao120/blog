@@ -1,7 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Eclipse安装方法</title>
+    <title>Eclipse安装方法（二）</title>
+    <url>/blog/2020/10/07/20100701/</url>
+    <content><![CDATA[<center>作者：19级 宋乾瑞</center>
+## 一、 安装准备
+
+<p>下载jdk-14.0.2_windows-x64_bin.exe，eclipse-201909.zip这两个文件备用。</p>
+<h2 id="二、-安装JAVA-JDK"><a href="#二、-安装JAVA-JDK" class="headerlink" title="二、 安装JAVA JDK"></a>二、 安装JAVA JDK</h2><p>运行jdk-14.0.2_windows-x64_bin.exe</p>
+<p><img src="/blog/images/pasted-64.png" alt="pasted image"></p>
+<a id="more"></a>
+
+<p>点击下一步</p>
+<p><img src="/blog/images/pasted-65.png" alt="pasted image"></p>
+<p>将路径改到D盘，在D盘新建文件夹，命名为JDK14，选择该文件夹，点击确定</p>
+<p><img src="/blog/images/pasted-66.png" alt="pasted image"></p>
+<p><img src="/blog/images/pasted-67.png" alt="pasted image"></p>
+<p><img src="/blog/images/pasted-68.png" alt="pasted image"></p>
+<p>点击下一步</p>
+<p><img src="/blog/images/pasted-71.png" alt="pasted image"></p>
+<p><img src="/blog/images/pasted-72.png" alt="pasted image"></p>
+<p>点击关闭即可，JDK安装完成</p>
+<p><img src="/blog/images/pasted-73.png" alt="pasted image"></p>
+<h2 id="三、生成JRE"><a href="#三、生成JRE" class="headerlink" title="三、生成JRE"></a>三、生成JRE</h2><p>打开CMD（打开方法：同时按win键和R键打开运行框，输入CMD按回车）</p>
+<p>依次输入以下三条指令</p>
+<p>D:</p>
+<p>CD JDK14</p>
+<p>bin\jlink.exe –module-path jmods –add-modules java.desktop –output jre</p>
+<p><img src="/blog/images/pasted-74.png" alt="pasted image"><br>执行以上三条命令后，打开D:\JDK14，可以看到jre文件夹，成功生成JRE</p>
+<p><img src="/blog/images/pasted-75.png" alt="pasted image"></p>
+<h2 id="四、配置环境变量："><a href="#四、配置环境变量：" class="headerlink" title="四、配置环境变量："></a>四、配置环境变量：</h2><p>右击计算机（或者“此电脑”），点击属性</p>
+<p><img src="/blog/images/pasted-76.png" alt="pasted image"></p>
+<p>点击高级系统设置</p>
+<p><img src="/blog/images/pasted-77.png" alt="pasted image"></p>
+<p>点击环境变量</p>
+<p><img src="/blog/images/pasted-78.png" alt="pasted image"></p>
+<p>如下，上方是用户变量，下方是系统变量，我们修改系统变量。</p>
+<p>点击下方的新建</p>
+<p><img src="/blog/images/pasted-81.png" alt="pasted image"></p>
+<p>点新建，变量名JAVA_HOME，变量值D:\JDK14</p>
+<p><img src="/blog/images/pasted-82.png" alt="pasted image"></p>
+<p>再新建一条，变量名CLASSPATH，变量值 .;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin</p>
+<p><img src="/blog/images/pasted-83.png" alt="pasted image"></p>
+<p>Path已经存在，不需要新建，点击Path点编辑即可，在Path新建一个子项  %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin<br><img src="/blog/images/pasted-84.png" alt="pasted image"></p>
+<p>或者，有些电脑的Path编辑界面如下，在原有变量值的末尾附加  ;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin</p>
+<p><img src="/blog/images/pasted-88.png" alt="pasted image"></p>
+<p>总结：</p>
+<p>变量名：JAVA_HOME</p>
+<p>变量值：D:\JDK14  //改为自己的安装路径</p>
+<p>变量名：CLASSPAHT</p>
+<p>变量值：.;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin</p>
+<p>变量名：Path       //如果有该变量名，点击“编辑”,在弹出窗口中，新建即可</p>
+<p>变量值：%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin</p>
+<h2 id="五、安装eclipse"><a href="#五、安装eclipse" class="headerlink" title="五、安装eclipse"></a>五、安装eclipse</h2><p>解压缩eclipse.zip，放到D盘。</p>
+<p>打开eclipse文件夹，运行eclipse.exe</p>
+<p><img src="/blog/images/pasted-89.png" alt="pasted image"></p>
+<p>点启动即可</p>
+<p><img src="/blog/images/pasted-90.png" alt="pasted image"></p>
+<p>出现以下界面即可使用</p>
+<p><img src="/blog/images/pasted-91.png" alt="pasted image"></p>
+<p>右击eclipse.exe，发送到-桌面快捷方式，即可在桌面上使用它</p>
+<p><img src="/blog/images/pasted-92.png" alt="pasted image"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Eclipse安装方法（一）</title>
     <url>/blog/2020/10/06/20100601/</url>
     <content><![CDATA[<center>作者：18级 周肖建</center>
 
