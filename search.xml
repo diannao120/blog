@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>电脑基础知识宣讲会</title>
+    <url>/blog/2020/10/08/20100801/</url>
+    <content><![CDATA[<center>19级 林欣宇</center><p><strong>由电脑120组织第一次电脑知识宣讲活动在2020年</strong></p><h3 id="正式开始"><a href="#正式开始" class="headerlink" title="正式开始"></a>正式开始</h3><p>2020年09月30日  周三，由电脑120组织的，由维修部部长胡浩淼担任主讲的电脑基础知识宣讲会，在龙子湖校区教学楼大教室4顺利举办。<br>参加本次会议的主要有20级计算机科学与技术、20级人工智能、20级数据科学与大数据技术专业新生。会场座无虚席，同学们均热情高涨。表达出了对此次会议极大的兴趣。</p><a id="more"></a>
+
+
+
+<p><img src="/blog/images/pasted-93.png" alt="同学们都在聚精会神的听讲1"></p>
+<p><img src="/blog/images/pasted-94.png" alt="同学们都在聚精会神的听讲2"></p>
+<p>会议正式开始前，为了能让同学们对电脑120有一个大致的了解，胡浩淼学长向在场新生介绍了电脑120的成立的背景、发展历史、成员组成和主要工作内容。随后，胡浩淼学长就笔记本电脑的五个主要组成部分、电脑配件的升级与更换、游戏本与轻薄本的区别、如何根据自己的学习生活需求挑选适合自己的电脑、通过哪些渠道来购买电脑、轻薄本和游戏本的型号选择等六个方面进行了认真细致地讲解，使新生更加系统全面地了解了与电脑有关的基础知识以及及如何选择一台心仪的电脑。</p>
+<p><img src="/blog/images/pasted-95.png" alt="认真讲解的胡浩淼学长"></p>
+<p> <img src="/blog/images/pasted-96.png" alt="上学校官网了，开心！！"></p>
+<p>正是因为知道电脑维修的不易，我们才选择从源头上减少电脑存在的问题，电脑120永远都不会忘记初心，服务同学，回报社会，我们是认真的！！</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Eclipse安装方法（二）</title>
     <url>/blog/2020/10/07/20100701/</url>
     <content><![CDATA[<center>作者：19级 宋乾瑞</center>
-## 一、 安装准备
 
-<p>下载jdk-14.0.2_windows-x64_bin.exe，eclipse-201909.zip这两个文件备用。</p>
+<h2 id="一、-安装准备"><a href="#一、-安装准备" class="headerlink" title="一、 安装准备"></a>一、 安装准备</h2><p>下载jdk-14.0.2_windows-x64_bin.exe，eclipse-201909.zip这两个文件备用。</p>
 <h2 id="二、-安装JAVA-JDK"><a href="#二、-安装JAVA-JDK" class="headerlink" title="二、 安装JAVA JDK"></a>二、 安装JAVA JDK</h2><p>运行jdk-14.0.2_windows-x64_bin.exe</p>
 <p><img src="/blog/images/pasted-64.png" alt="pasted image"></p>
 <a id="more"></a>
